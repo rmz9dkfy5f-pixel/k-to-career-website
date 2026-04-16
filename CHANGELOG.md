@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on keeping release notes clear, versioned, and easy to review.
 
+## [Unreleased]
+
+## [0.2.0] - 2026-04-15
+
+### Added
+- Added the V1 standalone HTML proof-of-concept file as the initial design reference and development starting point.
+
+### Changed
+- Restructured the repository root to support parallel website concept development.
+- Added top-level folders for `V1`, `V2`, and shared project documentation.
+- Standardized the repository layout for parallel concept development and future refinement.
+
+### Notes
+- This release establishes the working structure for parallel website concept development.
+- V1 now has its initial proof-of-concept starting point in the repository.
+- No public production site release yet.
+
 ## [0.1.0] - 2026-04-14
 
 ### Added
@@ -23,12 +40,3 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 ### Notes
 - This release represents the project foundation and working system setup.
 - No public site release yet.
-
-## [Unreleased]
-
-### Planned
-- Homepage information architecture.
-- Homepage copy structure.
-- Navigation and page hierarchy.
-- Staging and production branch workflow.
-- Initial deployment and versioned release process.
