@@ -6,8 +6,8 @@
 # ──────────────────────────────────────────────────────────────
 
 REPO_NAME="k-to-career-website"
-SNAPSHOT_DIR="$HOME/RepoSnapshots/$REPO_NAME/html"
-MANIFEST="$HOME/RepoSnapshots/$REPO_NAME/manifest.csv"
+SNAPSHOT_DIR="/Users/ant/Documents/RepoBackups/$REPO_NAME"
+MANIFEST="/Users/ant/Documents/RepoBackups/$REPO_NAME/manifest.csv"
 MANIFEST_HEADER="snapshot_id,commit_hash,short_hash,commit_date,branch,file_path,snapshot_label,commit_subject,exported_file"
 
 # HTML files to track (repo-relative paths)
