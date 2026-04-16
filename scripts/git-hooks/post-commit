@@ -1,0 +1,66 @@
+#!/bin/bash
+# ──────────────────────────────────────────────────────────────
+# post-commit — HTML snapshot exporter
+# Source of truth: scripts/git-hooks/post-commit
+# Install via:    bash scripts/install-hooks.sh
+# ──────────────────────────────────────────────────────────────
+
+REPO_NAME="k-to-career-website"
+SNAPSHOT_DIR="$HOME/RepoSnapshots/$REPO_NAME/html"
+MANIFEST="$HOME/RepoSnapshots/$REPO_NAME/manifest.csv"
+MANIFEST_HEADER="snapshot_id,commit_hash,short_hash,commit_date,branch,file_path,snapshot_label,commit_subject,exported_file"
+
+# HTML files to track (repo-relative paths)
+TARGET_FILES=(
+  "v1/index.html"
+)
+
+# ── Commit metadata ───────────────────────────────────────────
+COMMIT_HASH=$(git rev-parse HEAD)
+SHORT_SHA=$(git rev-parse --short HEAD)
+COMMIT_DATE=$(git log -1 --format="%ci")
+BRANCH=$(git rev-parse --abbrev-ref HEAD)
+COMMIT_SUBJECT=$(git log -1 --format="%s")
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
+
+# ── Derive label from [bracket] syntax in commit subject ──────
+if [[ "$COMMIT_SUBJECT" =~ ^\[([a-zA-Z0-9_-]+)\] ]]; then
+  LABEL="${BASH_REMATCH[1]}"
+else
+  LABEL="general"
+fi
+
+# ── Ensure output directories exist ──────────────────────────
+mkdir -p "$SNAPSHOT_DIR"
+
+# ── Write manifest header if file does not exist ─────────────
+if [ ! -f "$MANIFEST" ]; then
+  echo "$MANIFEST_HEADER" > "$MANIFEST"
+fi
+
+# ── Export snapshots ─────────────────────────────────────────
+for FILE_PATH in "${TARGET_FILES[@]}"; do
+
+  # Check file exists in this commit — skip cleanly if not
+  if ! git show "HEAD:$FILE_PATH" > /dev/null 2>&1; then
+    echo "[snapshot] Skipped: $FILE_PATH not in commit"
+    continue
+  fi
+
+  # Convert repo-relative path to filesystem-safe name
+  SAFE_NAME=$(echo "$FILE_PATH" | tr '/' '-')
+
+  # Build snapshot filename and path
+  SNAPSHOT_FILENAME="${TIMESTAMP}__${SHORT_SHA}__${LABEL}__${SAFE_NAME}"
+  SNAPSHOT_PATH="$SNAPSHOT_DIR/$SNAPSHOT_FILENAME"
+
+  # Export committed version (not working tree) to snapshot path
+  if git show "HEAD:$FILE_PATH" > "$SNAPSHOT_PATH" 2>/dev/null; then
+    # Append manifest row
+    echo "${SNAPSHOT_FILENAME},${COMMIT_HASH},${SHORT_SHA},${COMMIT_DATE},${BRANCH},${FILE_PATH},${LABEL},${COMMIT_SUBJECT},${SNAPSHOT_PATH}" >> "$MANIFEST"
+    echo "[snapshot] Exported: $SNAPSHOT_FILENAME"
+  else
+    echo "[snapshot] Failed to export: $FILE_PATH — skipping"
+  fi
+
+done
