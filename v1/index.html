@@ -342,10 +342,44 @@
     }
     footer strong { color: var(--amber); }
 
+    /* ── Hamburger Button ────────────────────────────────────── */
+    .nav-hamburger {
+      display: none;
+      flex-direction: column; justify-content: center; gap: 5px;
+      width: 36px; height: 36px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+      flex-shrink: 0;
+    }
+    .nav-hamburger span {
+      display: block; height: 2px; width: 100%;
+      background: var(--white); border-radius: 2px;
+      transition: transform .25s, opacity .2s;
+      transform-origin: center;
+    }
+    /* X state when nav is open */
+    nav.nav-open .nav-hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    nav.nav-open .nav-hamburger span:nth-child(2) { opacity: 0; }
+    nav.nav-open .nav-hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
     /* ── Responsive ───────────────────────────────────────────── */
     @media (max-width: 640px) {
-      nav { padding: 0 4%; }
-      .nav-links { display: none; }
+      nav { padding: 0 4%; height: auto; min-height: 64px; flex-wrap: wrap; }
+      .nav-hamburger { display: flex; }
+      .nav-cta { display: none; }
+      .nav-links {
+        display: none;
+        flex-direction: column; gap: 0;
+        width: 100%;
+        background: var(--navy);
+        padding: 8px 0 16px;
+        border-top: 1px solid rgba(255,255,255,.1);
+      }
+      .nav-links a {
+        display: block; padding: 12px 4%;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,.06);
+      }
+      nav.nav-open .nav-links { display: flex; }
       .hero { padding: 64px 5% 60px; }
       section { padding: 56px 5%; }
     }
@@ -367,6 +401,11 @@
     <li><a href="#contact">Contact</a></li>
   </ul>
   <a href="#contact" class="nav-cta">Get Involved</a>
+  <button class="nav-hamburger" aria-label="Open navigation menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
 
 
@@ -699,6 +738,34 @@
   // Open Professional Development track by default on page load
   document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('track-pd').classList.add('open');
+
+    // ── Mobile nav toggle ──────────────────────────────────────
+    const nav = document.querySelector('nav');
+    const hamburger = document.querySelector('.nav-hamburger');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = nav.classList.toggle('nav-open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      hamburger.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    });
+
+    // Close menu when a nav link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        nav.classList.remove('nav-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Open navigation menu');
+      });
+    });
+
+    // Close menu when clicking outside the nav
+    document.addEventListener('click', (e) => {
+      if (!nav.contains(e.target)) {
+        nav.classList.remove('nav-open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Open navigation menu');
+      }
+    });
   });
 </script>
 
