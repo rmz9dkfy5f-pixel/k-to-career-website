@@ -32,9 +32,9 @@ body{font-family:var(--sans);color:var(--text);background:var(--white);line-heig
 
 /* NAV */
 nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px solid var(--border);padding:0 1.5rem}
-.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;gap:1rem}
-.logo{font-family:var(--serif);font-size:1.25rem;color:var(--navy);text-decoration:none;white-space:nowrap}
-.logo span{color:var(--teal)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:100px;gap:1rem}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo-img{height:76px;width:auto;display:block}
 .nav-links{display:flex;gap:1.75rem;list-style:none}
 .nav-links a{font-size:.875rem;font-weight:500;color:var(--muted);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--navy)}
@@ -42,7 +42,7 @@ nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px 
 .nav-cta:hover{background:var(--teal-light)!important;color:var(--white)!important}
 .hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;background:none;border:none}
 .hamburger span{display:block;width:22px;height:2px;background:var(--navy);border-radius:2px;transition:all .3s}
-.mobile-menu{display:none;position:fixed;inset:64px 0 0;background:var(--white);z-index:99;padding:2rem 1.5rem;flex-direction:column;gap:1.5rem}
+.mobile-menu{display:none;position:fixed;inset:100px 0 0;background:var(--white);z-index:99;padding:2rem 1.5rem;flex-direction:column;gap:1.5rem}
 .mobile-menu.open{display:flex}
 .mobile-menu a{font-size:1.1rem;font-weight:500;color:var(--navy);text-decoration:none;padding:.5rem 0;border-bottom:1px solid var(--border)}
 .mobile-menu .m-cta{background:var(--teal);color:var(--white)!important;text-align:center;padding:.75rem;border-radius:6px;border:none!important;margin-top:.5rem}
@@ -150,8 +150,8 @@ nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px 
 /* FOOTER */
 footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;font-size:.875rem}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
-.footer-logo{font-family:var(--serif);color:var(--white);font-size:1.1rem}
-.footer-logo span{color:var(--teal-light)}
+.footer-logo{display:flex;align-items:center}
+.footer-logo-img{height:72px;width:auto;filter:invert(1)}
 .footer-note{font-size:.75rem;color:rgba(255,255,255,.35);margin-top:.25rem}
 
 /* RESPONSIVE */
@@ -185,7 +185,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a class="logo" href="#">K <span>to</span> Career</a>
+    <a class="logo" href="#"><img src="assets/images/logo.png" alt="K to Career" class="logo-img"></a>
     <ul class="nav-links">
       <li><a href="#program">PATHWAYS</a></li>
       <li><a href="#ages">Who We Serve</a></li>
@@ -465,7 +465,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-logo">K <span>to</span> Career Ecosystem</div>
+      <div class="footer-logo"><img src="assets/images/logo.png" alt="K to Career" class="footer-logo-img"></div>
       <div class="footer-note">STEM Learning &amp; Career Readiness — Nonprofit Organization</div>
     </div>
     <div style="font-size:.8rem;text-align:right">
