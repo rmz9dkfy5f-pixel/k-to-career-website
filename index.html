@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="K to Career concept preview hub for public review of website versions." />
+  <title>K to Career | Website Preview Hub</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --bg-soft: #111a2b;
+      --card: rgba(255,255,255,0.08);
+      --card-border: rgba(255,255,255,0.14);
+      --text: #f4f7fb;
+      --muted: #c7d2e3;
+      --accent: #7dd3fc;
+      --accent-strong: #38bdf8;
+      --success: #86efac;
+      --shadow: 0 20px 45px rgba(0,0,0,0.25);
+      --radius: 22px;
+      --max: 1180px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(56,189,248,0.22), transparent 28%),
+        radial-gradient(circle at top right, rgba(134,239,172,0.12), transparent 22%),
+        linear-gradient(180deg, #09111d 0%, #0b1220 52%, #0f172a 100%);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(100% - 2rem, var(--max));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 3.5rem 0 2rem;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.8rem;
+      background: rgba(125, 211, 252, 0.12);
+      border: 1px solid rgba(125, 211, 252, 0.2);
+      color: var(--accent);
+      border-radius: 999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 7vw, 4.3rem);
+      line-height: 1.08;
+      margin: 0 0 1rem;
+      max-width: 12ch;
+    }
+
+    .lead {
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      color: var(--muted);
+      margin: 0;
+      max-width: 67ch;
+    }
+
+    .top-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+      margin-top: 1.5rem;
+    }
+
+    .button,
+    .ghost-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0.9rem 1.1rem;
+      border-radius: 14px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease, background 160ms ease;
+    }
+
+    .button {
+      background: linear-gradient(135deg, var(--accent), var(--accent-strong));
+      color: #062235;
+      box-shadow: 0 14px 28px rgba(56,189,248,0.25);
+    }
+
+    .ghost-button {
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+    }
+
+    .button:hover,
+    .ghost-button:hover,
+    .button:focus-visible,
+    .ghost-button:focus-visible,
+    .site-link:hover,
+    .site-link:focus-visible {
+      transform: translateY(-2px);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+      margin: 2rem 0 0;
+    }
+
+    .stat {
+      padding: 1rem;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.045);
+      border: 1px solid rgba(255,255,255,0.09);
+      backdrop-filter: blur(10px);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.45rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .section {
+      padding: 1rem 0 3rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.2rem;
+    }
+
+    .section-header h2 {
+      margin: 0;
+      font-size: clamp(1.55rem, 4vw, 2.4rem);
+    }
+
+    .section-header p {
+      margin: 0;
+      color: var(--muted);
+      max-width: 46ch;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .card {
+      position: relative;
+      padding: 1.25rem;
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.05));
+      border: 1px solid var(--card-border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      min-height: 100%;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--accent), var(--success));
+    }
+
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(134,239,172,0.12);
+      color: var(--success);
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    .version-label {
+      font-weight: 800;
+      font-size: 1.3rem;
+      margin: 0;
+    }
+
+    .card p {
+      margin: 0.4rem 0 0;
+      color: var(--muted);
+    }
+
+    .highlights {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 1.2rem;
+      display: grid;
+      gap: 0.7rem;
+    }
+
+    .highlights li {
+      display: flex;
+      gap: 0.6rem;
+      align-items: start;
+      color: var(--text);
+    }
+
+    .highlights li::before {
+      content: "✓";
+      color: var(--success);
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+
+    .site-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      min-height: 48px;
+      padding: 0.9rem 1rem;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: 800;
+      color: #062235;
+      background: linear-gradient(135deg, #ffffff, #d8f4ff);
+      transition: transform 160ms ease, box-shadow 160ms ease;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+    }
+
+    .help-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 1rem;
+    }
+
+    .panel {
+      padding: 1.25rem;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: var(--shadow);
+    }
+
+    .panel h3 {
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+      font-size: 1.15rem;
+    }
+
+    .panel ol,
+    .panel ul {
+      margin: 0;
+      padding-left: 1.2rem;
+      color: var(--muted);
+    }
+
+    .panel li + li { margin-top: 0.55rem; }
+
+    footer {
+      padding: 0 0 3rem;
+    }
+
+    .footer-box {
+      padding: 1.15rem 1.25rem;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 920px) {
+      .cards,
+      .help-grid,
+      .stats {
+        grid-template-columns: 1fr;
+      }
+
+      .section-header {
+        align-items: start;
+        flex-direction: column;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="eyebrow">Public Preview Hub</div>
+      <h1>Review the three K to Career website concepts.</h1>
+      <p class="lead">
+        This page gives visitors one clear starting point for comparing the current site versions. Choose a concept below to review the approach, structure, and direction before the final public website is selected.
+      </p>
+      <div class="top-actions">
+        <a class="button" href="#versions">Compare concepts</a>
+        <a class="ghost-button" href="./v3/">Open latest version first</a>
+      </div>
+      <div class="stats" aria-label="Preview summary">
+        <div class="stat">
+          <strong>3</strong>
+          <span>public concept versions</span>
+        </div>
+        <div class="stat">
+          <strong>K–Career</strong>
+          <span>education-to-workforce focus</span>
+        </div>
+        <div class="stat">
+          <strong>1 hub</strong>
+          <span>clean GitHub Pages entry point</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="versions" aria-labelledby="versions-heading">
+      <div class="wrap">
+        <div class="section-header">
+          <div>
+            <h2 id="versions-heading">Choose a site version</h2>
+          </div>
+          <p>
+            Each card links to a separate folder-based version. Use this page as the public front door so visitors can clearly understand what each build represents.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card" aria-labelledby="version-1-title">
+            <div class="card-top">
+              <span class="badge">Concept 01</span>
+            </div>
+            <h3 class="version-label" id="version-1-title">1st Revised Copy</h3>
+            <p>
+              This version reflects the first revised build with the real business information added so the structure starts connecting to the actual organization instead of staying generic.
+            </p>
+            <ul class="highlights" aria-label="Version 1 highlights">
+              <li>Includes actual business information</li>
+              <li>Stronger than the original placeholder concept</li>
+              <li>Useful for reviewing early real-content direction</li>
+            </ul>
+            <a class="site-link" href="./v1/" aria-describedby="version-1-title">Open 1st Revised Copy</a>
+          </article>
+
+          <article class="card" aria-labelledby="version-2-title">
+            <div class="card-top">
+              <span class="badge">Concept 02</span>
+            </div>
+            <h3 class="version-label" id="version-2-title">Old Build Waiting for Real Site Info</h3>
+            <p>
+              This is the older build that still needs the actual site information implemented, making it useful mainly as a reference point for layout and earlier thinking.
+            </p>
+            <ul class="highlights" aria-label="Version 2 highlights">
+              <li>Older build before real content implementation</li>
+              <li>Useful for comparing earlier structure choices</li>
+              <li>Best treated as a reference, not the lead option</li>
+            </ul>
+            <a class="site-link" href="./v2/" aria-describedby="version-2-title">Open Old Build</a>
+          </article>
+
+          <article class="card" aria-labelledby="version-3-title">
+            <div class="card-top">
+              <span class="badge">Concept 03</span>
+            </div>
+            <h3 class="version-label" id="version-3-title">High Level Infographics</h3>
+            <p>
+              This version is the high-level infographic-style presentation, built to communicate the concept quickly and clearly for review at a glance.
+            </p>
+            <ul class="highlights" aria-label="Version 3 highlights">
+              <li>High-level infographic presentation</li>
+              <li>Best for fast event or client review</li>
+              <li>Useful as the quickest overview version</li>
+            </ul>
+            <a class="site-link" href="./v3/" aria-describedby="version-3-title">Open High Level Infographics</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <div class="footer-box">
+        This preview hub supports public comparison of multiple site concepts while keeping one controlled entry point. It is a selection page, not the final production homepage.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
