@@ -1,2 +1,3 @@
 snapshot_id,commit_hash,short_hash,commit_date,branch,file_path,snapshot_label,commit_subject,git_tag,exported_file
-20260415-230919-80f40b3-contact-update-v1-index.html,<FULL_COMMIT_HASH>,80f40b3,2026-04-15 23:09:19 -0400,main,v1/index.html,contact-update,[contact-update] Replace contact placeholders with real email and website URL,,
+2026-04-15_23-09-19__80f40b3__contact-update__v1-index.html,<FULL_COMMIT_HASH>,80f40b3,2026-04-15 23:09:19 -0400,main,v1/index.html,contact-update,[contact-update] Replace contact placeholders with real email and website URL,,
+2026-04-17_22-01-53__dc841fd__logo-scale__v3-index.html,dc841fd5970f4beac701bddb7c707abf66ef171d,dc841fd,2026-04-17 22:01:53 -0400,main,v3/index.html,logo-scale,[logo-scale] Increase nav logo height from 76px to 100px in v3,,/Users/<USER>/RepoSnapshots/<REPO>/html/2026-04-17_22-01-53__dc841fd__logo-scale__v3-index.html
