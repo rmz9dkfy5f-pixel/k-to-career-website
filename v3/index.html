@@ -4,7 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>K to Career — STEM Education to Career Readiness</title>
+<link rel="icon" type="image/png" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="canonical" href="https://www.ktocareer.org">
+<meta name="description" content="K to Career runs monthly Saturday PATHWAYS sessions connecting students from kindergarten through post-secondary to real STEM careers — coding, robotics, AI, aviation, cybersecurity, and engineering.">
+<meta property="og:title" content="K to Career — STEM Education to Career Readiness">
+<meta property="og:description" content="Monthly Saturday PATHWAYS sessions connecting K–12 and post-secondary students to real STEM careers through hands-on workshops and professional development.">
+<meta property="og:url" content="https://www.ktocareer.org">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="K to Career — STEM Education to Career Readiness">
+<meta name="twitter:description" content="Monthly Saturday PATHWAYS sessions connecting K–12 and post-secondary students to real STEM careers.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -157,11 +169,6 @@ nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px 
 .ic-partner-card .involve-link{background:var(--amber);color:var(--white)}
 .ic-org-card .involve-link{background:#185FA5;color:var(--white)}
 
-/* OPEN DECISIONS NOTICE */
-.notice{background:var(--amber-faint);border:1px solid var(--amber-light);border-radius:10px;padding:1.5rem 2rem;margin:3rem 0 0;max-width:1100px;margin-left:auto;margin-right:auto}
-.notice-title{font-weight:700;color:var(--amber);font-size:.875rem;margin-bottom:.375rem}
-.notice p{font-size:.85rem;color:var(--slate);line-height:1.6}
-
 /* FOOTER */
 footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;font-size:.875rem}
 .footer-inner{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
@@ -200,7 +207,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a class="logo" href="#"><img src="assets/images/logo.png" alt="K to Career" class="logo-img"></a>
+    <a class="logo" href="#"><img src="assets/images/logo.png" alt="K to Career" class="logo-img" width="178" height="100" fetchpriority="high"></a>
     <ul class="nav-links">
       <li><a href="#program">PATHWAYS</a></li>
       <li><a href="#ages">Who We Serve</a></li>
@@ -221,6 +228,8 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
   <a href="#involve" onclick="closeMenu()">Get Involved</a>
   <a href="#involve" class="m-cta" onclick="closeMenu()">Apply for PATHWAYS</a>
 </div>
+
+<main>
 
 <!-- HERO -->
 <section class="hero">
@@ -290,25 +299,25 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
     <p class="section-sub">Whether you are a student, a parent researching programs, an educator, or a STEM professional — there is a place for you here.</p>
     <div class="audience-grid">
       <a class="audience-card" href="#ages">
-        <div class="audience-icon ic-student">🎓</div>
+        <div class="audience-icon ic-student" aria-hidden="true">🎓</div>
         <h3>Students</h3>
         <p>Explore real STEM work, build technical skills, and connect with professionals before your career begins.</p>
         <span class="card-link">Explore the program →</span>
       </a>
       <a class="audience-card" href="#ages">
-        <div class="audience-icon ic-family">👨‍👧</div>
+        <div class="audience-icon ic-family" aria-hidden="true">👨‍👧</div>
         <h3>Families</h3>
         <p>Find the right Saturday program for your child, understand what they will learn, and how to apply.</p>
         <span class="card-link">See age groups →</span>
       </a>
       <a class="audience-card" href="#involve">
-        <div class="audience-icon ic-educator">📚</div>
+        <div class="audience-icon ic-educator" aria-hidden="true">📚</div>
         <h3>Educators</h3>
         <p>Learn how PATHWAYS complements classroom learning and how to connect your students with the program.</p>
         <span class="card-link">Get involved →</span>
       </a>
       <a class="audience-card" href="#involve">
-        <div class="audience-icon ic-partner">🤝</div>
+        <div class="audience-icon ic-partner" aria-hidden="true">🤝</div>
         <h3>STEM Partners</h3>
         <p>Bring your expertise to students. Lead a workshop, mentor a group, or support the next generation of professionals.</p>
         <span class="card-link">Partner with us →</span>
@@ -429,7 +438,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
   <div class="outcomes-inner">
     <div class="section-label">What Students Gain</div>
     <h2 class="section-title">Program outcomes</h2>
-    <p class="section-sub">PATHWAYS is designed to build five specific competencies. These reflect what students work toward in each session — not projected results, but what the program is built to develop.</p>
+    <p class="section-sub">PATHWAYS is designed to build six specific competencies. These reflect what students work toward in each session — not projected results, but what the program is built to develop.</p>
     <div class="outcomes-grid">
       <div class="outcome-card">
         <div class="outcome-num">01</div>
@@ -475,32 +484,29 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
       <div class="involve-card ic-student-card">
         <h3>Students &amp; Families</h3>
         <p>Apply for the Saturday PATHWAYS program. Sessions run monthly throughout the academic year for students from kindergarten through post-secondary. Each session includes both a hands-on workshop and professional development component.</p>
-        <a href="#" class="involve-link">Apply for PATHWAYS</a>
+        <span class="involve-link">Apply for PATHWAYS</span>
       </div>
       <div class="involve-card ic-partner-card">
         <h3>Industry &amp; STEM Professionals</h3>
         <p>Lead a workshop, serve as a mentor, or bring your organization's expertise into a Saturday session. Partnership involves direct work with students alongside exposure to a motivated, diverse talent pipeline.</p>
-        <a href="#" class="involve-link" style="background:var(--amber)">Express interest</a>
+        <span class="involve-link" style="background:var(--amber)">Express interest</span>
       </div>
       <div class="involve-card ic-org-card">
         <h3>Donors &amp; Supporters</h3>
         <p>K to Career is a nonprofit STEM education program focused on expanding access for underrepresented communities. Support funds program operations, materials, and student participation.</p>
-        <a href="#" class="involve-link" style="background:#185FA5">Support K to Career</a>
+        <span class="involve-link" style="background:#185FA5">Support K to Career</span>
       </div>
     </div>
   </div>
-
-  <div class="notice" style="margin-top:3rem;max-width:1100px;margin-left:auto;margin-right:auto;margin-right:auto">
-    <div class="notice-title">⚠ Pre-launch notice — some details are pending owner confirmation</div>
-    <p>This page is a Phase 1 draft. Session dates, location, cost and eligibility, and the application destination are being confirmed and will be updated before public launch. Placeholder content is labeled as such. No metrics, testimonials, or partner names will appear on the live site until verified.</p>
-  </div>
 </section>
+
+</main>
 
 <!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-logo"><img src="assets/images/logo.png" alt="K to Career" class="footer-logo-img"></div>
+      <div class="footer-logo"><img src="assets/images/logo.png" alt="K to Career" class="footer-logo-img" width="128" height="72" loading="lazy"></div>
       <div class="footer-note">STEM Learning &amp; Career Readiness — Nonprofit Organization</div>
       <div class="footer-note"><a href="mailto:info@ktocareer.org" style="color:inherit;text-decoration:none">info@ktocareer.org</a></div>
     </div>
