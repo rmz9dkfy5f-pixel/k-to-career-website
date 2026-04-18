@@ -6,6 +6,42 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 
 ## [Unreleased]
 
+## [1.2.0] - 2026-04-18
+
+**K to Career v3 — Production Readiness Pass**
+
+### What's New
+- Mission & Vision section added above audience entry
+- PATHWAYS acronym expansion displayed in program section
+
+### Improvements
+- Brand logo size increased in nav (76px → 100px)
+- Footer logo blended into background via `mix-blend-mode:screen`
+- About Us and Contact footer links wired to Smart Learning Solutions
+- Email `info@ktocareer.org` added to footer
+
+### Fixes
+- "Five" competencies corrected to six
+- Dead CTA buttons converted to non-interactive spans
+- Pre-launch notice banner removed
+
+### Performance & Accessibility
+- CLS fixed on both logo images (`width`/`height` attributes)
+- `fetchpriority="high"` on nav logo (LCP)
+- `loading="lazy"` on footer logo
+- `fonts.gstatic.com` preconnect added
+- `aria-hidden="true"` on all emoji icons
+- `<main>` landmark added
+
+### SEO & Meta
+- Meta description added
+- Open Graph + Twitter Card tags added
+- Canonical URL set to `www.ktocareer.org`
+
+### Security
+- `.claude/` added to `.gitignore`
+- Favicon generated from brand logo (`favicon-32.png`, `apple-touch-icon.png`)
+
 ## [0.2.0] - 2026-04-15
 
 ### Added
