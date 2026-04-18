@@ -84,6 +84,21 @@ nav{position:sticky;top:0;z-index:100;background:var(--white);border-bottom:1px 
 .ic-educator{background:#E6F1FB}
 .ic-partner{background:#FAECE7}
 
+/* MISSION & VISION */
+.mission{background:var(--navy);padding:5rem 1.5rem}
+.mission-inner{max-width:1100px;margin:0 auto}
+.mission .section-label{color:var(--amber-light)}
+.mission .section-title{color:var(--white)}
+.mission-overview{font-size:1rem;color:rgba(255,255,255,.72);line-height:1.75;max-width:680px;margin-bottom:3rem;font-weight:300}
+.mission-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.mission-block{padding:2rem;border-radius:10px}
+.mission-block.m-mission{background:rgba(15,110,86,.25);border:1px solid rgba(15,110,86,.5)}
+.mission-block.m-vision{background:rgba(186,117,23,.2);border:1px solid rgba(186,117,23,.4)}
+.mission-block-label{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.875rem}
+.m-mission .mission-block-label{color:var(--teal-light)}
+.m-vision .mission-block-label{color:var(--amber-light)}
+.mission-block p{font-size:.9375rem;color:rgba(255,255,255,.82);line-height:1.8;font-weight:300}
+
 /* PATHWAYS PROGRAM */
 .program{padding:5rem 1.5rem;background:var(--white)}
 .program-inner{max-width:1100px;margin:0 auto}
@@ -156,7 +171,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
 
 /* RESPONSIVE */
 @media(max-width:900px){
-  .hero-inner,.program-layout{grid-template-columns:1fr;gap:2.5rem}
+  .hero-inner,.program-layout,.mission-grid{grid-template-columns:1fr;gap:2.5rem}
   .hero-stats{grid-template-columns:repeat(4,1fr)}
   .audience-grid{grid-template-columns:repeat(2,1fr)}
   .age-grid{grid-template-columns:repeat(3,1fr)}
@@ -248,6 +263,25 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
   </div>
 </section>
 
+<!-- MISSION & VISION -->
+<section class="mission">
+  <div class="mission-inner">
+    <div class="section-label">Our Purpose</div>
+    <h2 class="section-title">A nonprofit STEM ecosystem built for the full career journey</h2>
+    <p class="mission-overview">K to Career connects learners from early childhood through post-secondary and early career entry to real-world STEM opportunities, industry professionals, and career pathways — with a focus on underrepresented communities.</p>
+    <div class="mission-grid">
+      <div class="mission-block m-mission">
+        <div class="mission-block-label">Mission</div>
+        <p>Empower learners of all ages to thrive in STEM fields through industry-connected educational experiences that bridge classroom learning and career success. Through strategic partnerships and personalized pathways, we inspire curiosity, develop critical skills, and create opportunities for diverse communities to participate in and lead the future of STEM.</p>
+      </div>
+      <div class="mission-block m-vision">
+        <div class="mission-block-label">Vision</div>
+        <p>A world where every individual has access to lifelong STEM learning that prepares them for meaningful careers, drives technological innovation, and builds economically vibrant communities — with curiosity nurtured from early childhood through professional development, and a diverse, skilled workforce ready for tomorrow's challenges.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- AUDIENCE ENTRY -->
 <section class="audience">
   <div class="audience-inner">
@@ -290,6 +324,7 @@ footer{background:var(--navy);color:rgba(255,255,255,.6);padding:3rem 1.5rem;fon
       <div>
         <div class="program-badge">Flagship Program</div>
         <h2 class="section-title">Saturday PATHWAYS</h2>
+        <p style="font-size:1rem;font-weight:600;letter-spacing:.04em;color:var(--teal);margin-bottom:1.25rem;line-height:1.8"><span style="color:var(--navy)">P</span>rofessional <span style="color:var(--navy)">A</span>dvancement <span style="color:var(--navy)">T</span>raining and <span style="color:var(--navy)">H</span>ands-On <span style="color:var(--navy)">W</span>orkshops for <span style="color:var(--navy)">A</span>spiring <span style="color:var(--navy)">Y</span>oung <span style="color:var(--navy)">S</span>cholars</p>
         <p class="program-desc">
           PATHWAYS runs monthly Saturday sessions throughout the academic year. Each session combines two parallel tracks — hands-on technical workshops led by industry professionals, and structured professional development that builds the career skills students need alongside technical ability.
         </p>
