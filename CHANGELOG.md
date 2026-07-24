@@ -6,6 +6,11 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 
 ## [Unreleased]
 
+### Fixes
+- `CLAUDE.md`'s Canonical Repo Structure section referenced `docs/strategy/` (lowercase) in four
+  places; the actual directory on disk is `docs/Strategy/` (capitalized). Corrected all four
+  references so the operating instructions match the real repo structure.
+
 ## [1.2.0] - 2026-04-18
 
 **K to Career v3 — Production Readiness Pass**

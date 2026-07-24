@@ -10,18 +10,18 @@ Do not invent strategy decisions that the repository does not support. Unless th
 ## Canonical Repo Structure
 Treat this structure as the source of truth for where information belongs:
 
-- `docs/strategy/` = business context, program context, and strategic reference documents
+- `docs/Strategy/` = business context, program context, and strategic reference documents
 - `docs/workflow/` = Claude Code operating instructions and team workflow documents
 - `plans/` = active task plans, execution plans, and planning templates
 
 Canonical files:
-- `docs/strategy/K_to_Career_Ecosystem.md` = primary business and program context document
+- `docs/Strategy/K_to_Career_Ecosystem.md` = primary business and program context document
 - `docs/workflow/claude-code-workflow.md` = Claude Code workflow and operating process
 - `plans/PLAN_TEMPLATE.md` = template for new task plans
 - `plans/k_to_career_action_plan.md` = current website planning document
 
 File placement rules:
-- New strategy or reference docs go in `docs/strategy/`
+- New strategy or reference docs go in `docs/Strategy/`
 - New workflow/process docs go in `docs/workflow/`
 - New task-specific implementation or execution plans go in `plans/`
 - Do not create duplicate versions of the same plan or strategy doc in multiple folders unless explicitly requested
@@ -36,7 +36,7 @@ File placement rules:
 - Validate after each slice using the narrowest useful checks first
 
 ## Repo Interpretation Rules
-- Treat files in `docs/strategy/` as reference material and business truth, not task checklists
+- Treat files in `docs/Strategy/` as reference material and business truth, not task checklists
 - Treat files in `plans/` as active execution artifacts
 - When strategy and implementation conflict, flag the conflict instead of guessing
 - When requirements are missing, identify assumptions explicitly before editing
