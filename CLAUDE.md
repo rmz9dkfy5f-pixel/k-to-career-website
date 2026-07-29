@@ -102,3 +102,36 @@ A task is not done until:
 - changed files are listed
 - obvious regressions are considered
 - the user can review the work in a bounded, understandable scope
+
+## V3.4 Agent Operating System
+
+This repository runs Project Starter Kit V3.4. Everything above remains authoritative for what to
+write and where it belongs; V3.4 adds the process layer around it.
+
+Before substantial work:
+1. Confirm the classification in `docs/governance/PROJECT_CLASSIFICATION.md`.
+2. Read `MODEL_SELECTION_GATE.md` and show its complete brief. In VS Code, compare Codex and Claude
+   Code, then pick a primary and a fallback.
+3. Read `docs/governance/AGENT_RUN_CONTRACT.md` before implementation.
+
+`AGENTS.md` carries the same operating rules in agent-neutral form for Codex and other agents. It
+defers to this file on project structure, content rules, and messaging — where the two appear to
+disagree, this file wins and the discrepancy should be flagged rather than resolved silently.
+
+Skills (`/v34-execution-loop`, `/v34-migration-loop`, `/v34-production-readiness`,
+`/v34-context-eval-loop`) live in `.claude/skills/`, mirrored to `.agents/skills/` for Codex. The
+execution loop is `Inspect → Plan → Change → Verify → Document → Gate → Decide`, which extends rather
+than replaces the Preferred Execution Pattern above.
+
+Governance and project docs added by V3.4:
+- `docs/governance/` = quality gates, run contracts, risk, rollback, security, release readiness
+- `docs/project/` = pointer stubs only; each names the canonical source for that information
+- `ai/` = agent prompts, review gates, subagent roles, run reports
+
+`docs/project/` deliberately holds no content of its own. This repo's canonical sources stay where
+the Canonical Repo Structure section above puts them, and the continuity records (session log,
+decision log, current context, handoff) live in the AntBrainOS vault, not in this repository.
+
+Validation for this repo is manual — there is no build tool, test runner, or linter. See
+`docs/governance/TEST_STRATEGY.md`. Do not invent a validation command that the toolchain does not
+actually provide.
