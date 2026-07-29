@@ -52,4 +52,14 @@ __MACOSX/
 # Claude Code
 .claude/*
 !.claude/settings.json
+!.claude/skills/
 .claude/settings.local.json
+
+# Project Starter Kit V3.4 — local tooling, not a deliverable of this repository
+project-starter-kit-v3.4/
+V34_INSTALL_REPORT.json
+.v34_migration_review/
+
+# Python bytecode
+__pycache__/
+*.pyc
