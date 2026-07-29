@@ -1,8 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(mkdir -p assets/images)",
-      "Bash(cp \"../Image 4-17-26 at 12.37 AM.PNG\" assets/images/logo.png)"
-    ]
-  }
-}
