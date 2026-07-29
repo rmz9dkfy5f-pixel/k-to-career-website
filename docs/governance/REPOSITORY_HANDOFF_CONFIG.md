@@ -51,6 +51,7 @@ scutil --get ComputerName 2>/dev/null || hostname
 | Machine | Detection | Snapshot destination | Notes |
 |---|---|---|---|
 | Ant’s Mac Mini (4) | `/Volumes/AntNVMe1TB` exists | `/Volumes/AntNVMe1TB/WorkSync/Projects/RepoBackups/K_to_Career_Website/` | current machine |
+| Ant’s MacBook Air | `/Users/ant/WorkSync/Projects/RepoBackups/K_to_Career_Website` exists | `/Users/ant/WorkSync/Projects/RepoBackups/K_to_Career_Website/` | current machine |
 
 If the current machine does not match any row above, or more than one row could plausibly match,
 **stop and ask the user** for the correct destination — do not guess or infer a path pattern.

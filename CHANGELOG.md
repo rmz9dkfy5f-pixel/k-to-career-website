@@ -6,6 +6,8 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 
 ## [Unreleased]
 
+## [1.4.0] - 2026-07-29
+
 ### Added
 - **Project Starter Kit V3.4 agent operating system**, installed in migration mode. Adds `AGENTS.md`
   as the agent-neutral entry point, `MODEL_SELECTION_GATE.md` and `PROMPT_MODEL_SELECTION_GATE.md`

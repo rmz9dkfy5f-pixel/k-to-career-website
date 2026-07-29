@@ -32,8 +32,8 @@ Use release tags for shipped states, following the plain `vMAJOR.MINOR.PATCH` co
 
 Generated delivery zip files belong in GitHub Releases, not committed to the repository branch tip.
 
-## Known Follow-Up
+## Current Cleanup State
 
-`v1/`, `v2/`, and `v3/` folders and the tracked delivery `*.zip` files still exist on `main` until a
-separate follow-up cleanup PR removes them after this branch-promotion PR merges. That sequencing is
-intentional — it keeps each PR's diff focused and independently reviewable.
+The old `v1/`, `v2/`, and `v3/` folders and the tracked delivery `*.zip` files were removed from
+`main` in the follow-up cleanup PR after the branch-promotion PR merged. Future delivery packages
+should be attached to GitHub Releases instead of committed to the repository.
