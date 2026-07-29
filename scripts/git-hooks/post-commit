@@ -12,7 +12,7 @@ MANIFEST_HEADER="snapshot_id,commit_hash,short_hash,commit_date,branch,file_path
 
 # HTML files to track (repo-relative paths)
 TARGET_FILES=(
-  "v1/index.html"
+  "index.html"
 )
 
 # ── Commit metadata ───────────────────────────────────────────
