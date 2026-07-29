@@ -45,5 +45,11 @@ Thumbs.db
 .tmp/
 temp/
 
+# Generated delivery packages — attach to GitHub Releases instead of committing
+*.zip
+__MACOSX/
+
 # Claude Code
-.claude/
+.claude/*
+!.claude/settings.json
+.claude/settings.local.json
