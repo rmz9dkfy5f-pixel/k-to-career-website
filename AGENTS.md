@@ -1,10 +1,34 @@
-# AGENTS.md — Project Starter Kit V3.4
+# AGENTS.md — K to Career Website
 
 ## Purpose
 
-This file gives coding agents the minimum always-loaded guidance needed to work safely in this repository.
+This file gives coding agents the minimum always-loaded guidance needed to work safely in this
+repository. It is the agent-neutral entry point (Codex and others); Claude Code reads `CLAUDE.md`.
 
 Detailed workflows live in skills and docs so this file stays concise.
+
+## Precedence
+
+`CLAUDE.md` is this repository's authoritative project contract. It defines the canonical repo
+structure, the content rules, the K to Career messaging rules, the planning standard, and the
+definition of done. **Read it before editing anything, whichever agent you are.**
+
+This file adds the V3.4 process layer on top. Where the two appear to disagree, `CLAUDE.md` wins —
+flag the discrepancy rather than resolving it silently.
+
+Three rules from `CLAUDE.md` are repeated here because violating them is unrecoverable:
+
+- Do not fabricate impact metrics, partnerships, testimonials, or program outcomes.
+- Keep audience paths distinct — students and parents, industry partners, donors and volunteers are
+  separate messages with separate calls to action. Do not blend them.
+- Do not invent strategy decisions the repository does not support. The primary website objective and
+  audience prioritization are deliberately still open; preserve that ambiguity.
+
+## Project Shape
+
+Static HTML/CSS site. No framework, no build tool, no package manager, no CMS. The production site is
+the root `index.html` on `main`, published by GitHub Pages. This repository is public — anything
+committed here, including documentation, is world-readable.
 
 ## Agent Operating Rule
 
@@ -42,10 +66,19 @@ named, repeatable run type for this repository should be registered and governed
 - If a command is destructive, explain the risk before running it.
 - Do not claim success unless verification has run or you clearly state why verification could not run.
 
+Repository-specific additions, from `docs/governance/REPOSITORY_HANDOFF_CONFIG.md`:
+
+- `docs/Strategy/K_to_Career_Ecosystem.md` is a protected path — the business source of truth.
+- Never force-push `main` or rewrite published history.
+- Work on `feature/`, `fix/`, or `chore/` branches per `docs/workflow/branching-model.md`. Never
+  commit directly to `main` — `main` is the live production site.
+- Never merge `style/v1-reference` or `style/v2-reference` into `main`; they are design references.
+
 ## Required References
 
 Before implementation, inspect relevant files from:
 
+- `CLAUDE.md` — authoritative project contract (canonical structure, content and messaging rules)
 - `MODEL_SELECTION_GATE.md`
 - `docs/governance/PROJECT_CLASSIFICATION.md`
 - `docs/governance/AGENT_RUN_CONTRACT.md`
@@ -59,10 +92,15 @@ Before implementation, inspect relevant files from:
 - `docs/governance/SECURITY_BASELINE.md`
 - `ai/agents/AGENT_REVIEW_GATES.md`
 
-When filling `docs/governance/REPOSITORY_HANDOFF_CONFIG.md`, use only real, confirmed values
-(discovered from the actual toolchain, Git remotes, and deployment config) — never a placeholder
-path or command presented as fact. Mark any inapplicable section `N/A — <reason>` per its own
-instructions.
+`docs/governance/REPOSITORY_HANDOFF_CONFIG.md` is already filled in with real, confirmed values —
+read it, do not regenerate it. When editing it, use only values discovered from the actual toolchain,
+Git remotes, and deployment config; never a placeholder path or command presented as fact. Mark any
+inapplicable section `N/A — <reason>` per its own instructions.
+
+Note that `docs/project/` holds pointer stubs only. Each names the canonical source for that
+information; the real content lives where `CLAUDE.md`'s Canonical Repo Structure section puts it, or
+in the AntBrainOS vault for continuity records. Do not start writing project content into
+`docs/project/` — that would create the duplicate sources of truth `CLAUDE.md` prohibits.
 
 ## Skills
 
