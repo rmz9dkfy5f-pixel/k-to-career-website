@@ -21,7 +21,8 @@ never credentials.
 - Full test command: none
 - Lint/type-check commands: none
 - Production build command: none — deploy is a static file copy
-- Runtime smoke test: manual visual check of `v3/` in a browser
+- Runtime smoke test: manual visual check of the root `index.html` in a browser (was `v3/` until
+  v1.3.0 promoted the site to the repository root; `v3/` no longer exists)
 - Manual or device checks: none required for docs-only changes; visual check required for
   markup/CSS changes
 
@@ -56,17 +57,29 @@ If the current machine does not match any row above, or more than one row could 
 
 ## Deployment Contract
 
-- Deployment in scope: no — this repo produces client-delivery packages (`k-to-career-*-client-package.zip`);
-  it is not deployed by this system to any VPS/hosting target
-- VPS/server alias: none
-- Deployment root: none
-- Deployment branch or artifact: client-delivery zip packages, built manually per release
+Applies because `docs/governance/PROJECT_CLASSIFICATION.md` classifies this repository as
+**Git-backed with deployment** (confirmed 2026-07-29). Note the distinction the two documents draw:
+a deployment target **exists**, and deploying to it is **not** an authorized agent action.
+
+- Deployment in scope for this agent system: **no** — an agent must not merge to `main`, and merging
+  is what publishes. This repo also produces manual client-delivery packages
+  (`k-to-career-*-client-package.zip`), which are built by hand per release.
+- Live deployment target: GitHub Pages, confirmed via
+  `gh api repos/rmz9dkfy5f-pixel/k-to-career-website/pages` → `status: built`
+- Deployment branch/source: `main`, path `/` (repository root) — no build step; publishing is
+  implicit on every push or merge to `main`
+- Published URL: `https://rmz9dkfy5f-pixel.github.io/k-to-career-website/`
+  (intended custom domain `www.ktocareer.org` — see `docs/deployment/HOSTING_NOTES.md`)
+- VPS/server alias: none — no server is operated for this project
+- Deployment root: none — static files served directly from the branch
 - Service/container names: none
-- Read-only health checks: none
-- Log locations: none
-- Rollback target: none
-- Actions requiring approval: any future addition of a real deployment target requires updating this
-  section first — do not assume one exists
+- Read-only health checks: none configured; the check is loading the published URL in a browser
+- Log locations: none — GitHub Pages exposes no logs to this project
+- Rollback target: revert the offending commit on `main` and let Pages republish; or re-clone at the
+  last good tag per the Snapshot Contract above
+- Actions requiring approval: **merging to `main` is a production deployment** and requires separate
+  explicit authorization, as recorded below. Any change of hosting target (e.g. a move to Wix)
+  requires updating this section and the classification first.
 
 ## Safety Boundaries
 

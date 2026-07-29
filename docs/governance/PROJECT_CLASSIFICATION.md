@@ -17,10 +17,26 @@ used for this project.
 
 ## This Project
 
-- **Classification:** TBD
-- **Confirmed by:** TBD
-- **Confirmed on:** TBD
-- **Evidence:** TBD — e.g. `git remote -v` output, deployment config file found, or its absence.
+- **Classification:** Git-backed with deployment
+- **Confirmed by:** Claude Code, during the V3.4 adoption run
+- **Confirmed on:** 2026-07-29
+- **Evidence:**
+  - `git remote -v` → `origin https://github.com/rmz9dkfy5f-pixel/k-to-career-website.git`
+  - `gh api repos/rmz9dkfy5f-pixel/k-to-career-website/pages` →
+    `{"status": "built", "source": {"branch": "main", "path": "/"}, "html_url":
+    "https://rmz9dkfy5f-pixel.github.io/k-to-career-website/"}`
+  - `docs/workflow/branching-model.md`: "`main` is the production website branch. The root
+    `index.html` on `main` represents the current production site."
+
+GitHub Pages is a real, currently-serving hosting target: a push to `main` publishes the live site
+with no build step. That is what makes this "with deployment" rather than "with remote."
+
+Note the distinction from `REPOSITORY_HANDOFF_CONFIG.md`'s Deployment Contract, which scopes what
+*this agent system* is authorized to deploy — nothing. The two are consistent: a deployment target
+exists, and deploying to it is not an authorized agent action.
+
+Re-check this if the client moves the site to Wix or another host, which is an open question rather
+than a decided plan.
 
 Never infer a classification from assumption or convenience. If unconfirmed, leave every field
 above as `TBD` rather than guessing.
