@@ -6,6 +6,21 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 
 ## [Unreleased]
 
+### Changed
+- Promoted the v3 site to the production root on `main` — `index.html`, `favicon-32.png`,
+  `apple-touch-icon.png`, and `assets/images/logo.png` are now served from the repository root
+  instead of `v3/`.
+- Converted `v1` and `v2` from production folders into standalone style-reference branches
+  (`style/v1-reference`, `style/v2-reference`).
+- Added `docs/workflow/branching-model.md` documenting the branch model, and relocated v3's
+  delivery/hosting docs to `docs/delivery/` and `docs/deployment/`.
+
+### Pending
+- Removal of the `v1/`, `v2/`, `v3/` folders and tracked delivery zips from `main`, plus
+  `.gitignore`/`.claude/settings.json` hygiene, is open as a separate PR
+  (`feature/remove-folder-versions`) — not yet merged. This entry will be promoted to a numbered
+  `[1.3.0]` release once that PR merges and the tag is created.
+
 ### Fixes
 - `CLAUDE.md`'s Canonical Repo Structure section referenced `docs/strategy/` (lowercase) in four
   places; the actual directory on disk is `docs/Strategy/` (capitalized). Corrected all four
