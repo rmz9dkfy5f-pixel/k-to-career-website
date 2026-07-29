@@ -6,25 +6,36 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 
 ## [Unreleased]
 
-### Changed
-- Promoted the v3 site to the production root on `main` — `index.html`, `favicon-32.png`,
-  `apple-touch-icon.png`, and `assets/images/logo.png` are now served from the repository root
-  instead of `v3/`.
-- Converted `v1` and `v2` from production folders into standalone style-reference branches
-  (`style/v1-reference`, `style/v2-reference`).
-- Added `docs/workflow/branching-model.md` documenting the branch model, and relocated v3's
-  delivery/hosting docs to `docs/delivery/` and `docs/deployment/`.
-
-### Pending
-- Removal of the `v1/`, `v2/`, `v3/` folders and tracked delivery zips from `main`, plus
-  `.gitignore`/`.claude/settings.json` hygiene, is open as a separate PR
-  (`feature/remove-folder-versions`) — not yet merged. This entry will be promoted to a numbered
-  `[1.3.0]` release once that PR merges and the tag is created.
-
 ### Fixes
 - `CLAUDE.md`'s Canonical Repo Structure section referenced `docs/strategy/` (lowercase) in four
   places; the actual directory on disk is `docs/Strategy/` (capitalized). Corrected all four
   references so the operating instructions match the real repo structure.
+
+## [1.3.0] - 2026-07-29
+
+**Branch Model Recovery / v3 Main Alignment**
+
+### Changed
+- Promoted the v3 site to the production root on `main` — `index.html`, `favicon-32.png`,
+  `apple-touch-icon.png`, and `assets/images/logo.png` are now served from the repository root
+  instead of `v3/`.
+- Converted `v1` and `v2` from production folders into standalone, pushed style-reference branches
+  (`style/v1-reference`, `style/v2-reference`).
+- Added `docs/workflow/branching-model.md` documenting the branch model, and relocated v3's
+  delivery/hosting docs to `docs/delivery/` and `docs/deployment/` (correcting a stale claim in
+  `HOSTING_NOTES.md` that GitHub Pages served from `/v3` — it was already serving `main` at root).
+- Amended `.gitignore` in place (`*.zip`, `__MACOSX/`, fixed the `.claude/` negation) and added
+  `.claude/settings.json`.
+
+### Removed
+- Removed the `v1/`, `v2/`, `v3/` folders and all tracked delivery `*.zip` packages from the
+  production branch tip, along with the duplicate `.gitignore.txt`.
+
+### Notes
+- Future generated zip packages should be attached to GitHub Releases instead of committed to the
+  repository.
+- `main` is production. `style/v1-reference` and `style/v2-reference` are design references only —
+  never merge them into `main`.
 
 ## [1.2.0] - 2026-04-18
 
