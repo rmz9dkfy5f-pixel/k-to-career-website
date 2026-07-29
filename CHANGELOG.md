@@ -6,10 +6,44 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 
 ## [Unreleased]
 
+### Added
+- **Project Starter Kit V3.4 agent operating system**, installed in migration mode. Adds `AGENTS.md`
+  as the agent-neutral entry point, `MODEL_SELECTION_GATE.md` and `PROMPT_MODEL_SELECTION_GATE.md`
+  for pre-task routing, four workflow skills mirrored across `.claude/skills/` and `.agents/skills/`
+  for Claude Code and Codex, 16 governance contracts under `docs/governance/`, pointer stubs under
+  `docs/project/`, and agent prompts and review gates under `ai/`.
+- `docs/governance/PROJECT_CLASSIFICATION.md` records this repository as **Git-backed with
+  deployment**, confirmed from the live GitHub Pages configuration rather than assumed.
+- `docs/governance/REPO_HEALTH_CHECK.md` (first health check: **PARTIAL**) and
+  `docs/governance/PROJECT_RISK_REGISTER.md` (8 evidence-backed risks, R-001–R-008).
+- `docs/governance/ADOPTION_POLICY.md` and `docs/governance/MIGRATION_REPORT.md` documenting how the
+  migration was performed and what was decided.
+- `plans/2026-07-29-v34-starter-kit-adoption.md`.
+
+### Changed
+- `CLAUDE.md` gains a V3.4 Agent Operating System section. All existing content is unchanged — the
+  edit is additions only. It remains the authoritative project contract; `AGENTS.md` defers to it.
+- `docs/governance/REPOSITORY_HANDOFF_CONFIG.md`: the runtime smoke test pointed at `v3/`, which was
+  removed in v1.3.0 when the site moved to the repository root. Corrected. The Deployment Contract
+  now records the real GitHub Pages target while keeping merging to `main` as an action that
+  requires separate explicit authorization.
+- `.gitignore`: added `!.claude/skills/` so agent skill files are trackable — `.claude/*` was
+  silently making them unstageable. Also ignores the starter kit and its generated artifacts.
+
 ### Fixes
 - `CLAUDE.md`'s Canonical Repo Structure section referenced `docs/strategy/` (lowercase) in four
   places; the actual directory on disk is `docs/Strategy/` (capitalized). Corrected all four
   references so the operating instructions match the real repo structure.
+
+### Notes
+- No site file changed. `index.html` and everything under `assets/` are untouched, so the published
+  site is byte-identical.
+- No existing file was overwritten. The installer preserved `CLAUDE.md` and
+  `docs/governance/REPOSITORY_HANDOFF_CONFIG.md`; both were merged by hand.
+- `docs/project/` deliberately holds pointer stubs only. Canonical documentation stays where
+  `CLAUDE.md` puts it, and continuity records stay in the AntBrainOS vault.
+- The primary website objective remains undecided by design, and `docs/project/PROJECT_BRIEF.md`
+  explicitly declines to answer it.
 
 ## [1.3.0] - 2026-07-29
 
