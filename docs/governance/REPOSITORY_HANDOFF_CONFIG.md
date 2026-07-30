@@ -10,8 +10,9 @@ never credentials.
 - Repository root: /Users/ant/Projects/GitHub/k-to-career-website
 - Canonical remote: https://github.com/rmz9dkfy5f-pixel/k-to-career-website.git
 - Default branch: main
-- Canonical handoff file: none repo-local — this project's continuity records live in the AntBrainOS
-  vault at `03_PROJECTS/Active/K_to_Career_Website/{HANDOFF_TO_CLAUDE.md,CURRENT_CONTEXT.md,SESSION_LOG.md}`
+- Canonical handoff file: root `AGENT_HANDOFF.md` as a structured startup pointer only — this
+  project's canonical continuity records still live in the AntBrainOS vault at
+  `03_PROJECTS/Active/K_to_Career_Website/{HANDOFF_TO_CLAUDE.md,CURRENT_CONTEXT.md,SESSION_LOG.md,DECISION_LOG.md}`
 
 ## Validation Contract
 
