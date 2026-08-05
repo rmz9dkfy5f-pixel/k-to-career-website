@@ -34,6 +34,42 @@ Notes:
 
 _Add new runs below._
 
+## Run 2026-07-30
+
+Agent/tool: Codex (VS Code)
+Task: Resolve repo-local handoff provenance gap by adding a root `AGENT_HANDOFF.md` startup
+pointer and updating pointer/config docs.
+Status: PASS
+Files inspected: `AGENTS.md`, `CLAUDE.md`, `MODEL_SELECTION_GATE.md`,
+`docs/governance/REPOSITORY_HANDOFF_CONFIG.md`, `docs/project/CONTEXT.md`,
+`docs/governance/{DONE_CRITERIA,PHASE_GATES,CHANGE_CONTROL,TEST_STRATEGY}.md`,
+`ai/agents/AGENT_REVIEW_GATES.md`, and the linked AntBrainOS K to Career continuity records.
+Files changed: `AGENT_HANDOFF.md`, `docs/governance/REPOSITORY_HANDOFF_CONFIG.md`,
+`docs/project/CONTEXT.md`, `docs/governance/AGENT_RUN_LOG.md`.
+Validation run: `git status --short`; `rg -c "^## Last Updated By$" AGENT_HANDOFF.md`;
+`rg` reference check for vault continuity paths; `git diff --check`.
+Result: Repo now has a project-local structured provenance pointer without duplicating the vault
+continuity records.
+Risks: Tags and snapshots are release-state markers in this repo; this branch should be merged by
+PR before any final release tag/snapshot is created.
+Next action: Open/review PR for `chore-agent-handoff-provenance`; after merge to `main`, create the
+next release tag and canonical snapshot if desired.
+
+## Model Usage Record
+Tool used: Codex
+Surface used: VS Code
+Model used: GPT-5 class Codex model
+Effort/thinking level: medium
+Why this model was chosen: focused documentation/audit-remediation slice with clear validation and
+small blast radius.
+If in VS Code, why Codex or Claude Code was chosen: Codex was already the active surface and the
+task was implementation-ready after the recovery audit identified the provenance gap.
+Was the model sufficient? Yes
+Should similar tasks use the same route? Yes
+Escalation needed next time? Only for vault-side continuity writes or network pushes.
+Notes: The work deliberately keeps `docs/project/` pointer-only and keeps canonical continuity in the
+AntBrainOS vault.
+
 ## Run 2026-07-29
 
 Agent/tool: Claude Code (VS Code extension)

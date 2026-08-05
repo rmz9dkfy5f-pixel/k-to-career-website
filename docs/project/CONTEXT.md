@@ -11,6 +11,7 @@
 |---|---|
 | Durable operating rules for this repo | `CLAUDE.md` (authoritative), `AGENTS.md` |
 | Business and program facts | `docs/Strategy/K_to_Career_Ecosystem.md` |
+| Cross-session startup pointer | root `AGENT_HANDOFF.md` |
 | Cross-session continuity | vault: `03_PROJECTS/Active/K_to_Career_Website/CURRENT_CONTEXT.md` |
 | Workflow expectations | `docs/workflow/claude-code-workflow.md` |
 
