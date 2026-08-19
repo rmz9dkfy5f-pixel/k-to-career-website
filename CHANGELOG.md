@@ -6,6 +6,30 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 
 ## [Unreleased]
 
+### Changed
+- Resolved risk R-006 (public exposure of absolute local filesystem paths): moved
+  `docs/governance/REPOSITORY_HANDOFF_CONFIG.md`'s repository root and Snapshot Destination by
+  Machine table into the AntBrainOS vault; the repo file now points there instead of stating the
+  values directly.
+
+### Notes
+- No site file changed. `index.html` and everything under `assets/` are untouched.
+
+## [1.4.1] - 2026-08-04
+
+### Added
+- Root `AGENT_HANDOFF.md`: a structured, agent-neutral startup provenance pointer for agents
+  opening this repository cold, authored by the 2026-07-30 Codex session and published this
+  release.
+
+### Changed
+- `docs/governance/REPOSITORY_HANDOFF_CONFIG.md` and `docs/project/CONTEXT.md` updated to
+  reference the new `AGENT_HANDOFF.md` pointer.
+
+### Notes
+- No site file changed — docs/governance only. PR #4 (`chore-agent-handoff-provenance` → `main`)
+  squash-merged as `d6d14b0`; tagged `v1.4.1`; canonical snapshot verified 71/71 files.
+
 ## [1.4.0] - 2026-07-29
 
 ### Added

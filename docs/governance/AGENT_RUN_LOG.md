@@ -34,6 +34,45 @@ Notes:
 
 _Add new runs below._
 
+## Run 2026-08-04
+
+Agent/tool: Claude Code (VS Code extension)
+Task: Resolve the recorded next task from the 2026-07-30 Codex session — push
+`chore-agent-handoff-provenance`, open/review its PR, merge to `main`, then tag and snapshot.
+Status: PASS
+Files inspected: repo-local `AGENT_HANDOFF.md`, `docs/governance/AGENT_RUN_LOG.md`'s matching
+"Run 2026-07-30" entry, current `git diff main..HEAD`.
+Files changed (repo): `AGENT_HANDOFF.md` (new), `docs/governance/AGENT_RUN_LOG.md`,
+`docs/governance/REPOSITORY_HANDOFF_CONFIG.md`, `docs/project/CONTEXT.md` — all authored by the
+prior Codex session; this session only published, merged, tagged, and snapshotted them.
+Validation run: a full `REPO_SESSION_START_RECOVERY_AUDIT.md` pass (Verdict `PASS WITH CONDITIONS`,
+previous-agent provenance Confirmed as Codex); `git ls-remote --heads` after push;
+`git rev-parse v1.4.1^{commit}` after tagging, confirmed against the remote tag.
+Result: PR #4 squash-merged as `d6d14b0`, tagged `v1.4.1`, canonical snapshot created and
+SHA-256-verified (71/71 files) at
+`/Users/ant/WorkSync/Projects/RepoBackups/K_to_Career_Website/v1.4.1/`.
+Risks: None new. No CI/status checks configured on this repo (static site, no build); PR showed
+`mergeStateStatus: CLEAN` before merge.
+Next action: recorded as "lock the primary website objective" — see DECISION_LOG.md, actioned in
+the 2026-08-19 session.
+
+## Model Usage Record
+Tool used: Claude Code
+Surface used: VS Code extension
+Model used: not recorded at the time. This run-log entry is a retroactive backfill added
+2026-08-19 (the session's work is fully documented in the AntBrainOS vault's `SESSION_LOG.md` and
+`DECISION_LOG.md`, but this repo-local run log was never updated to match) — do not infer a model
+choice that wasn't recorded.
+Effort/thinking level: not recorded
+Why this model was chosen: not recorded
+If in VS Code, why Codex or Claude Code was chosen: not recorded
+Was the model sufficient? Not recorded
+Should similar tasks use the same route? Not recorded
+Escalation needed next time? Not recorded
+Notes: This gap — a repo-local governance doc silently falling behind the vault's continuity
+records for one full session — is itself the reason the 2026-08-19 session ran a documentation
+freshness pass. See that session's own run-log entry above (once added) for the closeout check.
+
 ## Run 2026-07-30
 
 Agent/tool: Codex (VS Code)
