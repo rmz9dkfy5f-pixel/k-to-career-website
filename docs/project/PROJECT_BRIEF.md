@@ -14,13 +14,17 @@
 | Non-negotiable content, messaging, and audience rules | `CLAUDE.md` |
 | Project shape and constraints for agents | `AGENTS.md` |
 
-## Open, deliberately
+## Resolved
 
-The **primary website objective** — which audience to optimise for first: students and parents,
-industry partners, or donors and volunteers — is **not decided**. `CLAUDE.md` instructs agents to
-preserve that flexibility rather than resolve it. Do not write an answer into this file. It is a
-decision for the project owner, and it blocks further site strategy work until made.
+The **primary website objective** — which audience to optimise for first — is **decided**:
+students and families, locked 2026-08-19. See `CLAUDE.md`'s Project Identity section (authoritative)
+and the AntBrainOS vault `DECISION_LOG.md` for the full record. Do not write the decision's
+rationale into this file — this stays a pointer, per the note above. Site content/CTA changes to
+reflect the decision are a separate, not-yet-authorized pass.
 
-Likewise, do not add success criteria expressed as impact metrics. This project has no verified
-outcome numbers, participation counts, testimonials, or named partnerships, and fabricating them is
-explicitly prohibited.
+## Still Open, deliberately
+
+Do not add success criteria expressed as impact metrics. This project has no verified outcome
+numbers, participation counts, testimonials, or named partnerships, and fabricating them is
+explicitly prohibited. Other unresolved items (site map, CMS choice, launch/hosting status) remain
+genuinely open — see `plans/k_to_career_action_plan.md`.

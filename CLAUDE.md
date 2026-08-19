@@ -5,7 +5,9 @@ This repository is for the **K to Career** website and related product work.
 
 K to Career is a STEM learning and career-readiness ecosystem serving learners from early childhood through post-secondary and early career entry. The website must reflect the full K-to-career journey while staying concrete, outcome-oriented, and useful to distinct audiences.
 
-Do not invent strategy decisions that the repository does not support. Unless the user has explicitly chosen otherwise, preserve flexibility around the primary website objective and audience prioritization.
+Do not invent strategy decisions that the repository does not support. Where a decision is still open, preserve flexibility rather than assuming an answer.
+
+**Primary website objective — locked 2026-08-19:** students and families are the first-priority audience. This governs sequencing and emphasis (which message leads, which call to action is primary) — it does not override the audience-separation rule below; industry partners and donors/volunteers keep their own distinct paths and CTAs. Decided explicitly by the project owner; see AntBrainOS vault `03_PROJECTS/Active/K_to_Career_Website/DECISION_LOG.md` for the full record. Site content/CTA-hierarchy changes to reflect this are a separate, not-yet-authorized pass — this decision is documentation only.
 
 ## Canonical Repo Structure
 Treat this structure as the source of truth for where information belongs:

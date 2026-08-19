@@ -3,6 +3,12 @@
 ## Clarify the Core Objective
 Decide whether the website’s primary purpose is to attract students and parents, secure funding from donors and grants, or recruit industry partners and volunteers. One clear objective should control the site strategy.
 
+**Resolved 2026-08-19:** students and families are the locked first-priority audience. See
+`CLAUDE.md`'s Project Identity section and the AntBrainOS vault `DECISION_LOG.md` for the full
+record. This locks *priority*, not exclusivity — the audience segmentation below still applies to
+all three groups. Site structure/content changes to reflect this priority are not yet done — see
+"Draft the Site Map" and "Develop Targeted Content" below, still open.
+
 ## Segment the Audience
 Separate the main audience groups:
 - Students and parents
@@ -47,8 +53,8 @@ Set the baseline requirements:
 Release a first version, test it with real users from each audience segment, gather feedback, and tighten weak pages before wider promotion.
 
 ## Immediate Next Moves
-1. Choose the primary website goal.
-2. Pick the top audience to optimize for first.
+1. [x] Choose the primary website goal. — Resolved 2026-08-19, see above.
+2. [x] Pick the top audience to optimize for first. — Students and families, resolved 2026-08-19.
 3. Collect proof points and operating details.
 4. Approve the site map.
 5. Start homepage and programs page copy.
