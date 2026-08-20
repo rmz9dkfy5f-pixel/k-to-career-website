@@ -29,9 +29,7 @@
   ],
   "enabled_modules": [
     "accessibility",
-    "browser_matrix",
-    "seo",
-    "web_performance"
+    "seo"
   ],
   "files": [
     {
@@ -256,7 +254,7 @@
       "path": ".starter-kit/manifest.json",
       "profiles": [],
       "required": true,
-      "sha256": "136bef2a02eaa56ecb78b8a6e970f2f09982b29323f20da89a9664b48ed2f994"
+      "sha256": "a6a3e9ddc687ed785f4aba03475218d29e7c39ab38ccda8fe788a019724a9807"
     },
     {
       "modules": [],
@@ -661,26 +659,6 @@
       "profiles": [],
       "required": true,
       "sha256": "ce1f3c64bc0358fcb8df65ac508ad36f1d05477a4e85c895895abfa163c6988e"
-    },
-    {
-      "modules": [
-        "web_performance"
-      ],
-      "ownership": "starter_kit",
-      "path": "docs/operations/WEB_PERFORMANCE_POLICY.md",
-      "profiles": [],
-      "required": true,
-      "sha256": "5899c9ee264642727af7067459f7d2c58979a92a654ad60811f5d08be1480132"
-    },
-    {
-      "modules": [
-        "browser_matrix"
-      ],
-      "ownership": "starter_kit",
-      "path": "docs/operations/BROWSER_MATRIX_POLICY.md",
-      "profiles": [],
-      "required": true,
-      "sha256": "3b03284a7566064f215bc83ae54bc431b4a1ce329b7b03bd5f99d1f912527a40"
     }
   ],
   "installation_mode": "migrated",

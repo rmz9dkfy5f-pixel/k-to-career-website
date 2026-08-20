@@ -1,0 +1,41 @@
+{
+  "approval": {
+    "apply_flag": true,
+    "approved_by": null,
+    "expected_plan_id": "cc014325fd83e0e27b8be6d4f5d7bd1c7088a06cc7203210515b077f27da2b91"
+  },
+  "changes": [
+    {
+      "action": "created",
+      "after_sha256": "f8b4c7dfc621cfa8e3768965be50f74c8b35a0b748d8949599a1b47b50e3c9f3",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "docs/operations/ACCESSIBILITY_POLICY.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "5b5f06ceae5dbf3fc42cf2e79956e4d0261cec561cf9bccde8c151687f5994c7",
+      "backup": ".starter-kit/migrations/68a28472-626e-4415-a831-3ed3bf0a5593/backup/.starter-kit/capability-state.json",
+      "before_sha256": "4996d72522dd7f391d9442ddafd3b842c8cf1c3456ab55eeeae5b6119e3483e1",
+      "ownership": "generated",
+      "path": ".starter-kit/capability-state.json"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "6ccc234e01087955ae4b99784595204e6d4a6becda80c9bf0d6af988b89a95cb",
+      "backup": ".starter-kit/migrations/68a28472-626e-4415-a831-3ed3bf0a5593/backup/.starter-kit/manifest.json",
+      "before_sha256": "9ebe2e5e4ae9f16dcbea48470bbfff958bac04f60fb65a9362f89a97eaee9723",
+      "ownership": "generated",
+      "path": ".starter-kit/manifest.json"
+    }
+  ],
+  "completed_at": "2026-08-20T05:24:22.389987+00:00",
+  "conflicts": [],
+  "kind": "module-enable",
+  "plan_id": "cc014325fd83e0e27b8be6d4f5d7bd1c7088a06cc7203210515b077f27da2b91",
+  "run_id": "68a28472-626e-4415-a831-3ed3bf0a5593",
+  "schema_version": "1.0",
+  "started_at": "2026-08-20T05:24:22.383465+00:00",
+  "status": "completed"
+}

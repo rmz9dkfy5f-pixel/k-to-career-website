@@ -2,7 +2,7 @@
   "capabilities": [
     {
       "id": "accessibility",
-      "state": "configured",
+      "state": "not_applicable",
       "waiver": null
     },
     {
@@ -17,7 +17,7 @@
     },
     {
       "id": "browser_matrix",
-      "state": "configured",
+      "state": "not_applicable",
       "waiver": null
     },
     {
@@ -182,7 +182,7 @@
     },
     {
       "id": "seo",
-      "state": "configured",
+      "state": "not_applicable",
       "waiver": null
     },
     {
@@ -207,7 +207,7 @@
     },
     {
       "id": "web_performance",
-      "state": "configured",
+      "state": "not_applicable",
       "waiver": null
     }
   ],

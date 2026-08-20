@@ -1,5 +1,24 @@
 {
   "checks": [],
-  "manual_checks": [],
+  "manual_checks": [
+    {
+      "blocking": true,
+      "description": "Serve the repository root over local HTTP (python3 -m http.server) and confirm HTTP 200 for /, /favicon-32.png, /apple-touch-icon.png, and the first asset referenced by index.html, and that index.html's <title> renders. This is the closest available analogue to 'the deploy works', since GitHub Pages serves this tree verbatim.",
+      "id": "static_site_http_smoke",
+      "person": "CyberAntAI",
+      "result": "2026-08-20, during the v3.7.0 migration: 200 for /, /favicon-32.png, /apple-touch-icon.png, /assets/images/logo.png; <title>K to Career - STEM Education to Career Readiness</title> rendered.",
+      "status": "passed",
+      "target": "index.html"
+    },
+    {
+      "blocking": false,
+      "description": "Open index.html in a real browser and confirm layout, navigation, and the audience CTAs render correctly with no console errors, at desktop and mobile widths. Required because this repository has no test runner, linter, or build tool - see docs/governance/TEST_STRATEGY.md.",
+      "id": "browser_visual_review",
+      "person": null,
+      "result": null,
+      "status": "pending",
+      "target": "index.html"
+    }
+  ],
   "schema_version": "1.0"
 }

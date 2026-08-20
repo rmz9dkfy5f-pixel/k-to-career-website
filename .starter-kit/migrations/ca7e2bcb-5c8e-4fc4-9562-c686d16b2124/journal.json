@@ -1,0 +1,41 @@
+{
+  "approval": {
+    "apply_flag": true,
+    "approved_by": null,
+    "expected_plan_id": "73f41edecf1d289c7b871ace70a5aa2f637b74d470cc38af44b7d4c01163a367"
+  },
+  "changes": [
+    {
+      "action": "created",
+      "after_sha256": "ce1f3c64bc0358fcb8df65ac508ad36f1d05477a4e85c895895abfa163c6988e",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "docs/operations/SEO_POLICY.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "4614fd6ee5a0e0209921ff4a25aa9912e9ba169b8e784702124b1efc0617a9a1",
+      "backup": ".starter-kit/migrations/ca7e2bcb-5c8e-4fc4-9562-c686d16b2124/backup/.starter-kit/capability-state.json",
+      "before_sha256": "5b5f06ceae5dbf3fc42cf2e79956e4d0261cec561cf9bccde8c151687f5994c7",
+      "ownership": "generated",
+      "path": ".starter-kit/capability-state.json"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "7ab8f91b085e697908cb13b883e2ab827bb6fe0edbbcd517a20afbd399fae870",
+      "backup": ".starter-kit/migrations/ca7e2bcb-5c8e-4fc4-9562-c686d16b2124/backup/.starter-kit/manifest.json",
+      "before_sha256": "6ccc234e01087955ae4b99784595204e6d4a6becda80c9bf0d6af988b89a95cb",
+      "ownership": "generated",
+      "path": ".starter-kit/manifest.json"
+    }
+  ],
+  "completed_at": "2026-08-20T05:24:22.776430+00:00",
+  "conflicts": [],
+  "kind": "module-enable",
+  "plan_id": "73f41edecf1d289c7b871ace70a5aa2f637b74d470cc38af44b7d4c01163a367",
+  "run_id": "ca7e2bcb-5c8e-4fc4-9562-c686d16b2124",
+  "schema_version": "1.0",
+  "started_at": "2026-08-20T05:24:22.771490+00:00",
+  "status": "completed"
+}
