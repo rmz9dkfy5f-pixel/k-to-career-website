@@ -8,15 +8,16 @@ records remain in the AntBrainOS vault.
 
 ## Last Updated By
 
-Codex — 2026-07-30 (Codex in VS Code; repo-local pointer created)
+Claude Code — 2026-08-19 (Claude Code in VS Code; refreshed to match actual `main` state, which this
+file had fallen one release behind)
 
 ## Repository Identity
 
 - Project: K to Career Website
 - Repository root: `/Users/ant/Projects/GitHub/k-to-career-website`
 - Branch at pointer creation: `main`
-- HEAD at pointer creation: `3e2ea45a2b4dafad6ab0be38c25a4b293280c7f7`
-- Tag at pointer creation: `v1.4.0`
+- HEAD at pointer creation: `d6d14b0e45e8231ef86003dbee7da7b662a26b83`
+- Tag at pointer creation: `v1.4.1`
 - Canonical remote: `https://github.com/rmz9dkfy5f-pixel/k-to-career-website.git`
 
 ## Canonical Continuity Records
@@ -36,10 +37,15 @@ This file may summarize provenance for startup routing, but it must not become a
 
 ## Latest Project-Specific Provenance
 
-The latest confirmed K to Career project state is `main` at `3e2ea45`, tagged `v1.4.0`.
-The matching vault records say the v1.4.0 merge, validation, tag, and snapshot session was run in
-Codex after a repository session-start recovery audit. Treat that as the latest project-specific
-agent provenance unless newer K to Career repo or vault records say otherwise.
+The latest confirmed K to Career project state is `main` at `d6d14b0`, tagged `v1.4.1`. The matching
+vault records say the v1.4.1 merge, tag, and snapshot session was run in Claude Code on 2026-08-04
+after a repository session-start recovery audit. Treat that as the latest *merged-to-main*
+provenance unless newer K to Career repo or vault records say otherwise.
+
+A 2026-08-19 Claude Code session (documentation-freshness pass; locked the primary website objective
+to students & families) is committed on branch `chore/doc-freshness-and-audience-lock`, not yet
+merged to `main` — pending explicit push/PR/merge authorization. See vault `SESSION_LOG.md` for the
+full record. This file will be refreshed again once that branch merges.
 
 ## Routing Note
 

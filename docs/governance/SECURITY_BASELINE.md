@@ -35,14 +35,14 @@
   admin routes, no runtime dependencies, and no build/deployment secrets. The only network exposure
   is the publicly served static site itself.
 - Risks:
-  - **The repository is public, and GitHub Pages serves every root-level file.** All governance
-    documentation added by this adoption is world-readable. `REPOSITORY_HANDOFF_CONFIG.md` in
-    particular contains absolute local filesystem paths (the repo root and the snapshot volume) and
-    the machine's `ComputerName`. This predates the adoption but the adoption enlarges the surface.
-    See R-006. **This needs an explicit accept-or-remove decision from the project owner.**
+  - **R-006, resolved 2026-08-19.** The repository is public and GitHub Pages serves every
+    root-level file. `REPOSITORY_HANDOFF_CONFIG.md` previously contained absolute local filesystem
+    paths (the repo root and the snapshot volume) and the machine's `ComputerName`. Project owner
+    chose "remove": those values now live in AntBrainOS vault
+    `03_PROJECTS/Active/K_to_Career_Website/REPOSITORY_HANDOFF_CONFIG_LOCAL.md`, and the repo file
+    points there instead of stating them.
   - `docs/deployment/HOSTING_NOTES.md` records that neither GitHub Pages nor Wix allows setting
     server-level security headers (CSP, X-Frame-Options) on a static site. Accepted limitation of
     the chosen hosting, not a defect.
-- Next action: confirm whether publishing operational coordinates in a public repository is
-  acceptable. If not, move `REPOSITORY_HANDOFF_CONFIG.md`'s machine-specific paths into the
-  AntBrainOS vault alongside the other continuity records and leave a pointer here.
+- Next action: none outstanding for R-006. See `PROJECT_RISK_REGISTER.md` for the full resolution
+  record.

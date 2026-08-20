@@ -7,7 +7,10 @@ never credentials.
 ## Repository Identity
 
 - Project name: K to Career Website
-- Repository root: /Users/ant/Projects/GitHub/k-to-career-website
+- Repository root: see AntBrainOS vault
+  `03_PROJECTS/Active/K_to_Career_Website/REPOSITORY_HANDOFF_CONFIG_LOCAL.md` — moved out of this
+  public repo 2026-08-19 to close risk R-006 (absolute local filesystem paths were world-readable
+  via GitHub Pages)
 - Canonical remote: https://github.com/rmz9dkfy5f-pixel/k-to-career-website.git
 - Default branch: main
 - Canonical handoff file: root `AGENT_HANDOFF.md` as a structured startup pointer only — this
@@ -41,21 +44,11 @@ never credentials.
 
 ### Snapshot Destination by Machine
 
-Mirrors the detection mechanism in `05_SOPS/Obsidian/ANTBRAIN_VAULT_SNAPSHOT.md`, scoped to this
-repository — same `RepoBackups/<name>` convention that SOP already uses for the vault itself, applied
-here under this project's own name instead of `AntBrainOS`.
-
-```bash
-scutil --get ComputerName 2>/dev/null || hostname
-```
-
-| Machine | Detection | Snapshot destination | Notes |
-|---|---|---|---|
-| Ant’s Mac Mini (4) | `/Volumes/AntNVMe1TB` exists | `/Volumes/AntNVMe1TB/WorkSync/Projects/RepoBackups/K_to_Career_Website/` | current machine |
-| Ant’s MacBook Air | `/Users/ant/WorkSync/Projects/RepoBackups/K_to_Career_Website` exists | `/Users/ant/WorkSync/Projects/RepoBackups/K_to_Career_Website/` | current machine |
-
-If the current machine does not match any row above, or more than one row could plausibly match,
-**stop and ask the user** for the correct destination — do not guess or infer a path pattern.
+Machine-specific detection commands and destination paths are no longer published in this public
+repo (risk R-006, closed 2026-08-19). See AntBrainOS vault
+`03_PROJECTS/Active/K_to_Career_Website/REPOSITORY_HANDOFF_CONFIG_LOCAL.md` for the current
+detection mechanism and destination table. If that file is unreachable, **stop and ask the user**
+for the correct destination — do not guess or infer a path pattern.
 
 ## Deployment Contract
 

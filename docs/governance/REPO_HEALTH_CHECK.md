@@ -17,7 +17,8 @@ Production Readiness is incomplete because no compatibility testing has ever bee
 
 ### Git
 
-- [x] Git status reviewed. Clean, `main` synced with `origin/main`, tagged `v1.3.0`.
+- [x] Git status reviewed. Clean, `main` synced with `origin/main`, tagged `v1.4.1` (updated
+      2026-08-19; was `v1.3.0` as of the 2026-07-29 check).
 - [x] `.gitignore` is appropriate. Corrected during this adoption: `.claude/*` was silently making
       `.claude/skills/**` unstageable.
 - [x] No secrets are committed. `git grep -niE 'api[_-]?key|secret|password|bearer|token'` across
@@ -41,10 +42,16 @@ Production Readiness is incomplete because no compatibility testing has ever bee
 
 ## Last Health Check
 
-- Date: 2026-07-29
-- Agent: Claude Code (V3.4 adoption run)
+- Date: 2026-07-29 (full check); Git/Security sections partially updated 2026-08-19 — see note below
+- Agent: Claude Code (V3.4 adoption run); 2026-08-19 update also Claude Code
 - Result: PARTIAL
 - Notes:
+  - **2026-08-19 partial update, not a full re-run.** Only the Git checklist item (above) and the
+    Security risk note below were refreshed, as part of a documentation-freshness pass. Structure,
+    Build/Test, and the remaining Production Readiness items were not re-verified this pass — the
+    findings below are carried forward unchanged from 2026-07-29 and may themselves be stale.
+  - **R-006 resolved 2026-08-19.** The public-path-exposure risk referenced under Security baseline
+    is now closed — see `PROJECT_RISK_REGISTER.md` and `SECURITY_BASELINE.md`.
   - **Unreferenced binary at repo root.** `Image 4-17-26 at 12.37 AM.PNG` is 732 KB, tracked, and
     referenced by zero files (`git grep` returns nothing). It appears to be a duplicate of
     `assets/images/logo.png`, which is the same byte size. Because GitHub Pages serves this

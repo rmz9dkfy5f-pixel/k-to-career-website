@@ -21,8 +21,10 @@ Three rules from `CLAUDE.md` are repeated here because violating them is unrecov
 - Do not fabricate impact metrics, partnerships, testimonials, or program outcomes.
 - Keep audience paths distinct — students and parents, industry partners, donors and volunteers are
   separate messages with separate calls to action. Do not blend them.
-- Do not invent strategy decisions the repository does not support. The primary website objective and
-  audience prioritization are deliberately still open; preserve that ambiguity.
+- Do not invent strategy decisions the repository does not support. The primary website objective is
+  now locked (students & families, first priority — see `CLAUDE.md`'s Project Identity section and
+  the vault `DECISION_LOG.md`); anything else still open (site map, CMS, launch/hosting status, etc.)
+  stays genuinely open — preserve that ambiguity rather than assuming an answer.
 
 ## Project Shape
 
