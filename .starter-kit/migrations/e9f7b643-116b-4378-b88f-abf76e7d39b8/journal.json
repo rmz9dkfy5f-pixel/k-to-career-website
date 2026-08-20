@@ -1,0 +1,41 @@
+{
+  "approval": {
+    "apply_flag": true,
+    "approved_by": "CyberAntAI",
+    "expected_plan_id": "73a407b72aa2fd4a3c9a329a4dc957bfe0dc156725f48d3b938115b328ac8164"
+  },
+  "changes": [
+    {
+      "action": "modified",
+      "after_sha256": "f4c066b68f34c86173f5c31c20f906559f72624f33164b8be17e7b8ac2c3d2cd",
+      "backup": ".starter-kit/migrations/e9f7b643-116b-4378-b88f-abf76e7d39b8/backup/.starter-kit/evidence/6bacc8b7-405a-41f5-a1f1-23ec5385fbb9/handoff.md",
+      "before_sha256": "58bf2fe8c2be6e1186026f2f30e3883404ab09c83aeb55e97ed2811128bcf750",
+      "ownership": "generated",
+      "path": ".starter-kit/evidence/6bacc8b7-405a-41f5-a1f1-23ec5385fbb9/handoff.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "1392c011362cf5d18d85f68203e1348603d4b8d8593e63c9465b77de43ca90b4",
+      "backup": ".starter-kit/migrations/e9f7b643-116b-4378-b88f-abf76e7d39b8/backup/.starter-kit/evidence/6bacc8b7-405a-41f5-a1f1-23ec5385fbb9/gate-result.json",
+      "before_sha256": "8389d88924d610a376b49ac49914adf9ca0fd11fc561193cb8a3d2f9ad3a5395",
+      "ownership": "generated",
+      "path": ".starter-kit/evidence/6bacc8b7-405a-41f5-a1f1-23ec5385fbb9/gate-result.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "7c5f77f7c2ca7eb2a3299340e0f195fbf19e694dda2ce076a6124ce1d20528aa",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/reports/CURRENT_SESSION.md"
+    }
+  ],
+  "completed_at": "2026-08-20T05:00:31.094787+00:00",
+  "conflicts": [],
+  "kind": "session-closeout",
+  "plan_id": "73a407b72aa2fd4a3c9a329a4dc957bfe0dc156725f48d3b938115b328ac8164",
+  "run_id": "e9f7b643-116b-4378-b88f-abf76e7d39b8",
+  "schema_version": "1.0",
+  "started_at": "2026-08-20T05:00:31.085404+00:00",
+  "status": "completed"
+}

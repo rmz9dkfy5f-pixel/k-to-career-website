@@ -20,7 +20,7 @@ Reviews secrets, auth, dependency risk, data exposure, and unsafe scripts.
 
 ## Migration Reviewer
 
-Compares existing project files with V3.4 templates and identifies safe merges.
+Compares existing project files with V3.5 templates and identifies safe merges.
 
 ## Documentation Reviewer
 
