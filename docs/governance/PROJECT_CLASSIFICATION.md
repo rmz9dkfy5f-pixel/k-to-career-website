@@ -17,9 +17,16 @@ used for this project.
 
 ## This Project
 
-- **Classification:** Git-backed with deployment
+- **Classification:** git_backed_with_deployment
+- **Classification (prose):** Git-backed with deployment
 - **Confirmed by:** Claude Code, during the V3.4 adoption run
 - **Confirmed on:** 2026-07-29
+- **Token form note:** the `Classification:` value above is the kit's canonical machine token
+  (`starter_kit` compares it against `.starter-kit/manifest.json`'s `project_classification`, reading
+  only the first whitespace-delimited word). The prose line preserves the human-readable form. The
+  kit's own auto-detection reported `git_backed_with_remote`, which is **less** accurate — it cannot
+  see GitHub Pages without an API call. The manifest was reconciled to the verified value below,
+  2026-08-19, during the v3.7.0 migration.
 - **Evidence:**
   - `git remote -v` → `origin https://github.com/rmz9dkfy5f-pixel/k-to-career-website.git`
   - `gh api repos/rmz9dkfy5f-pixel/k-to-career-website/pages` →

@@ -1,0 +1,656 @@
+{
+  "active_profile": "web_application",
+  "authority_files": {
+    "build_provenance": ".starter-kit/build-provenance.json",
+    "capabilities": ".starter-kit/capability-state.json",
+    "license_policy": ".starter-kit/license-policy.json",
+    "manifest": ".starter-kit/manifest.json",
+    "models": ".starter-kit/model-registry.json",
+    "privacy_classification": ".starter-kit/privacy-classification.json",
+    "profile": ".starter-kit/project-profile.json",
+    "provenance": ".starter-kit/provenance.json",
+    "run_types": ".starter-kit/run-types.json",
+    "sbom": ".starter-kit/sbom.json",
+    "security_evidence": ".starter-kit/security-evidence.json",
+    "security_exceptions": ".starter-kit/security-exceptions.json",
+    "source_authority": ".starter-kit/source-authority.json",
+    "threat_model": ".starter-kit/threat-model.json",
+    "validation": ".starter-kit/validation-contract.json",
+    "version": ".starter-kit/version-state.json"
+  },
+  "compatibility_aliases": [
+    "scripts/v34_install.py",
+    "scripts/v34_validate.py",
+    "scripts/v34_adoption_audit.py",
+    "v34-execution-loop",
+    "v34-migration-loop",
+    "v34-production-readiness",
+    "v34-context-eval-loop"
+  ],
+  "enabled_modules": [],
+  "files": [
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-context-eval-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "61135139c067531862f7f60073b896b8229fa4ce89c93cae1290ade036a9cbe1"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-execution-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "19bac6bd70302d2e6506252ac80af0b27b82319c7241875d18f34cadd5d7a22f"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-migration-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "8b09af2f3fc5ecdfc4e16d0fb5e0a09e754b199498ddcfd53d18eac3dad8f217"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-module-management/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "2bf7f3aa681cc656a79ac2fa2ebf546c8a1eabbd9e5b20f798131efd9a963609"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-production-readiness/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "fdfe5a7ee26a3f9675a72ad802695780f411a46cb973d9fab0f7e8bc0711355b"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-release-evidence/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "79dbbe1256547aaa78f05c227c0b9a9f8f5ffc619990555b68c4dc4a3de3fc5c"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-session-closeout/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "39072808d140bdf95ec4509d2e69c1a43be52a2424334ab2b2550a5dc9ff0e0e"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-session-start/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "db2abe4af935ea4a96d3ab9d4c44407a9dfb60fdf9cc4c35dfdf12131107061f"
+    },
+    {
+      "modules": [],
+      "ownership": "compatibility",
+      "path": ".agents/skills/v34-context-eval-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "4c6a50f82c9f5ece9788d693d1467f6211e813b51cb46aaa5593df47f5caea93"
+    },
+    {
+      "modules": [],
+      "ownership": "compatibility",
+      "path": ".agents/skills/v34-execution-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "665dca225312f2d7309a5c32392668b4113ea14b2af544c964dfd8f8243709c9"
+    },
+    {
+      "modules": [],
+      "ownership": "compatibility",
+      "path": ".agents/skills/v34-migration-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "2fa87ee468cc9a3d05c4516b135e5d1cd943e3016bb0c1ef2c920b6b58e49170"
+    },
+    {
+      "modules": [],
+      "ownership": "compatibility",
+      "path": ".agents/skills/v34-production-readiness/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "a41874cb665a7e0f48e1eabe739215dfb82591dbf65bbc1bba95c4804b9ee30f"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-context-eval-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "61135139c067531862f7f60073b896b8229fa4ce89c93cae1290ade036a9cbe1"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-execution-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "19bac6bd70302d2e6506252ac80af0b27b82319c7241875d18f34cadd5d7a22f"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-migration-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "8b09af2f3fc5ecdfc4e16d0fb5e0a09e754b199498ddcfd53d18eac3dad8f217"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-module-management/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "2bf7f3aa681cc656a79ac2fa2ebf546c8a1eabbd9e5b20f798131efd9a963609"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-production-readiness/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "fdfe5a7ee26a3f9675a72ad802695780f411a46cb973d9fab0f7e8bc0711355b"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-release-evidence/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "79dbbe1256547aaa78f05c227c0b9a9f8f5ffc619990555b68c4dc4a3de3fc5c"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-session-closeout/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "39072808d140bdf95ec4509d2e69c1a43be52a2424334ab2b2550a5dc9ff0e0e"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-session-start/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "db2abe4af935ea4a96d3ab9d4c44407a9dfb60fdf9cc4c35dfdf12131107061f"
+    },
+    {
+      "modules": [],
+      "ownership": "compatibility",
+      "path": ".claude/skills/v34-context-eval-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "4c6a50f82c9f5ece9788d693d1467f6211e813b51cb46aaa5593df47f5caea93"
+    },
+    {
+      "modules": [],
+      "ownership": "compatibility",
+      "path": ".claude/skills/v34-execution-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "665dca225312f2d7309a5c32392668b4113ea14b2af544c964dfd8f8243709c9"
+    },
+    {
+      "modules": [],
+      "ownership": "compatibility",
+      "path": ".claude/skills/v34-migration-loop/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "2fa87ee468cc9a3d05c4516b135e5d1cd943e3016bb0c1ef2c920b6b58e49170"
+    },
+    {
+      "modules": [],
+      "ownership": "compatibility",
+      "path": ".claude/skills/v34-production-readiness/SKILL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "a41874cb665a7e0f48e1eabe739215dfb82591dbf65bbc1bba95c4804b9ee30f"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/build-provenance.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "3740eb26c092984ca5d6be19637763c6fca22063bb7c349698b2d0085f263fe2"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/capability-state.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "4996d72522dd7f391d9442ddafd3b842c8cf1c3456ab55eeeae5b6119e3483e1"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/license-policy.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "1c41c10f440f6fd0c2f6b1fba051cdd7e25b1366d5346f16ec13d2e62f8dd129"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/manifest.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "1eefaac323ff94cdcb23394beef583b0aac7a0e9191c455851c1f43231b3add5"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/model-registry.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "beb15294cb2c6d5a8373bc4a6235488f65a6c22fa2e7b8f49c1ee442048c6015"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/privacy-classification.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "b967e3cf47a4181d6e2ad6cb82873e8cdbd1dbe5326bcad8883cfa700dda6c79"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/project-profile.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "decc46d1262547d2dd39bf897f8390b5e4178eb03382b1027c956dc3f8f7dba8"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/provenance.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "a981933cc168e122914978427728ceea21a861031876d9ea2aec419ab727a755"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/run-types.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "ad5caa00e37b7b47fe406c85e8f1d34ae83c3f59725ef9eb98ba7e32f63adfdd"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/sbom.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "2edb8069a1a04e2e4415bebbe5bf0a352bd6f6529939fb3aeefd276e98c834d9"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/security-evidence.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "3f466009ee31dcefddf794564383173221abbc7188d41bd1450a9fededd815a5"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/security-exceptions.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "fb6012be8098d25369977eecf7720bafc3ebfc0afd63b1b7e05e9a98a776a584"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/source-authority.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "168267cbe8e6fa89b8b1cce9596909892bc4e5df452c1a7a243839663e8f62eb"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/threat-model.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "c87a91e2984191f18c435c1f13c1187130c1a7c141ff13549f7c5248e3b761b9"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/validation-contract.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "4ef93ff3e26f4cd7527012e972d8f560c043060e23eef7232c88a9afb3097d17"
+    },
+    {
+      "modules": [],
+      "ownership": "generated",
+      "path": ".starter-kit/version-state.json",
+      "profiles": [],
+      "required": true,
+      "sha256": "285313c2caee46b20bda04abf2f61fa700f71a37ff01290b31692e8e056718a1"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "AGENTS.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "ff7f9a8f1f77a4be05925a9ac7bc2c62bba28293b91754aa99f5046592675ec6"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "CLAUDE.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "eaabc060345aa439d229753aba7c8638b32a677718f7f019c8860d278138719b"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "MODEL_SELECTION_GATE.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "2e52c871b590108e69c1b3278d4cc327896ef6743c093185e525bb992d67e1d6"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "PROMPT_MODEL_SELECTION_GATE.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "c1feb050d8d161e5b1548cf3afb5239e927f67867995d0c94d2a988b6719415b"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "ai/agents/AGENT_REVIEW_GATES.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "93f90391146fe946b928188656f13d43c1074e4a647e1780f71ca90636b19e3e"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "ai/agents/SUBAGENT_ROLES.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "33f2bf6e4fd082569189592b26439e60921ad1ed9a7d1a2b4689a15c4f018d15"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "ai/prompts/MIGRATION_AGENT_PROMPT.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "2bdd4c28919255957f7b4d5700ac6245c397c5cf6c38fde4364ac8815b9faf85"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "ai/prompts/TASK_INTAKE.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "6f33c44b00f6c370adff5f42b2b1a7a4af6a98d5089079e4254fc24de6ab6f02"
+    },
+    {
+      "modules": [],
+      "ownership": "compatibility",
+      "path": "ai/prompts/V34_AGENT_TASK_PROMPT.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "96d6c5fb9d03773c403546490b6635412dbbbbe666fbb67c5bfd0772e3960cbd"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "ai/reports/.gitkeep",
+      "profiles": [],
+      "required": true,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "docs/governance/AGENT_RUN_CONTRACT.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "1862ede561b5b3dc8b2b736cc24a00a7e5c3f5dc7815d31ffc90d56b1160abf7"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/AGENT_RUN_LOG.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "31f400ffe9210ee8af531f2cfd242122abc094f228371c40842743caba214357"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "docs/governance/CHANGE_CONTROL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "231b00101586b85c55e985ddc8bd81c5ea274fdd3700f43460618be914718663"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/COMPATIBILITY_MATRIX.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "3f1018c96be93ddd0093f41b4bb80539e5837295662c895fa4d0780f146388d6"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "docs/governance/CONTEXT_ENGINEERING.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "4f117134c1388dd8a14ffd59df8de7a605c054b84b79634f36efd3c9c05dad38"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "docs/governance/DONE_CRITERIA.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "44a178c91e80bdd0c24cfc685753f9bfd8b70659db3942b35b167507bcb8e408"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "docs/governance/EVALS_AND_FAILURE_LOG.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "cb00b5d7b4af5e65257b81c5340f6c1ee2a2d9e3a0dcb8ef40922f84c9807b9b"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/FIRST_SESSION_REHEARSAL.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "b0a8dec62add40a396ec42e3e5941076e12cd52431632309040c03ded70b9870"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "docs/governance/PHASE_GATES.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "5423ad9170a60dfe37de34f05e33587e9f301765ebbb1eafdce4f45673923f0d"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/PROJECT_CLASSIFICATION.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "ab0f164b8e187eff2afd3d92c8fb9d7ebeaec9af17d216e377b901801910f017"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/PROJECT_RISK_REGISTER.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "db92ef9229aadc00bfb1a1e8dc6d46df22f3b11cd6b982263ba3322119cac53e"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/RELEASE_GATE.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "75332bcbb14ca6b2614f1b5cde5d3501a6cc165c43db8a93224e1d9d9bb47512"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/REPOSITORY_HANDOFF_CONFIG.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "4f865baf6251ea46e29a2bb46ace157d905ff070bfc3534cce343e46f327ee9b"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/REPO_HEALTH_CHECK.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "5632c49e7ef9388e40cd25c53392ddabc4c9b893f694aef0631b52887a539fb5"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "docs/governance/ROLLBACK_PLAN.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "52f7a70ab04158d77e160031ddd0893fdbc9414ba7def710de4085e3f59f8e42"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/SECURITY_BASELINE.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "f93ffe33a344a5c99c54ab3599cd74ae90a4fdbe1e88578022ed2180a178e634"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/governance/TEST_STRATEGY.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "a114e22c1d69476a1142a4a060a8e1f0c59375b85f80ba80e7ab20bf8abc8a80"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/project/ARCHITECTURE.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "dd6c41a990af6551f48d27a5a3a1be8059507eb6f22a4bd9f7522670350e5a40"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/project/CHANGELOG.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "e88f6f3bf4e31815bd57d064d6d5e42597972941b6513a0148e17d50525256c6"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/project/COMMIT_NOTES.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "77718841e97e06d5098efb880c52b64c28b60df8cbe3212eeeaa7e75d251d695"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/project/CONTEXT.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "4bf823401bce00edaf5b2b64be6fca5cbcd60cc90534db080a86b0aa2377f7bd"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/project/DECISION_LOG.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "aeef9b1f867e29bbc0022082f3807605a04dfdf07fb81b3d2c14bd91b3e57023"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/project/PROJECT_BRIEF.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "b63976c9541a1e5d7c58fc15c0748e9335b014f0585fac71b5d292e9ccd52877"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/project/RELEASE_NOTES.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "f2c829582fa575fe25e982321d0fdc64270e2f3a6a36a3fa3bc48d7c46fde295"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/project/ROADMAP.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "46ba0a9f2c970655aa483eb76446be0198988ac5f323cc18aed98ac9dc4630bd"
+    },
+    {
+      "modules": [],
+      "ownership": "project",
+      "path": "docs/project/STATUS.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "39b47d25dec17bc3331108e288f2311a06f6a94f68c00de9e5739186eef12417"
+    }
+  ],
+  "installation_mode": "migrated",
+  "installed_at": "2026-08-20T03:20:03.417455+00:00",
+  "installed_version": "3.7.0",
+  "kit_name": "AntBrainOS Project Starter Kit",
+  "migration_history": [
+    {
+      "from": "3.4.3",
+      "run_id": "fe77c849-c844-4d8f-9949-0f9b4b910aa8",
+      "status": "completed",
+      "to": "3.7.0"
+    }
+  ],
+  "project_classification": "git_backed_with_deployment",
+  "schema_version": "1.0",
+  "source_package": "project-starter-kit-v3.6-working"
+}

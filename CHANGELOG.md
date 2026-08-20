@@ -6,14 +6,45 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 
 ## [Unreleased]
 
+### Added
+- Project Starter Kit upgraded **V3.4 → v3.7.0** (kit tag `v3.7.0`, commit `b172bc6`). Adds eight
+  `starter-*` skills (session start/closeout, module management, release evidence, execution,
+  migration, production readiness, context-eval), mirrored across `.claude/skills/` and
+  `.agents/skills/`; the four `v34-*` skills remain as deprecated compatibility aliases through
+  v4.0. Adds `.starter-kit/` state (manifest, profile, provenance, SBOM, threat model, privacy
+  classification, security evidence) and `docs/security/V36_SECURITY_ASSURANCE_REPORT.md`.
+- Release-gate facts recorded for this repository: `public_exposure=public`,
+  `data_sensitivity=none`, `risk_level=low`, privacy `default_classification=public` — all
+  evidence-backed (the site has no forms, inputs, analytics, trackers, database, or backend).
+
 ### Changed
+- `docs/governance/PROJECT_CLASSIFICATION.md` now emits the kit's canonical machine token
+  `git_backed_with_deployment` on its `Classification:` line, with the prose form preserved
+  alongside. The kit's auto-detection had reported the less accurate `git_backed_with_remote`,
+  which cannot account for GitHub Pages.
+- `docs/governance/MIGRATION_REPORT.md` restructured to hold one section per migration, newest
+  first, with the full v3.7.0 record added above the preserved V3.4 report.
 - Resolved risk R-006 (public exposure of absolute local filesystem paths): moved
   `docs/governance/REPOSITORY_HANDOFF_CONFIG.md`'s repository root and Snapshot Destination by
   Machine table into the AntBrainOS vault; the repo file now points there instead of stating the
   values directly.
 
 ### Notes
-- No site file changed. `index.html` and everything under `assets/` are untouched.
+- **No site file changed.** `index.html`'s SHA-256 was verified byte-identical to `main` after the
+  migration; `assets/` untouched. Local HTTP smoke test returned `200` for `/`, favicon,
+  apple-touch-icon, and logo.
+- No existing customized file was overwritten: all 21 conflicts were preserved, with the kit's
+  proposed versions stored as candidates in the migration journal. `CLAUDE.md`, `AGENTS.md`, and
+  `REPOSITORY_HANDOFF_CONFIG.md` are unchanged.
+- The three root-level migration scaffolding files the kit installs were removed, matching the
+  decision the V3.4 migration made for the same reasons (duplicate sources of truth, and Pages
+  serving every root file).
+- Validation: `validate`, `validate --release`, `validate --compatibility 3.4.3`, `doctor`,
+  `status`, `security inspect/plan/apply`, `session-closeout`, and cold `session-start` all PASS.
+  `quality --execute` reports PASS_WITH_WARNINGS (`no_quality_checks`), which accurately reflects
+  this repository's manual-only validation.
+- This was the first real-repository pilot of the kit's migration tooling; five findings against it
+  are recorded in `docs/governance/MIGRATION_REPORT.md`.
 
 ## [1.4.1] - 2026-08-04
 

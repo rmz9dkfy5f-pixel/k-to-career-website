@@ -1,0 +1,33 @@
+{
+  "approval": {
+    "apply_flag": true,
+    "approved_by": null,
+    "expected_plan_id": "64650f18bd42a30278b8653a09d5ec018803e24150bfa69fd9de688f38d98d5c"
+  },
+  "changes": [
+    {
+      "action": "created",
+      "after_sha256": "e73eaa65c35edb1d4257086b922ba0be262f5f8cc430eedda800d9b10bb8752f",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": "docs/security/V36_SECURITY_ASSURANCE_REPORT.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "2bd86d50b733fe3c99d17e36761da6804ccd4b4cf29e74324787f5ea6de3b440",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/reports/v36-security-gate.json"
+    }
+  ],
+  "completed_at": "2026-08-20T04:56:26.259674+00:00",
+  "conflicts": [],
+  "kind": "security-evidence",
+  "plan_id": "64650f18bd42a30278b8653a09d5ec018803e24150bfa69fd9de688f38d98d5c",
+  "run_id": "31b9c1ff-3c72-49e8-99fc-d92769a8b60e",
+  "schema_version": "1.0",
+  "started_at": "2026-08-20T04:56:26.156642+00:00",
+  "status": "completed"
+}

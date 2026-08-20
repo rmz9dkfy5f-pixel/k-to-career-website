@@ -1,0 +1,552 @@
+{
+  "approval": {
+    "apply_flag": true,
+    "approved_by": "CyberAntAI",
+    "expected_plan_id": "692159d06369f3fcf59543e460ff2b9a39865c22cae88b740781198a13e51838"
+  },
+  "changes": [
+    {
+      "action": "created",
+      "after_sha256": "61135139c067531862f7f60073b896b8229fa4ce89c93cae1290ade036a9cbe1",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-context-eval-loop/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "19bac6bd70302d2e6506252ac80af0b27b82319c7241875d18f34cadd5d7a22f",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-execution-loop/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "8b09af2f3fc5ecdfc4e16d0fb5e0a09e754b199498ddcfd53d18eac3dad8f217",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-migration-loop/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "2bf7f3aa681cc656a79ac2fa2ebf546c8a1eabbd9e5b20f798131efd9a963609",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-module-management/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "fdfe5a7ee26a3f9675a72ad802695780f411a46cb973d9fab0f7e8bc0711355b",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-production-readiness/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "79dbbe1256547aaa78f05c227c0b9a9f8f5ffc619990555b68c4dc4a3de3fc5c",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-release-evidence/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "39072808d140bdf95ec4509d2e69c1a43be52a2424334ab2b2550a5dc9ff0e0e",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-session-closeout/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "db2abe4af935ea4a96d3ab9d4c44407a9dfb60fdf9cc4c35dfdf12131107061f",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".agents/skills/starter-session-start/SKILL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "4c6a50f82c9f5ece9788d693d1467f6211e813b51cb46aaa5593df47f5caea93",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/.agents/skills/v34-context-eval-loop/SKILL.md",
+      "before_sha256": "d4f938173ce85349263d07b92e78fc8f65b2ddb454007730c8d8773afaf943a3",
+      "ownership": "compatibility",
+      "path": ".agents/skills/v34-context-eval-loop/SKILL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "665dca225312f2d7309a5c32392668b4113ea14b2af544c964dfd8f8243709c9",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/.agents/skills/v34-execution-loop/SKILL.md",
+      "before_sha256": "5ac6b584343c9a26a5e4f2334e4fb2421cbebf06c95e616f3880ebb86e9ba922",
+      "ownership": "compatibility",
+      "path": ".agents/skills/v34-execution-loop/SKILL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "2fa87ee468cc9a3d05c4516b135e5d1cd943e3016bb0c1ef2c920b6b58e49170",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/.agents/skills/v34-migration-loop/SKILL.md",
+      "before_sha256": "318bee78df1a8c39d6ec008b0d66b52746ba60298097cfabf0c73ea9fb851b0e",
+      "ownership": "compatibility",
+      "path": ".agents/skills/v34-migration-loop/SKILL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "a41874cb665a7e0f48e1eabe739215dfb82591dbf65bbc1bba95c4804b9ee30f",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/.agents/skills/v34-production-readiness/SKILL.md",
+      "before_sha256": "22900a6df32e9e0fb4746f85506fa61196f90f95f2f21bd224443a3025b5af00",
+      "ownership": "compatibility",
+      "path": ".agents/skills/v34-production-readiness/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "61135139c067531862f7f60073b896b8229fa4ce89c93cae1290ade036a9cbe1",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-context-eval-loop/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "19bac6bd70302d2e6506252ac80af0b27b82319c7241875d18f34cadd5d7a22f",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-execution-loop/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "8b09af2f3fc5ecdfc4e16d0fb5e0a09e754b199498ddcfd53d18eac3dad8f217",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-migration-loop/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "2bf7f3aa681cc656a79ac2fa2ebf546c8a1eabbd9e5b20f798131efd9a963609",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-module-management/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "fdfe5a7ee26a3f9675a72ad802695780f411a46cb973d9fab0f7e8bc0711355b",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-production-readiness/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "79dbbe1256547aaa78f05c227c0b9a9f8f5ffc619990555b68c4dc4a3de3fc5c",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-release-evidence/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "39072808d140bdf95ec4509d2e69c1a43be52a2424334ab2b2550a5dc9ff0e0e",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-session-closeout/SKILL.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "db2abe4af935ea4a96d3ab9d4c44407a9dfb60fdf9cc4c35dfdf12131107061f",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": ".claude/skills/starter-session-start/SKILL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "4c6a50f82c9f5ece9788d693d1467f6211e813b51cb46aaa5593df47f5caea93",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/.claude/skills/v34-context-eval-loop/SKILL.md",
+      "before_sha256": "d4f938173ce85349263d07b92e78fc8f65b2ddb454007730c8d8773afaf943a3",
+      "ownership": "compatibility",
+      "path": ".claude/skills/v34-context-eval-loop/SKILL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "665dca225312f2d7309a5c32392668b4113ea14b2af544c964dfd8f8243709c9",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/.claude/skills/v34-execution-loop/SKILL.md",
+      "before_sha256": "5ac6b584343c9a26a5e4f2334e4fb2421cbebf06c95e616f3880ebb86e9ba922",
+      "ownership": "compatibility",
+      "path": ".claude/skills/v34-execution-loop/SKILL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "2fa87ee468cc9a3d05c4516b135e5d1cd943e3016bb0c1ef2c920b6b58e49170",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/.claude/skills/v34-migration-loop/SKILL.md",
+      "before_sha256": "318bee78df1a8c39d6ec008b0d66b52746ba60298097cfabf0c73ea9fb851b0e",
+      "ownership": "compatibility",
+      "path": ".claude/skills/v34-migration-loop/SKILL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "a41874cb665a7e0f48e1eabe739215dfb82591dbf65bbc1bba95c4804b9ee30f",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/.claude/skills/v34-production-readiness/SKILL.md",
+      "before_sha256": "22900a6df32e9e0fb4746f85506fa61196f90f95f2f21bd224443a3025b5af00",
+      "ownership": "compatibility",
+      "path": ".claude/skills/v34-production-readiness/SKILL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "2e52c871b590108e69c1b3278d4cc327896ef6743c093185e525bb992d67e1d6",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/MODEL_SELECTION_GATE.md",
+      "before_sha256": "c2e0e5e7e85b62cfd20deb207679cf98e98df9311f76a2cbc12b51a5d415efe2",
+      "ownership": "starter_kit",
+      "path": "MODEL_SELECTION_GATE.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "93f90391146fe946b928188656f13d43c1074e4a647e1780f71ca90636b19e3e",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/ai/agents/AGENT_REVIEW_GATES.md",
+      "before_sha256": "558df290425160ee24fa309e9237117776178ae61401ef970c69aa0a0fddee54",
+      "ownership": "starter_kit",
+      "path": "ai/agents/AGENT_REVIEW_GATES.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "33f2bf6e4fd082569189592b26439e60921ad1ed9a7d1a2b4689a15c4f018d15",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/ai/agents/SUBAGENT_ROLES.md",
+      "before_sha256": "f3e473a8e5d6462058b05632ce29e6d420366c4b0e529ab355d81e6221d89cdd",
+      "ownership": "starter_kit",
+      "path": "ai/agents/SUBAGENT_ROLES.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "2bdd4c28919255957f7b4d5700ac6245c397c5cf6c38fde4364ac8815b9faf85",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/ai/prompts/MIGRATION_AGENT_PROMPT.md",
+      "before_sha256": "e90c69c1b206f5846537f79d45f1af9c489c81d9f4ca782391f19e4543380e49",
+      "ownership": "starter_kit",
+      "path": "ai/prompts/MIGRATION_AGENT_PROMPT.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "96d6c5fb9d03773c403546490b6635412dbbbbe666fbb67c5bfd0772e3960cbd",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/ai/prompts/V34_AGENT_TASK_PROMPT.md",
+      "before_sha256": "78f5b6d43af4c162721af695d2adecfad37f65459419cd721b417ef572c24955",
+      "ownership": "compatibility",
+      "path": "ai/prompts/V34_AGENT_TASK_PROMPT.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "1862ede561b5b3dc8b2b736cc24a00a7e5c3f5dc7815d31ffc90d56b1160abf7",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/docs/governance/AGENT_RUN_CONTRACT.md",
+      "before_sha256": "9ecae4a6cf9a7b960f0e6650ab6dc956da3dba507e96488e11fc9d34e7ce64af",
+      "ownership": "starter_kit",
+      "path": "docs/governance/AGENT_RUN_CONTRACT.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "231b00101586b85c55e985ddc8bd81c5ea274fdd3700f43460618be914718663",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/docs/governance/CHANGE_CONTROL.md",
+      "before_sha256": "e6268f399d27a53ffbb95f70b67390c515d18b4ce0ebd3dc230c9c53393967a0",
+      "ownership": "starter_kit",
+      "path": "docs/governance/CHANGE_CONTROL.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "52f7a70ab04158d77e160031ddd0893fdbc9414ba7def710de4085e3f59f8e42",
+      "backup": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/backup/docs/governance/ROLLBACK_PLAN.md",
+      "before_sha256": "fead5329b606118dc3c0eb86b992db5cfbf99782d794dd492be7e4a59f158cd1",
+      "ownership": "starter_kit",
+      "path": "docs/governance/ROLLBACK_PLAN.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "7dd114248b5b1dda1f1e080e47b09f25234d16e80497ea9de0a206a7d9195e49",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "00_MIGRATION_KICKOFF.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "e74f1ffedab7678232f921e912103cd1aa14d8b7c707ba5f95b7c36cd1e33b0d",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "ADOPTION_POLICY.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "c1844a124506e055a24a113da7dc0724ec4890fde3082716de31c8888696f910",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "MIGRATION_REPORT.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "decc46d1262547d2dd39bf897f8390b5e4178eb03382b1027c956dc3f8f7dba8",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/project-profile.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "4ef93ff3e26f4cd7527012e972d8f560c043060e23eef7232c88a9afb3097d17",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/validation-contract.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "4996d72522dd7f391d9442ddafd3b842c8cf1c3456ab55eeeae5b6119e3483e1",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/capability-state.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "ad5caa00e37b7b47fe406c85e8f1d34ae83c3f59725ef9eb98ba7e32f63adfdd",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/run-types.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "285313c2caee46b20bda04abf2f61fa700f71a37ff01290b31692e8e056718a1",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/version-state.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "beb15294cb2c6d5a8373bc4a6235488f65a6c22fa2e7b8f49c1ee442048c6015",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/model-registry.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "168267cbe8e6fa89b8b1cce9596909892bc4e5df452c1a7a243839663e8f62eb",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/source-authority.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "a981933cc168e122914978427728ceea21a861031876d9ea2aec419ab727a755",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/provenance.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "1c41c10f440f6fd0c2f6b1fba051cdd7e25b1366d5346f16ec13d2e62f8dd129",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/license-policy.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "2edb8069a1a04e2e4415bebbe5bf0a352bd6f6529939fb3aeefd276e98c834d9",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/sbom.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "3740eb26c092984ca5d6be19637763c6fca22063bb7c349698b2d0085f263fe2",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/build-provenance.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "fb6012be8098d25369977eecf7720bafc3ebfc0afd63b1b7e05e9a98a776a584",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/security-exceptions.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "b967e3cf47a4181d6e2ad6cb82873e8cdbd1dbe5326bcad8883cfa700dda6c79",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/privacy-classification.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "c87a91e2984191f18c435c1f13c1187130c1a7c141ff13549f7c5248e3b761b9",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/threat-model.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "3f466009ee31dcefddf794564383173221abbc7188d41bd1450a9fededd815a5",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/security-evidence.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "01d17e11ce874f81bcce44bc72a785d25035a40a5cde1942ecf84a7c7088cb1e",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/manifest.json"
+    }
+  ],
+  "completed_at": "2026-08-20T03:20:03.518350+00:00",
+  "conflicts": [
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/AGENTS.md",
+      "candidate_sha256": "9f7dce8f24b5a04af2fd6c40c836b5b37a7d41137c1d0d932206de1df6046eeb",
+      "existing_sha256": "ff7f9a8f1f77a4be05925a9ac7bc2c62bba28293b91754aa99f5046592675ec6",
+      "path": "AGENTS.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/CLAUDE.md",
+      "candidate_sha256": "e73025bba0ac80abea1c5e475defe7841f79679ce863d7b6d5fdb841842f7087",
+      "existing_sha256": "eaabc060345aa439d229753aba7c8638b32a677718f7f019c8860d278138719b",
+      "path": "CLAUDE.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/AGENT_RUN_LOG.md",
+      "candidate_sha256": "dab935da04f9a0e4cc40cca560ab1ded25e7e88f21c412f034abf63895e2b816",
+      "existing_sha256": "31f400ffe9210ee8af531f2cfd242122abc094f228371c40842743caba214357",
+      "path": "docs/governance/AGENT_RUN_LOG.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/COMPATIBILITY_MATRIX.md",
+      "candidate_sha256": "21031a2c40fc7654b0362d065da5070676af0c68618556280c69c971af73c2a0",
+      "existing_sha256": "3f1018c96be93ddd0093f41b4bb80539e5837295662c895fa4d0780f146388d6",
+      "path": "docs/governance/COMPATIBILITY_MATRIX.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/FIRST_SESSION_REHEARSAL.md",
+      "candidate_sha256": "76ef66950caac570db81e5b5d99ce1f9ce7d938e99b4b2c733ec0855a662e5bd",
+      "existing_sha256": "b0a8dec62add40a396ec42e3e5941076e12cd52431632309040c03ded70b9870",
+      "path": "docs/governance/FIRST_SESSION_REHEARSAL.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/PROJECT_CLASSIFICATION.md",
+      "candidate_sha256": "2252848a530e0061f8da31ac70801825a78aefe01096538905d2323a080f3343",
+      "existing_sha256": "ab0f164b8e187eff2afd3d92c8fb9d7ebeaec9af17d216e377b901801910f017",
+      "path": "docs/governance/PROJECT_CLASSIFICATION.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/PROJECT_RISK_REGISTER.md",
+      "candidate_sha256": "f538b5cceddb3c6a2dc46bb80af44a0264ddd9afaa5e84be71e399119a32c218",
+      "existing_sha256": "db92ef9229aadc00bfb1a1e8dc6d46df22f3b11cd6b982263ba3322119cac53e",
+      "path": "docs/governance/PROJECT_RISK_REGISTER.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/RELEASE_GATE.md",
+      "candidate_sha256": "66d3c9ae4b42f13272ccf85e3a48727ca62e2d9dad0a0768e63f21b481a93e74",
+      "existing_sha256": "75332bcbb14ca6b2614f1b5cde5d3501a6cc165c43db8a93224e1d9d9bb47512",
+      "path": "docs/governance/RELEASE_GATE.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/REPOSITORY_HANDOFF_CONFIG.md",
+      "candidate_sha256": "9f5ed19ce5ca758ded63264c8544262085228480cfddda7b7d665789974d7e32",
+      "existing_sha256": "4f865baf6251ea46e29a2bb46ace157d905ff070bfc3534cce343e46f327ee9b",
+      "path": "docs/governance/REPOSITORY_HANDOFF_CONFIG.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/REPO_HEALTH_CHECK.md",
+      "candidate_sha256": "ad51f7bdca430f8cc3b90770b3e84acaa31e8e2e0ce07fe6837f4005086d9029",
+      "existing_sha256": "5632c49e7ef9388e40cd25c53392ddabc4c9b893f694aef0631b52887a539fb5",
+      "path": "docs/governance/REPO_HEALTH_CHECK.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/SECURITY_BASELINE.md",
+      "candidate_sha256": "e1c0a9fc4f22996c51a1490053682719b76ee089942151dfc6e760d0fe5cbcc4",
+      "existing_sha256": "f93ffe33a344a5c99c54ab3599cd74ae90a4fdbe1e88578022ed2180a178e634",
+      "path": "docs/governance/SECURITY_BASELINE.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/governance/TEST_STRATEGY.md",
+      "candidate_sha256": "90756cbbd56d9f3e903ac581916ad62304f55e31d340e15e420a440f9504c42d",
+      "existing_sha256": "a114e22c1d69476a1142a4a060a8e1f0c59375b85f80ba80e7ab20bf8abc8a80",
+      "path": "docs/governance/TEST_STRATEGY.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/project/ARCHITECTURE.md",
+      "candidate_sha256": "975b321a64a28be51272a56a18018c51f366d4e1edcb3c1b201d88b232d5b60a",
+      "existing_sha256": "dd6c41a990af6551f48d27a5a3a1be8059507eb6f22a4bd9f7522670350e5a40",
+      "path": "docs/project/ARCHITECTURE.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/project/CHANGELOG.md",
+      "candidate_sha256": "9eebff59bd42f35e1c993ad6dd577ded7d94ce8bb75ef6a066bbebe304b5e836",
+      "existing_sha256": "e88f6f3bf4e31815bd57d064d6d5e42597972941b6513a0148e17d50525256c6",
+      "path": "docs/project/CHANGELOG.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/project/COMMIT_NOTES.md",
+      "candidate_sha256": "fb33c20d4e7df78acff2be1cdc85183504957154b942c2fe1ea07d25759e3145",
+      "existing_sha256": "77718841e97e06d5098efb880c52b64c28b60df8cbe3212eeeaa7e75d251d695",
+      "path": "docs/project/COMMIT_NOTES.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/project/CONTEXT.md",
+      "candidate_sha256": "373cc9fb821d890ec35126a417827d744d0f31c2e3aa1d601cbd971ab03fca06",
+      "existing_sha256": "4bf823401bce00edaf5b2b64be6fca5cbcd60cc90534db080a86b0aa2377f7bd",
+      "path": "docs/project/CONTEXT.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/project/DECISION_LOG.md",
+      "candidate_sha256": "53b04f9c38ba91d684344dfa66f7483c823b8df373923575db273b272f8acf20",
+      "existing_sha256": "aeef9b1f867e29bbc0022082f3807605a04dfdf07fb81b3d2c14bd91b3e57023",
+      "path": "docs/project/DECISION_LOG.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/project/PROJECT_BRIEF.md",
+      "candidate_sha256": "8fe2675e0640b30bd28ca93ba3979f5ee04c55e268d306ce8897c8ed4a6e8e30",
+      "existing_sha256": "b63976c9541a1e5d7c58fc15c0748e9335b014f0585fac71b5d292e9ccd52877",
+      "path": "docs/project/PROJECT_BRIEF.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/project/RELEASE_NOTES.md",
+      "candidate_sha256": "172b5f7ca0ffb321a41734e1192035ab555cbd691070b58bab6cc188d8725947",
+      "existing_sha256": "f2c829582fa575fe25e982321d0fdc64270e2f3a6a36a3fa3bc48d7c46fde295",
+      "path": "docs/project/RELEASE_NOTES.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/project/ROADMAP.md",
+      "candidate_sha256": "8ebe5faf4cfdd2ab056b5d23d88b1ae508da8e14285c96a62111194d109f2c05",
+      "existing_sha256": "46ba0a9f2c970655aa483eb76446be0198988ac5f323cc18aed98ac9dc4630bd",
+      "path": "docs/project/ROADMAP.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/fe77c849-c844-4d8f-9949-0f9b4b910aa8/conflicts/docs/project/STATUS.md",
+      "candidate_sha256": "12262d1f0192e6aa5576de9c4940151ae58090c751746033c6fe0dd34dc68571",
+      "existing_sha256": "39b47d25dec17bc3331108e288f2311a06f6a94f68c00de9e5739186eef12417",
+      "path": "docs/project/STATUS.md"
+    }
+  ],
+  "kind": "migration",
+  "plan_id": "692159d06369f3fcf59543e460ff2b9a39865c22cae88b740781198a13e51838",
+  "run_id": "fe77c849-c844-4d8f-9949-0f9b4b910aa8",
+  "schema_version": "1.0",
+  "started_at": "2026-08-20T03:20:03.418057+00:00",
+  "status": "completed"
+}
