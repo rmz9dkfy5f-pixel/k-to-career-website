@@ -156,16 +156,33 @@ Recorded because this was the tooling's first real-repository run:
 - Git-level: all work is confined to `chore/migrate-starter-kit-v3.7`. Until that branch is merged,
   production is unaffected — do not merge, and optionally delete the branch.
 
+## Follow-Up Completed — 2026-08-20
+
+All four next actions were subsequently authorized and executed:
+
+1. **Merged.** PR #6 squash-merged to `main` as `321404c`. Site content verified byte-identical
+   across the merge, so the Pages republish was a no-op for visitors.
+2. **Four web-quality modules enabled** — `accessibility`, `seo`, `web_performance`,
+   `browser_matrix` (PR #7). Each adds a policy document under `docs/operations/`.
+   **`visual_regression` was deliberately not enabled**: it is the one module of the five whose
+   evidence contract (`visual_regression_review_record`) this repository cannot honestly satisfy,
+   since it has no screenshot-baseline or image-diff tooling and no build step to produce one.
+   Enabling a gate that can never be met would manufacture a permanent unmet obligation — the
+   opposite of what the gate is for. Revisit if visual-diff tooling is ever adopted.
+3. **Validation contract populated** (PR #7) with two manual checks — `static_site_http_smoke`
+   (blocking, recorded passed with its real result) and `browser_visual_review` (non-blocking,
+   pending a human). `quality --execute` now reports the specific
+   `manual_check_unverified: browser_visual_review is pending` instead of the generic
+   `no_quality_checks`, which is a truthful improvement rather than a silenced warning.
+4. **Tooling findings reported** to the Starter Kit project — see the AntBrainOS vault
+   `03_PROJECTS/Backlog/Project_Starter_Kit/DECISION_LOG.md`.
+
 ## Next Action
 
-1. Review the migration branch. **Merging is a production deployment** — Pages publishes `main` — and
-   requires its own separate explicit authorization, which this migration did not carry.
-2. Decide whether to enable any of the five new v3.7 module clusters (container/cloud,
-   deployment/promotion, data reliability, observability/reliability, web quality). Explicitly out of
-   scope here; the web-quality cluster is the plausible candidate for this repository.
-3. Consider populating the validation contract with the manual browser check, to clear the
-   `no_quality_checks` warning honestly.
-4. Report the tooling findings above to the Starter Kit project.
+1. Perform the pending `browser_visual_review` manual check and record its result in
+   `.starter-kit/validation-contract.json`.
+2. Consider `visual_regression` only if image-diff tooling is adopted (see above).
+3. Consider a release tag once the outstanding manual check is recorded.
 
 ---
 

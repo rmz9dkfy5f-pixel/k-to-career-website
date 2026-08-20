@@ -7,6 +7,15 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 ## [Unreleased]
 
 ### Added
+- Enabled four v3.7 **web-quality modules** — `accessibility`, `seo`, `web_performance`,
+  `browser_matrix` — each adding a policy document under `docs/operations/`. All four are declared
+  `optional_modules` for the `web_application` profile and satisfy their `required_signals`
+  (`all_of: ["web"]`).
+- Populated `.starter-kit/validation-contract.json` with two manual checks, replacing the generic
+  `no_quality_checks` warning with named, actionable ones: `static_site_http_smoke` (blocking,
+  recorded **passed** with its 2026-08-20 result) and `browser_visual_review` (non-blocking,
+  **pending** a human). Manual checks — not executable ones — are the honest form here, since this
+  repository has no test runner, linter, or build tool.
 - Project Starter Kit upgraded **V3.4 → v3.7.0** (kit tag `v3.7.0`, commit `b172bc6`). Adds eight
   `starter-*` skills (session start/closeout, module management, release evidence, execution,
   migration, production readiness, context-eval), mirrored across `.claude/skills/` and

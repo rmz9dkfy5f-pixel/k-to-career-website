@@ -27,12 +27,7 @@
     "v34-production-readiness",
     "v34-context-eval-loop"
   ],
-  "enabled_modules": [
-    "accessibility",
-    "browser_matrix",
-    "seo",
-    "web_performance"
-  ],
+  "enabled_modules": [],
   "files": [
     {
       "modules": [],
@@ -256,7 +251,7 @@
       "path": ".starter-kit/manifest.json",
       "profiles": [],
       "required": true,
-      "sha256": "136bef2a02eaa56ecb78b8a6e970f2f09982b29323f20da89a9664b48ed2f994"
+      "sha256": "1eefaac323ff94cdcb23394beef583b0aac7a0e9191c455851c1f43231b3add5"
     },
     {
       "modules": [],
@@ -641,46 +636,6 @@
       "profiles": [],
       "required": true,
       "sha256": "39b47d25dec17bc3331108e288f2311a06f6a94f68c00de9e5739186eef12417"
-    },
-    {
-      "modules": [
-        "accessibility"
-      ],
-      "ownership": "starter_kit",
-      "path": "docs/operations/ACCESSIBILITY_POLICY.md",
-      "profiles": [],
-      "required": true,
-      "sha256": "f8b4c7dfc621cfa8e3768965be50f74c8b35a0b748d8949599a1b47b50e3c9f3"
-    },
-    {
-      "modules": [
-        "seo"
-      ],
-      "ownership": "starter_kit",
-      "path": "docs/operations/SEO_POLICY.md",
-      "profiles": [],
-      "required": true,
-      "sha256": "ce1f3c64bc0358fcb8df65ac508ad36f1d05477a4e85c895895abfa163c6988e"
-    },
-    {
-      "modules": [
-        "web_performance"
-      ],
-      "ownership": "starter_kit",
-      "path": "docs/operations/WEB_PERFORMANCE_POLICY.md",
-      "profiles": [],
-      "required": true,
-      "sha256": "5899c9ee264642727af7067459f7d2c58979a92a654ad60811f5d08be1480132"
-    },
-    {
-      "modules": [
-        "browser_matrix"
-      ],
-      "ownership": "starter_kit",
-      "path": "docs/operations/BROWSER_MATRIX_POLICY.md",
-      "profiles": [],
-      "required": true,
-      "sha256": "3b03284a7566064f215bc83ae54bc431b4a1ce329b7b03bd5f99d1f912527a40"
     }
   ],
   "installation_mode": "migrated",

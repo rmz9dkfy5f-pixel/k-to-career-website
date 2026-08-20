@@ -1,0 +1,41 @@
+{
+  "approval": {
+    "apply_flag": true,
+    "approved_by": null,
+    "expected_plan_id": "c983f5ac65cd7ab673647b17337a6ca28463242a319870b8f62019547fef6e42"
+  },
+  "changes": [
+    {
+      "action": "created",
+      "after_sha256": "5899c9ee264642727af7067459f7d2c58979a92a654ad60811f5d08be1480132",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "docs/operations/WEB_PERFORMANCE_POLICY.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "a46da2bac9381ad355b7f023bb68539136315edecdbe1245a7d325841d6c947a",
+      "backup": ".starter-kit/migrations/52aade89-7af4-45de-b19d-65164bdab70b/backup/.starter-kit/capability-state.json",
+      "before_sha256": "4614fd6ee5a0e0209921ff4a25aa9912e9ba169b8e784702124b1efc0617a9a1",
+      "ownership": "generated",
+      "path": ".starter-kit/capability-state.json"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "372d0ef0c7fdfc35154642a9c66588b3ffe276017f308364e072d98e77fcdfe4",
+      "backup": ".starter-kit/migrations/52aade89-7af4-45de-b19d-65164bdab70b/backup/.starter-kit/manifest.json",
+      "before_sha256": "7ab8f91b085e697908cb13b883e2ab827bb6fe0edbbcd517a20afbd399fae870",
+      "ownership": "generated",
+      "path": ".starter-kit/manifest.json"
+    }
+  ],
+  "completed_at": "2026-08-20T05:24:23.123167+00:00",
+  "conflicts": [],
+  "kind": "module-enable",
+  "plan_id": "c983f5ac65cd7ab673647b17337a6ca28463242a319870b8f62019547fef6e42",
+  "run_id": "52aade89-7af4-45de-b19d-65164bdab70b",
+  "schema_version": "1.0",
+  "started_at": "2026-08-20T05:24:23.118700+00:00",
+  "status": "completed"
+}
