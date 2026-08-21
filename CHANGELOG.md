@@ -38,6 +38,16 @@ The format is based on keeping release notes clear, versioned, and easy to revie
   Machine table into the AntBrainOS vault; the repo file now points there instead of stating the
   values directly.
 
+### Fixed
+- Regenerated `favicon-32.png` and `apple-touch-icon.png` from a square crop of the logo's
+  graduation-cap glyph. The prior versions (added in `7961176`) squashed the full 3840×2160
+  landscape wordmark straight into square canvases, making the browser-tab icon illegible and
+  cropping the "to Career" text off the Apple touch icon. `favicon-32.png` is additionally
+  thresholded to pure black/white — LANCZOS-resampled anti-aliasing left the thin line-art strokes
+  a washed-out gray at 32×32, undermining the fix's own point; the 180×180 touch icon has enough
+  resolution to stay crisp without thresholding. `index.html`'s icon `<link>` tags, paths,
+  and MIME type were already correct — this only replaces the two image files.
+
 ### Notes
 - **No site file changed.** `index.html`'s SHA-256 was verified byte-identical to `main` after the
   migration; `assets/` untouched. Local HTTP smoke test returned `200` for `/`, favicon,
