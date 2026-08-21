@@ -6,8 +6,9 @@
 # ──────────────────────────────────────────────────────────────
 
 REPO_NAME="k-to-career-website"
-SNAPSHOT_DIR="/Users/ant/Documents/RepoBackups/$REPO_NAME"
-MANIFEST="/Users/ant/Documents/RepoBackups/$REPO_NAME/manifest.csv"
+# Override with K2C_SNAPSHOT_DIR to use a different local destination.
+SNAPSHOT_DIR="${K2C_SNAPSHOT_DIR:-$HOME/Documents/RepoBackups/$REPO_NAME}"
+MANIFEST="$SNAPSHOT_DIR/manifest.csv"
 MANIFEST_HEADER="snapshot_id,commit_hash,short_hash,commit_date,branch,file_path,snapshot_label,commit_subject,exported_file"
 
 # HTML files to track (repo-relative paths)

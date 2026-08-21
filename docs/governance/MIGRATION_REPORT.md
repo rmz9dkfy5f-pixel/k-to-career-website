@@ -10,7 +10,7 @@ versions.
 Migrated Project Starter Kit **V3.4 → v3.7.0**. Single direct jump: the kit's compatibility floor is
 fixed at `3.4.3` and does not advance between releases, so there are no intermediate version hops.
 
-Kit source: `antbrainos-project-starter-kit` at tag `v3.7.0` (dereferenced commit
+Kit source: the private Project Starter Kit source repository at tag `v3.7.0` (dereferenced commit
 `b172bc6bedb9064aafeaf159d08649ee8cbfcc2a`), run from a detached worktree pinned to that tag so the
 kit's own `main` checkout (then mid-v3.8 work at `4dff24c`) was never disturbed.
 

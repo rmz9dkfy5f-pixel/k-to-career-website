@@ -14,7 +14,10 @@ file had fallen one release behind)
 ## Repository Identity
 
 - Project: K to Career Website
-- Repository root: `/Users/ant/Projects/GitHub/k-to-career-website`
+- Repository root: see AntBrainOS vault
+  `03_PROJECTS/Active/K_to_Career_Website/REPOSITORY_HANDOFF_CONFIG_LOCAL.md` — moved out of this
+  public repo 2026-08-20 to close risk R-006 (absolute local filesystem paths were world-readable
+  via GitHub Pages)
 - Branch at pointer creation: `main`
 - HEAD at pointer creation: `d6d14b0e45e8231ef86003dbee7da7b662a26b83`
 - Tag at pointer creation: `v1.4.1`
@@ -50,8 +53,10 @@ full record. This file will be refreshed again once that branch merges.
 ## Routing Note
 
 Do not use the vault-level `00_START_HERE/AGENT_HANDOFF.md` as K to Career provenance unless its
-newest applicable entry names this repository or the exact path
-`/Users/ant/Projects/GitHub/k-to-career-website`.
+newest applicable entry names this repository — "K to Career Website" — or the canonical remote
+`https://github.com/rmz9dkfy5f-pixel/k-to-career-website.git`. As of 2026-08-20 this file no longer
+publishes the repository's local filesystem path (risk R-006); route by project name or remote URL
+instead.
 
 If this file conflicts with the repository Git state, treat Git as authoritative for code state and
 lower provenance confidence until the vault project records are reconciled.

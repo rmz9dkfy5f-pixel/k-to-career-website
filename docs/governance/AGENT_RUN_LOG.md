@@ -107,8 +107,9 @@ Validation run: a full `REPO_SESSION_START_RECOVERY_AUDIT.md` pass (Verdict `PAS
 previous-agent provenance Confirmed as Codex); `git ls-remote --heads` after push;
 `git rev-parse v1.4.1^{commit}` after tagging, confirmed against the remote tag.
 Result: PR #4 squash-merged as `d6d14b0`, tagged `v1.4.1`, canonical snapshot created and
-SHA-256-verified (71/71 files) at
-`/Users/ant/WorkSync/Projects/RepoBackups/K_to_Career_Website/v1.4.1/`.
+SHA-256-verified (71/71 files) at the snapshot destination recorded in the AntBrainOS vault
+`03_PROJECTS/Active/K_to_Career_Website/REPOSITORY_HANDOFF_CONFIG_LOCAL.md` (not published in this
+public repo — risk R-006, addressed 2026-08-20).
 Risks: None new. No CI/status checks configured on this repo (static site, no build); PR showed
 `mergeStateStatus: CLEAN` before merge.
 Next action: recorded as "lock the primary website objective" — see DECISION_LOG.md, actioned in
