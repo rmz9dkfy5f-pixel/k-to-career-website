@@ -8,8 +8,8 @@ records remain in the AntBrainOS vault.
 
 ## Last Updated By
 
-Claude Code — 2026-08-19 (Claude Code in VS Code; refreshed to match actual `main` state, which this
-file had fallen one release behind)
+Claude Code — 2026-08-20 (Claude Code in VS Code; refreshed to match actual `main` state, which this
+file had fallen three commits and one full release behind)
 
 ## Repository Identity
 
@@ -19,8 +19,9 @@ file had fallen one release behind)
   public repo 2026-08-20 to close risk R-006 (absolute local filesystem paths were world-readable
   via GitHub Pages)
 - Branch at pointer creation: `main`
-- HEAD at pointer creation: `d6d14b0e45e8231ef86003dbee7da7b662a26b83`
-- Tag at pointer creation: `v1.4.1`
+- HEAD at pointer creation: `813b62f90fae5760d4d552ad3ae342436b964914`
+- Tag at pointer creation: this push will be tagged `v1.5.1`, applied in Section 7 of the session-end
+  super prompt (not yet an actual git ref as of this commit)
 - Canonical remote: `https://github.com/rmz9dkfy5f-pixel/k-to-career-website.git`
 
 ## Canonical Continuity Records
@@ -40,15 +41,21 @@ This file may summarize provenance for startup routing, but it must not become a
 
 ## Latest Project-Specific Provenance
 
-The latest confirmed K to Career project state is `main` at `d6d14b0`, tagged `v1.4.1`. The matching
-vault records say the v1.4.1 merge, tag, and snapshot session was run in Claude Code on 2026-08-04
-after a repository session-start recovery audit. Treat that as the latest *merged-to-main*
-provenance unless newer K to Career repo or vault records say otherwise.
+The latest confirmed K to Career project state, as of this pointer's refresh, is `main` at
+`813b62f`, about to be tagged `v1.5.1` (Section 7 of this session's push workflow). Prior tagged
+state was `v1.5.0` at `53f5d2d` (2026-08-20, Starter Kit v3.7.0 migration + web-quality modules).
 
-A 2026-08-19 Claude Code session (documentation-freshness pass; locked the primary website objective
-to students & families) is committed on branch `chore/doc-freshness-and-audience-lock`, not yet
-merged to `main` — pending explicit push/PR/merge authorization. See vault `SESSION_LOG.md` for the
-full record. This file will be refreshed again once that branch merges.
+This 2026-08-20 Claude Code session, run directly on `main` (no feature branch — a deviation from
+this repo's usual PR-based pattern, flagged during session-end): a repository session-start
+recovery audit (Verdict PASS WITH CONDITIONS, previous-agent provenance Confirmed as this same
+agent/session); the user-confirmed R-006 remainder fix (`346aa90` — scrubbed four leftover
+absolute-path instances plus a fifth a code-review pass caught in `scripts/git-hooks/post-commit`,
+corrected R-002's wrong location, redacted the private Starter Kit repo's name); a precision
+correction to that same fix's own overclaimed grep scope (`76d659d`); and a favicon/apple-touch-icon
+regeneration (`813b62f`) fixing a real, pre-existing bug found while investigating an unrelated
+report that turned out to be a local Live Server artifact — the prior icons squashed the full
+landscape wordmark into square canvases, illegible at actual size. See vault `SESSION_LOG.md` for
+the full record of all three.
 
 ## Routing Note
 
