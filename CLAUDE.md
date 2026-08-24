@@ -7,7 +7,7 @@ K to Career is a STEM learning and career-readiness ecosystem serving learners f
 
 Do not invent strategy decisions that the repository does not support. Where a decision is still open, preserve flexibility rather than assuming an answer.
 
-**Primary website objective — locked 2026-08-19:** students and families are the first-priority audience. This governs sequencing and emphasis (which message leads, which call to action is primary) — it does not override the audience-separation rule below; industry partners and donors/volunteers keep their own distinct paths and CTAs. Decided explicitly by the project owner; see AntBrainOS vault `03_PROJECTS/Active/K_to_Career_Website/DECISION_LOG.md` for the full record. Site content/CTA-hierarchy changes to reflect this are a separate, not-yet-authorized pass — this decision is documentation only.
+**Primary website objective — locked 2026-08-19:** students and families are the first-priority audience. This governs sequencing and emphasis (which message leads, which call to action is primary) — it does not override the audience-separation rule below; industry partners and donors/volunteers keep their own distinct paths and CTAs. Decided explicitly by the project owner; see AntBrainOS vault `03_PROJECTS/Active/K_to_Career_Website/DECISION_LOG.md` for the full record. Site content/CTA-hierarchy changes to reflect this were authorized and implemented 2026-08-24 (`index.html`'s Hero now leads Mission & Vision in document order; Students/Families entry cards carry a "Start Here" badge) — see `CHANGELOG.md` and this repo's `plans/` directory for the change record.
 
 ## Canonical Repo Structure
 Treat this structure as the source of truth for where information belongs:
