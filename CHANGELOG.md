@@ -27,6 +27,12 @@ The format is based on keeping release notes clear, versioned, and easy to revie
   evidence-backed (the site has no forms, inputs, analytics, trackers, database, or backend).
 
 ### Changed
+- Implemented the locked students-&-families audience-priority decision in `index.html`: the Hero
+  section (with its student/family-facing primary CTA) now leads Mission & Vision in document
+  order, instead of following it. The Students and Families cards in the Audience grid, and the
+  combined Students & Families card in Get Involved, now carry a small "Start Here" badge. The
+  Industry & STEM Professionals, Educators, and Donors & Supporters paths are unchanged in
+  content, order, and styling — audience separation is preserved per `CLAUDE.md`.
 - `docs/governance/PROJECT_CLASSIFICATION.md` now emits the kit's canonical machine token
   `git_backed_with_deployment` on its `Classification:` line, with the prose form preserved
   alongside. The kit's auto-detection had reported the less accurate `git_backed_with_remote`,
