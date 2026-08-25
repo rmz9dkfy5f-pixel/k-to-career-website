@@ -27,6 +27,11 @@ The format is based on keeping release notes clear, versioned, and easy to revie
   evidence-backed (the site has no forms, inputs, analytics, trackers, database, or backend).
 
 ### Changed
+- Enabled GitHub branch protection on `main`: force-pushes and branch deletion are now blocked
+  (`enforce_admins: true`, `allow_force_pushes: false`, `allow_deletions: false`). No PR-review
+  requirement was added — this repo has no CI and is solo-maintained, so `gh pr merge` and the
+  existing PR-based workflow are unaffected. See `docs/governance/REPOSITORY_HANDOFF_CONFIG.md`'s
+  Safety Boundaries section.
 - Implemented the locked students-&-families audience-priority decision in `index.html`: the Hero
   section (with its student/family-facing primary CTA) now leads Mission & Vision in document
   order, instead of following it. The Students and Families cards in the Audience grid, and the
