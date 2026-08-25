@@ -44,6 +44,12 @@ The format is based on keeping release notes clear, versioned, and easy to revie
   Machine table into the AntBrainOS vault; the repo file now points there instead of stating the
   values directly.
 
+### Removed
+- Deleted `Image 4-17-26 at 12.37 AM.PNG` (732 KB), a tracked, unreferenced binary at the repo
+  root that was publicly served by GitHub Pages for no reason. Its git blob hash was confirmed
+  identical to `assets/images/logo.png`'s before removal — a true byte-for-byte duplicate, not
+  just a same-size coincidence. Resolves risk R-005.
+
 ### Fixed
 - Regenerated `favicon-32.png` and `apple-touch-icon.png` from a square crop of the logo's
   graduation-cap glyph. The prior versions (added in `7961176`) squashed the full 3840×2160
