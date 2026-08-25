@@ -14,9 +14,9 @@
       "blocking": false,
       "description": "Open index.html in a real browser and confirm layout, navigation, and the audience CTAs render correctly with no console errors, at desktop and mobile widths. Required because this repository has no test runner, linter, or build tool - see docs/governance/TEST_STRATEGY.md.",
       "id": "browser_visual_review",
-      "person": null,
-      "result": null,
-      "status": "pending",
+      "person": "CyberAntAI",
+      "result": "2026-08-24, checked the live site (https://rmz9dkfy5f-pixel.github.io/k-to-career-website/) after the v1.6.0 hero-priority reorder: hero renders first below nav, Mission & Vision follows it, Start Here badges render correctly on the Students, Families, and combined Students & Families cards, other audience cards unchanged, no layout or console issues reported at desktop or mobile widths.",
+      "status": "passed",
       "target": "index.html"
     }
   ],
