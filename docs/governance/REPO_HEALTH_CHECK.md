@@ -52,11 +52,11 @@ Production Readiness is incomplete because no compatibility testing has ever bee
     findings below are carried forward unchanged from 2026-07-29 and may themselves be stale.
   - **R-006 resolved 2026-08-19.** The public-path-exposure risk referenced under Security baseline
     is now closed — see `PROJECT_RISK_REGISTER.md` and `SECURITY_BASELINE.md`.
-  - **Unreferenced binary at repo root.** `Image 4-17-26 at 12.37 AM.PNG` is 732 KB, tracked, and
-    referenced by zero files (`git grep` returns nothing). It appears to be a duplicate of
-    `assets/images/logo.png`, which is the same byte size. Because GitHub Pages serves this
-    repository's root, it is publicly reachable. Recorded, not removed — deleting a tracked binary is
-    its own change with its own review.
+  - **Unreferenced binary at repo root — resolved 2026-08-24.** `Image 4-17-26 at 12.37 AM.PNG` was
+    732 KB, tracked, and referenced by zero files (`git grep` returned nothing). Its git blob hash
+    was confirmed identical to `assets/images/logo.png`'s, not just matching by coincidental file
+    size — it was a true byte-for-byte duplicate. Removed; see `PROJECT_RISK_REGISTER.md`'s R-005
+    resolution and `CHANGELOG.md`.
   - **Documentation drift in `docs/workflow/branching-model.md`.** Its "Known Follow-Up" section
     still says the `v1/`, `v2/`, `v3/` folders and tracked zips "still exist on `main`". That cleanup
     landed in `7f2fdfa` and the statement is now false. Deferred deliberately — out of scope for a
