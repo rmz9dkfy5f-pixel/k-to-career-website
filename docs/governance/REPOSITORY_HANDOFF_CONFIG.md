@@ -82,7 +82,11 @@ a deployment target **exists**, and deploying to it is **not** an authorized age
   see this repo's own `CLAUDE.md`)
 - Secret-bearing files: none tracked in this repo
 - Prohibited actions: force-push to `main`, rewriting published history, fabricating impact
-  metrics/partnerships/testimonials (per `CLAUDE.md`'s Content Rules)
+  metrics/partnerships/testimonials (per `CLAUDE.md`'s Content Rules). As of 2026-08-25, the
+  force-push and branch-deletion prohibitions on `main` are also platform-enforced via GitHub
+  branch protection (`enforce_admins: true`, `allow_force_pushes: false`,
+  `allow_deletions: false`) — not just agent policy. No PR-review requirement was added; PR-based
+  merging via `gh pr merge` is unaffected.
 - Commit/push authorization rule: authorized per the Repo Push Super Prompt's authorization envelope
 - Tag/release authorization rule: authorized_by_super_prompt
 - Deploy/merge authorization rule: requires_separate_explicit_authorization (currently: no
