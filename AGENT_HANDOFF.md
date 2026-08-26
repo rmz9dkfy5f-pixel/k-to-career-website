@@ -62,6 +62,14 @@ Repo Push/Session-End Super Prompt's mandatory Final Backfill step.
 
 See vault `SESSION_LOG.md` for the full record of every push above.
 
+## Recommended Next Task
+
+User-confirmed (2026-08-26 session-end closeout, `REPO_SESSION_START_RECOVERY_AUDIT`-style Step
+4a next-task gate, recorded verbatim): **merge PR #12** (`chore/backfill-agent-handoff-2026-08-26`
+— this very backfill). Ranked above it but not chosen: confirming client launch/hosting status;
+gathering real impact proof points; fixing R-008's stale `docs/workflow/branching-model.md`
+wording. Do not substitute a different starting point without re-confirming.
+
 ## Routing Note
 
 Do not use the vault-level `00_START_HERE/AGENT_HANDOFF.md` as K to Career provenance unless its
