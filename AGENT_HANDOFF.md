@@ -8,9 +8,9 @@ records remain in the AntBrainOS vault.
 
 ## Last Updated By
 
-Claude Code — 2026-08-26 (Claude Code in VS Code; backfilled per the Repo Push/Session-End Super
-Prompt's mandatory Final Backfill step — this file had fallen four tags and four PRs behind actual
-`main` state, describing 2026-08-20/`v1.5.1` as current)
+Claude Code — 2026-08-26 (Claude Code in VS Code; correcting this file's own "Recommended Next
+Task" section, which went stale the moment the PR it named was merged — an object lesson in why
+this section exists at all)
 
 ## Repository Identity
 
@@ -20,8 +20,11 @@ Prompt's mandatory Final Backfill step — this file had fallen four tags and fo
   public repo 2026-08-20 to close risk R-006 (absolute local filesystem paths were world-readable
   via GitHub Pages)
 - Branch at pointer creation: `main`
-- HEAD at pointer creation: `c9b9c18ee19bc37a3f8b7ea94185d2aec507e83b`
-- Tag at pointer creation: `v1.6.3` — applied and pushed, remote independently verified
+- HEAD at pointer creation: `a812475e3e71913a8f5686e371b01fbc36f5076f`
+- Tag at pointer creation: `v1.6.3` — points one commit behind current HEAD (at `c9b9c18`); this
+  and the previous commit (`a812475`, the `AGENT_HANDOFF.md` backfill itself) are the super
+  prompt's own trailing bookkeeping, explicitly exempt from needing a new tag — see Section 7 step
+  12's loop guard
 - Canonical remote: `https://github.com/rmz9dkfy5f-pixel/k-to-career-website.git`
 
 ## Canonical Continuity Records
@@ -60,15 +63,18 @@ this repo has no CI and is solo-maintained) — applied directly via the GitHub 
 read-back before recording (PR #11, `c9b9c18`, tagged `v1.6.3`). This backfill itself, per the
 Repo Push/Session-End Super Prompt's mandatory Final Backfill step.
 
-See vault `SESSION_LOG.md` for the full record of every push above.
+See vault `SESSION_LOG.md` for the full record of every push above, including PR #12
+(`a812475`), which merged this same file's initial backfill — the very thing this correction is
+patching.
 
 ## Recommended Next Task
 
-User-confirmed (2026-08-26 session-end closeout, `REPO_SESSION_START_RECOVERY_AUDIT`-style Step
-4a next-task gate, recorded verbatim): **merge PR #12** (`chore/backfill-agent-handoff-2026-08-26`
-— this very backfill). Ranked above it but not chosen: confirming client launch/hosting status;
-gathering real impact proof points; fixing R-008's stale `docs/workflow/branching-model.md`
-wording. Do not substitute a different starting point without re-confirming.
+User-confirmed (2026-08-26 session-end closeout, Step 4a gate re-run after PR #12 merged and
+invalidated the prior pick, recorded verbatim): **confirm client launch status and intended
+hosting platform** — open since 2026-06-25 (custom domain `www.ktocareer.org` vs. GitHub Pages;
+see `docs/deployment/HOSTING_NOTES.md`). Ranked below it, not chosen: gathering real impact proof
+points; fixing R-008's stale `docs/workflow/branching-model.md` wording. Do not substitute a
+different starting point without re-confirming.
 
 ## Routing Note
 
