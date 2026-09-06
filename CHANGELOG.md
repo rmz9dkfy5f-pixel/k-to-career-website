@@ -7,6 +7,13 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 ## [Unreleased]
 
 ### Added
+- Project Starter Kit upgraded **v3.7.0 → v3.10.0** (kit tag `v3.10.0`, commit `e95c597`). No new
+  modules enabled (still `accessibility`, `seo`, `web_performance`, `browser_matrix` only — none of
+  the new AI/agent or adaptive-context module clusters apply to a static site with no AI use).
+  `CLAUDE.md`'s "V3.4 Agent Operating System" section and `AGENTS.md`'s Skills list — stale since
+  the prior 3.4.3→3.7.0 migration, since both files are project-owned and never auto-upgraded — were
+  hand-corrected to name the current `starter-*` skills instead of `v34-*`. Full record in
+  `docs/governance/MIGRATION_REPORT.md`.
 - Enabled four v3.7 **web-quality modules** — `accessibility`, `seo`, `web_performance`,
   `browser_matrix` — each adding a policy document under `docs/operations/`. All four are declared
   `optional_modules` for the `web_application` profile and satisfy their `required_signals`

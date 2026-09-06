@@ -13,8 +13,9 @@ Detailed workflows live in skills and docs so this file stays concise.
 structure, the content rules, the K to Career messaging rules, the planning standard, and the
 definition of done. **Read it before editing anything, whichever agent you are.**
 
-This file adds the V3.4 process layer on top. Where the two appear to disagree, `CLAUDE.md` wins —
-flag the discrepancy rather than resolving it silently.
+This file adds the Project Starter Kit process layer on top (currently v3.10.0 — see
+`.starter-kit/manifest.json` for the authoritative installed version). Where the two appear to
+disagree, `CLAUDE.md` wins — flag the discrepancy rather than resolving it silently.
 
 Three rules from `CLAUDE.md` are repeated here because violating them is unrecoverable:
 
@@ -34,7 +35,7 @@ committed here, including documentation, is world-readable.
 
 ## Agent Operating Rule
 
-For any non-trivial task, use the V3.4 loop:
+For any non-trivial task, use the Starter Kit loop:
 
 ```text
 Inspect → Plan → Change → Verify → Document → Gate → Decide
@@ -108,10 +109,17 @@ in the AntBrainOS vault for continuity records. Do not start writing project con
 
 Use these skills when available:
 
-- `v34-execution-loop` for implementation, bugfixes, refactors, repo cleanup, and audit remediation.
-- `v34-migration-loop` for migrating existing projects into V3.4.
-- `v34-production-readiness` for production readiness audits.
-- `v34-context-eval-loop` for prompt, context, eval, and failure-loop work.
+- `starter-execution-loop` for implementation, bugfixes, refactors, repo cleanup, and audit remediation.
+- `starter-migration-loop` for migrating this repository to a newer kit release.
+- `starter-production-readiness` for production readiness audits.
+- `starter-context-eval-loop` for prompt, context, eval, and failure-loop work.
+- `starter-module-management` for enabling, disabling, or reconfiguring optional capability modules.
+- `starter-release-evidence` for assembling release/tag evidence without publishing.
+- `starter-session-closeout` for closing a session with preserved validation/handoff evidence.
+- `starter-session-start` for recovering repository state at the start of a session.
+
+The four `v34-*` skills remain available as deprecated compatibility aliases through v4.0 — prefer
+the `starter-*` names above.
 
 ## Output Standard
 

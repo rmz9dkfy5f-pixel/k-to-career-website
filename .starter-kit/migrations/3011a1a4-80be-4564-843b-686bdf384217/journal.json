@@ -1,0 +1,232 @@
+{
+  "approval": {
+    "apply_flag": true,
+    "approved_by": "CyberAntAI",
+    "expected_plan_id": "d514b892d35eaec3f91e4cc364089ea9579b89909c30d1b5f3f71f01c9219ff3"
+  },
+  "changes": [
+    {
+      "action": "modified",
+      "after_sha256": "1907909d8d12f08199b37cf5e4960d72a0f4161b609513ac38d52efbfe5ab413",
+      "backup": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/backup/PROMPT_MODEL_SELECTION_GATE.md",
+      "before_sha256": "c1feb050d8d161e5b1548cf3afb5239e927f67867995d0c94d2a988b6719415b",
+      "ownership": "starter_kit",
+      "path": "PROMPT_MODEL_SELECTION_GATE.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "a3c635dd05c898af3906ad06b82d9bc6d4d37c691c5c1a6f6bddc20071319442",
+      "backup": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/backup/docs/governance/CONTEXT_ENGINEERING.md",
+      "before_sha256": "4f117134c1388dd8a14ffd59df8de7a605c054b84b79634f36efd3c9c05dad38",
+      "ownership": "starter_kit",
+      "path": "docs/governance/CONTEXT_ENGINEERING.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "68792e87751650b341d70f0a946b2b83cbb47f9541d36bb8adcb8f8a132c079a",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "00_MIGRATION_KICKOFF.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "5b890352e7c8a65aee244e312e3ccbadc920f5600e30ea828d4b0dba790e7471",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "ADOPTION_POLICY.md"
+    },
+    {
+      "action": "created",
+      "after_sha256": "1066c959a0d725c340e2e1c642ad57807585d4bc7d3aab1740603436ed6c88f1",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "MIGRATION_REPORT.md"
+    }
+  ],
+  "completed_at": "2026-09-06T00:41:45.501832+00:00",
+  "conflicts": [
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/AGENTS.md",
+      "candidate_sha256": "18925ef8c0215eb29b9357f6ddd749488a29b9409ab810ce0685e33505775c2b",
+      "existing_sha256": "ff7f9a8f1f77a4be05925a9ac7bc2c62bba28293b91754aa99f5046592675ec6",
+      "path": "AGENTS.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/ai/agents/SUBAGENT_ROLES.md",
+      "candidate_sha256": "abda33f6a53832da269eea9046d03701a0cc5485b8295f8e7b0310f70e4aa738",
+      "existing_sha256": "33f2bf6e4fd082569189592b26439e60921ad1ed9a7d1a2b4689a15c4f018d15",
+      "path": "ai/agents/SUBAGENT_ROLES.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/ai/prompts/V34_AGENT_TASK_PROMPT.md",
+      "candidate_sha256": "e0f8b57c50c2bbf716968611918df4590c9a5be1b0a68aff1b2298204029cf90",
+      "existing_sha256": "96d6c5fb9d03773c403546490b6635412dbbbbe666fbb67c5bfd0772e3960cbd",
+      "path": "ai/prompts/V34_AGENT_TASK_PROMPT.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/AGENT_RUN_LOG.md",
+      "candidate_sha256": "6fa3006e34785f36d4b33767d6be79fd278e748a8fa052a3361ed780a3eaeec5",
+      "existing_sha256": "a2dcae77ce430c2732253b859af48cfecec877aa830cc42a80c1df4f52e97c1a",
+      "path": "docs/governance/AGENT_RUN_LOG.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/COMPATIBILITY_MATRIX.md",
+      "candidate_sha256": "21031a2c40fc7654b0362d065da5070676af0c68618556280c69c971af73c2a0",
+      "existing_sha256": "3f1018c96be93ddd0093f41b4bb80539e5837295662c895fa4d0780f146388d6",
+      "path": "docs/governance/COMPATIBILITY_MATRIX.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/FIRST_SESSION_REHEARSAL.md",
+      "candidate_sha256": "91a98f9670158cdded7737ae52c544291366888d32fdabd6ba35b60d2ad5244e",
+      "existing_sha256": "b0a8dec62add40a396ec42e3e5941076e12cd52431632309040c03ded70b9870",
+      "path": "docs/governance/FIRST_SESSION_REHEARSAL.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/PROJECT_CLASSIFICATION.md",
+      "candidate_sha256": "fac66c382f1171a33cdefc34d4b4ba9a1ff9a1819c26e0c8a4d14ca910306cfc",
+      "existing_sha256": "9955a36481e194ffa59fc74292d5f8c39ee1f74f3ed58a754c2e0f36ebc7069b",
+      "path": "docs/governance/PROJECT_CLASSIFICATION.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/PROJECT_RISK_REGISTER.md",
+      "candidate_sha256": "f538b5cceddb3c6a2dc46bb80af44a0264ddd9afaa5e84be71e399119a32c218",
+      "existing_sha256": "79cfdc822e5a5c06ec4cb40e1ee60f5c99459e8be0238ca5b400fab316858766",
+      "path": "docs/governance/PROJECT_RISK_REGISTER.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/RELEASE_GATE.md",
+      "candidate_sha256": "66d3c9ae4b42f13272ccf85e3a48727ca62e2d9dad0a0768e63f21b481a93e74",
+      "existing_sha256": "75332bcbb14ca6b2614f1b5cde5d3501a6cc165c43db8a93224e1d9d9bb47512",
+      "path": "docs/governance/RELEASE_GATE.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/REPOSITORY_HANDOFF_CONFIG.md",
+      "candidate_sha256": "9f5ed19ce5ca758ded63264c8544262085228480cfddda7b7d665789974d7e32",
+      "existing_sha256": "035c47f57c97a9bd1290dd741c1ae244f5e696aed8169457ebcfd474bd4ac882",
+      "path": "docs/governance/REPOSITORY_HANDOFF_CONFIG.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/REPO_HEALTH_CHECK.md",
+      "candidate_sha256": "ad51f7bdca430f8cc3b90770b3e84acaa31e8e2e0ce07fe6837f4005086d9029",
+      "existing_sha256": "52cd46a0565e288e6712e5b86ff9dc1737c8046c060e66c53997ad3468cd067b",
+      "path": "docs/governance/REPO_HEALTH_CHECK.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/SECURITY_BASELINE.md",
+      "candidate_sha256": "e1c0a9fc4f22996c51a1490053682719b76ee089942151dfc6e760d0fe5cbcc4",
+      "existing_sha256": "f93ffe33a344a5c99c54ab3599cd74ae90a4fdbe1e88578022ed2180a178e634",
+      "path": "docs/governance/SECURITY_BASELINE.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/governance/TEST_STRATEGY.md",
+      "candidate_sha256": "90756cbbd56d9f3e903ac581916ad62304f55e31d340e15e420a440f9504c42d",
+      "existing_sha256": "a114e22c1d69476a1142a4a060a8e1f0c59375b85f80ba80e7ab20bf8abc8a80",
+      "path": "docs/governance/TEST_STRATEGY.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/project/ARCHITECTURE.md",
+      "candidate_sha256": "975b321a64a28be51272a56a18018c51f366d4e1edcb3c1b201d88b232d5b60a",
+      "existing_sha256": "dd6c41a990af6551f48d27a5a3a1be8059507eb6f22a4bd9f7522670350e5a40",
+      "path": "docs/project/ARCHITECTURE.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/project/CHANGELOG.md",
+      "candidate_sha256": "9eebff59bd42f35e1c993ad6dd577ded7d94ce8bb75ef6a066bbebe304b5e836",
+      "existing_sha256": "e88f6f3bf4e31815bd57d064d6d5e42597972941b6513a0148e17d50525256c6",
+      "path": "docs/project/CHANGELOG.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/project/COMMIT_NOTES.md",
+      "candidate_sha256": "fb33c20d4e7df78acff2be1cdc85183504957154b942c2fe1ea07d25759e3145",
+      "existing_sha256": "77718841e97e06d5098efb880c52b64c28b60df8cbe3212eeeaa7e75d251d695",
+      "path": "docs/project/COMMIT_NOTES.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/project/CONTEXT.md",
+      "candidate_sha256": "373cc9fb821d890ec35126a417827d744d0f31c2e3aa1d601cbd971ab03fca06",
+      "existing_sha256": "4bf823401bce00edaf5b2b64be6fca5cbcd60cc90534db080a86b0aa2377f7bd",
+      "path": "docs/project/CONTEXT.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/project/DECISION_LOG.md",
+      "candidate_sha256": "53b04f9c38ba91d684344dfa66f7483c823b8df373923575db273b272f8acf20",
+      "existing_sha256": "aeef9b1f867e29bbc0022082f3807605a04dfdf07fb81b3d2c14bd91b3e57023",
+      "path": "docs/project/DECISION_LOG.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/project/PROJECT_BRIEF.md",
+      "candidate_sha256": "8fe2675e0640b30bd28ca93ba3979f5ee04c55e268d306ce8897c8ed4a6e8e30",
+      "existing_sha256": "b63976c9541a1e5d7c58fc15c0748e9335b014f0585fac71b5d292e9ccd52877",
+      "path": "docs/project/PROJECT_BRIEF.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/project/RELEASE_NOTES.md",
+      "candidate_sha256": "172b5f7ca0ffb321a41734e1192035ab555cbd691070b58bab6cc188d8725947",
+      "existing_sha256": "f2c829582fa575fe25e982321d0fdc64270e2f3a6a36a3fa3bc48d7c46fde295",
+      "path": "docs/project/RELEASE_NOTES.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/project/ROADMAP.md",
+      "candidate_sha256": "8ebe5faf4cfdd2ab056b5d23d88b1ae508da8e14285c96a62111194d109f2c05",
+      "existing_sha256": "46ba0a9f2c970655aa483eb76446be0198988ac5f323cc18aed98ac9dc4630bd",
+      "path": "docs/project/ROADMAP.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/docs/project/STATUS.md",
+      "candidate_sha256": "12262d1f0192e6aa5576de9c4940151ae58090c751746033c6fe0dd34dc68571",
+      "existing_sha256": "39b47d25dec17bc3331108e288f2311a06f6a94f68c00de9e5739186eef12417",
+      "path": "docs/project/STATUS.md"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/.starter-kit/project-profile.json",
+      "candidate_sha256": "1cd2f0238e625e4415e393fa8b9503d462fd9e66f7851de9a7a31afdef080dea",
+      "existing_sha256": "fd519b260df8202da8698a21d8cce6d20b12423ad3a996592d15db071a6e65e0",
+      "path": ".starter-kit/project-profile.json"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/.starter-kit/validation-contract.json",
+      "candidate_sha256": "4ef93ff3e26f4cd7527012e972d8f560c043060e23eef7232c88a9afb3097d17",
+      "existing_sha256": "5d16780eb290889590a51aabc0aacd63552c89d85072708ae398934c2fd80139",
+      "path": ".starter-kit/validation-contract.json"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/.starter-kit/capability-state.json",
+      "candidate_sha256": "ad3643840dc1ca571af6529fc25a9384cb01c44b5f9eb5de2733efa95844daff",
+      "existing_sha256": "d59db54ec539425ef26b3e6e96600e9e4f7e6512519f259d10b8a8cb654532c8",
+      "path": ".starter-kit/capability-state.json"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/.starter-kit/version-state.json",
+      "candidate_sha256": "bb16ffe13571027e8457b8ae0bdfac67bc1abbec5e859cde26ecaf7947be3cd2",
+      "existing_sha256": "285313c2caee46b20bda04abf2f61fa700f71a37ff01290b31692e8e056718a1",
+      "path": ".starter-kit/version-state.json"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/.starter-kit/source-authority.json",
+      "candidate_sha256": "7bb77d411bdda60d122ee6b4bdffb89766fbb2d796f1999a2702b23d72810c99",
+      "existing_sha256": "168267cbe8e6fa89b8b1cce9596909892bc4e5df452c1a7a243839663e8f62eb",
+      "path": ".starter-kit/source-authority.json"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/.starter-kit/privacy-classification.json",
+      "candidate_sha256": "b967e3cf47a4181d6e2ad6cb82873e8cdbd1dbe5326bcad8883cfa700dda6c79",
+      "existing_sha256": "5b412989b9e0009a77031f9eadaccc0f2a2bc9e43a8b3fbda63fa44a80640ba9",
+      "path": ".starter-kit/privacy-classification.json"
+    },
+    {
+      "candidate": ".starter-kit/migrations/3011a1a4-80be-4564-843b-686bdf384217/conflicts/.starter-kit/manifest.json",
+      "candidate_sha256": "dddae92d313a8e1c9731f292947292889833367597488855b0e99f01b7402223",
+      "existing_sha256": "4a1a1747147840448527318c5cb4ea2f65ad95c530a2bf330b0231ac3bb92f76",
+      "path": ".starter-kit/manifest.json"
+    }
+  ],
+  "kind": "migration",
+  "plan_id": "d514b892d35eaec3f91e4cc364089ea9579b89909c30d1b5f3f71f01c9219ff3",
+  "run_id": "3011a1a4-80be-4564-843b-686bdf384217",
+  "schema_version": "1.0",
+  "started_at": "2026-09-06T00:41:45.243752+00:00",
+  "status": "completed"
+}
