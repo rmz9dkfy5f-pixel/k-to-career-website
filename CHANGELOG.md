@@ -7,6 +7,15 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 ## [Unreleased]
 
 ### Added
+- Enabled the **`release_metadata`** Starter Kit module: `.starter-kit/release-manifest.json`
+  (schema-validated release-state record — status, artifacts, checksums, compatibility,
+  migration notes, evidence, publishing authorization) and `docs/release/RELEASE_EVIDENCE.md`.
+  `version_source` was corrected from the kit's own generated default
+  (`.starter-kit/version-state.json`, which tracks the *kit's* version) to `CHANGELOG.md`, where
+  this site's own release versioning actually lives. Left at its honest seeded state
+  (`release_status: candidate`, all evidence arrays empty) rather than backfilled for past
+  releases — the schema describes a single in-flight release, not a historical ledger, so this
+  becomes the real record starting with this project's next actual tagged release.
 - Project Starter Kit upgraded **v3.7.0 → v3.10.0** (kit tag `v3.10.0`, commit `e95c597`). No new
   modules enabled (still `accessibility`, `seo`, `web_performance`, `browser_matrix` only — none of
   the new AI/agent or adaptive-context module clusters apply to a static site with no AI use).
