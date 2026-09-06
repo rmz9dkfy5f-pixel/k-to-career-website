@@ -1,0 +1,49 @@
+{
+  "approval": {
+    "apply_flag": true,
+    "approved_by": "CyberAntAI",
+    "expected_plan_id": "218331565370e1a5287b690842e050bd6adf420770281cc1b7ef295026e2936f"
+  },
+  "changes": [
+    {
+      "action": "created",
+      "after_sha256": "55675e428e66d23244e139e709c40daa319d8438669199bd43720c2d7b565768",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "generated",
+      "path": ".starter-kit/release-manifest.json"
+    },
+    {
+      "action": "created",
+      "after_sha256": "c0ad8ebbe39c7f6d465f7bb4f3e871b17a9aab25430cf76039ad9add7be73c43",
+      "backup": null,
+      "before_sha256": null,
+      "ownership": "starter_kit",
+      "path": "docs/release/RELEASE_EVIDENCE.md"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "b2f6d5b9045684ba29a29f14fd5ad44a9f73623d2aa2b670065f5387e2179106",
+      "backup": ".starter-kit/migrations/5db59116-179e-4b60-90a9-def4c4df6e8e/backup/.starter-kit/capability-state.json",
+      "before_sha256": "ad3643840dc1ca571af6529fc25a9384cb01c44b5f9eb5de2733efa95844daff",
+      "ownership": "generated",
+      "path": ".starter-kit/capability-state.json"
+    },
+    {
+      "action": "modified",
+      "after_sha256": "17ab4e7055ae19e3d62c2300102b1e6a45c2fb978ed6c8390a777ad81d0aad30",
+      "backup": ".starter-kit/migrations/5db59116-179e-4b60-90a9-def4c4df6e8e/backup/.starter-kit/manifest.json",
+      "before_sha256": "2ccb738608b57c1538e2174d92f13be0bff6026e03a9c15afe9b7646810dc6b3",
+      "ownership": "generated",
+      "path": ".starter-kit/manifest.json"
+    }
+  ],
+  "completed_at": "2026-09-06T21:08:05.936813+00:00",
+  "conflicts": [],
+  "kind": "module-enable",
+  "plan_id": "218331565370e1a5287b690842e050bd6adf420770281cc1b7ef295026e2936f",
+  "run_id": "5db59116-179e-4b60-90a9-def4c4df6e8e",
+  "schema_version": "1.0",
+  "started_at": "2026-09-06T21:08:05.920046+00:00",
+  "status": "completed"
+}

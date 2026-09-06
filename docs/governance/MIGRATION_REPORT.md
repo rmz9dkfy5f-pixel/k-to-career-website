@@ -5,6 +5,113 @@ versions.
 
 ---
 
+# v3.10.0 Migration — 2026-09-06
+
+Migrated Project Starter Kit **v3.7.0 → v3.10.0** (skipping v3.8.0 and v3.9.0 — the kit's
+compatibility floor is fixed at `3.4.3` and does not require intermediate hops).
+
+Kit source: the private Project Starter Kit source repository at tag `v3.10.0` (commit `e95c597`),
+run from a detached worktree pinned to that tag so the kit's own `main`-tracking checkout (mid-v3.11
+work) was never disturbed.
+
+## Status
+
+**Complete.** `validate` **PASS** (0 findings), `validate --release` **PASS** (0 findings),
+`quality --execute` **PASS** (0 checks — no build/test tooling, as before), `security inspect`
+**PASS** (0 findings, all 9 v3.6 security-assurance state files present).
+
+No site content changed; no existing project-owned content was overwritten.
+
+## Identifiers
+
+- Migration plan ID: `d514b892d35eaec3f91e4cc364089ea9579b89909c30d1b5f3f71f01c9219ff3`
+- Migration run ID (rollback handle): `3011a1a4-80be-4564-843b-686bdf384217`
+- Profile: `web_application` (unchanged)
+
+## Git State
+
+`adopt-audit`/`plan-migration`/`migrate --apply` were run with `--allow-non-default-branch` (new in
+v3.9.0) on `chore/migrate-starter-kit-v3.10`, off `main` at `e629235` — never applied to `main`
+directly, consistent with this repo's branch protection and established pattern.
+
+## What Changed
+
+66 planned operations: 3 `create` (root scaffolding, removed — see below), 2 `replace_v34_owned`
+(`PROMPT_MODEL_SELECTION_GATE.md`, `docs/governance/CONTEXT_ENGINEERING.md` — verified
+byte-identical to their frozen prior templates before replacement), 38 `preserved_conflict`, 2
+`shadowed_document` (resolved by removing the root scaffolding), 23 `identical`.
+
+**Untouched:** `index.html`, `assets/`, `docs/Strategy/`, `plans/`, `.claude/skills/*` (no longer
+kit-templated as of v3.9.0 — see Deviations), all `docs/project/*` and `docs/governance/*`
+pointer/policy docs not listed as changed above.
+
+## Conflicts Preserved
+
+All 38 conflicts (`docs/governance/*`, `docs/project/*`, `AGENTS.md`, `ai/agents/SUBAGENT_ROLES.md`,
+`ai/prompts/V34_AGENT_TASK_PROMPT.md`, and 7 `.starter-kit/*.json` generated state files) were left
+untouched on disk, with the kit's proposed candidate stashed under
+`.starter-kit/migrations/3011a1a4-.../conflicts/`. Unlike the v3.7.0 migration, **`CLAUDE.md` did
+not even appear in the plan** — v3.9.0 dropped `CLAUDE.md` and `.claude/skills/` from the kit's
+shipped template set entirely (agent-neutral `AGENTS.md`/`.agents/skills/` only, going forward); the
+kit has no path-retirement mechanism, so existing files are neither replaced nor deleted, just no
+longer templated.
+
+Of the 7 conflicted `.starter-kit/*.json` files, this migration adopted 4 of the kit's candidates
+after individually verifying they carried no real recorded project state (`project-profile.json`'s
+refreshed discovery scan, `version-state.json`'s version bump, `source-authority.json`'s refreshed
+staleness dates) or safely merged one (`capability-state.json`: added the 25 new v3.8–v3.10 modules
+as `not_applicable` while preserving the 4 existing `configured` entries byte-for-byte) — and
+deliberately **rejected** the candidate for 2 files that would have silently discarded real recorded
+facts:
+
+| File | Candidate would have done | Kept instead |
+|---|---|---|
+| `validation-contract.json` | Reset `manual_checks` to `[]`, discarding both recorded `passed` results | Existing file, unchanged — both `static_site_http_smoke` and `browser_visual_review` remain recorded `passed` |
+| `privacy-classification.json` | Reset `data_classes` to `[]` and `default_classification` to `unknown` | Existing file, unchanged — `organisational_contact_email` classification and `public` default preserved |
+
+This is exactly the class of regression v3.9.0's issue #101 fix ("migrations no longer silently
+discard live project state") targets at the manifest level — but the fix doesn't extend to every
+individual generated file's *content*, only to whether the migration *tool itself* overwrites them
+(it doesn't; it always conflict-preserves). Each generated-state conflict still needs a human
+judgment call on adopt-vs-keep, same as any other conflict.
+
+## Deliberate Deviations From The Kit's Output
+
+1. **Root migration scaffolding removed** — same three files, same reasons as the v3.7.0 migration
+   (world-readable duplication on a public Pages repo). Still branded "V3.5" internally in the kit's
+   own frozen template, confirming this scaffolding has been stale inside the kit itself since at
+   least that release.
+2. **Manifest reconciled by hand**: removed the three scaffolding entries from `files`; recomputed
+   the normalized self-hash via the kit's own `_normalized_manifest_hash` (imported directly from
+   `starter_kit/validation.py` rather than reimplemented, to avoid a transcription error); the two
+   rejected-candidate files' hashes were reset to match their preserved (unchanged) real content.
+3. **`CLAUDE.md`'s "V3.4 Agent Operating System" section and `AGENTS.md`'s Skills list were
+   hand-corrected** — both had gone stale across the *prior* 3.4.3→3.7.0 jump (still said "V3.4",
+   still named the four `v34-*` skills) because both files are `ownership: project` and are
+   therefore never auto-upgraded; they land in the conflict-preserve bucket every time. Updated to
+   name the current `starter-*` skills (adding the four not previously listed:
+   `starter-module-management`, `starter-release-evidence`, `starter-session-closeout`,
+   `starter-session-start`) and to reference the installed version via `.starter-kit/manifest.json`
+   rather than a hardcoded version string, specifically so this doesn't go stale the same way again.
+4. **`.claude/skills/*` left as-is, not removed.** Owner decision: keep it as a hand-maintained
+   mirror of `.agents/skills/*` (needed for Claude Code to discover `/starter-*` skills locally in
+   this repo), since the kit itself no longer maintains it. No content actually differed this round
+   (all 12 skill files show `identical` action — unchanged since v3.7.0), so no resync was needed
+   this time, but it must be checked by hand on every future upgrade.
+
+## Verification
+
+- `index.html`/`assets/` confirmed byte-unchanged (`git diff --stat` empty for both).
+- `validate`, `validate --release`, `quality --execute`, `security inspect` all **PASS**.
+
+## Known Non-Issues Checked For
+
+- The `_validate_security_assurance` lexicographic-string version-comparison defect (fixed inside
+  v3.10.0 itself, before it was tagged) was never exposed by this migration, since it migrates
+  straight to the already-fixed tag.
+
+---
+
 # v3.7.0 Migration — 2026-08-20
 
 Migrated Project Starter Kit **V3.4 → v3.7.0**. Single direct jump: the kit's compatibility floor is

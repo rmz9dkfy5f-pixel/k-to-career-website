@@ -105,10 +105,12 @@ A task is not done until:
 - obvious regressions are considered
 - the user can review the work in a bounded, understandable scope
 
-## V3.4 Agent Operating System
+## Project Starter Kit Agent Operating System
 
-This repository runs Project Starter Kit V3.4. Everything above remains authoritative for what to
-write and where it belongs; V3.4 adds the process layer around it.
+This repository runs the AntBrainOS Project Starter Kit (currently v3.10.0 — see
+`.starter-kit/manifest.json` for the authoritative installed version, rather than trusting this
+section's own wording, which has gone stale across version jumps before). Everything above remains
+authoritative for what to write and where it belongs; the kit adds the process layer around it.
 
 Before substantial work:
 1. Confirm the classification in `docs/governance/PROJECT_CLASSIFICATION.md`.
@@ -120,12 +122,12 @@ Before substantial work:
 defers to this file on project structure, content rules, and messaging — where the two appear to
 disagree, this file wins and the discrepancy should be flagged rather than resolved silently.
 
-Skills (`/v34-execution-loop`, `/v34-migration-loop`, `/v34-production-readiness`,
-`/v34-context-eval-loop`) live in `.claude/skills/`, mirrored to `.agents/skills/` for Codex. The
-execution loop is `Inspect → Plan → Change → Verify → Document → Gate → Decide`, which extends rather
-than replaces the Preferred Execution Pattern above.
+Skills (see `AGENTS.md`'s Skills section for the current list — kept there only, to avoid two lists
+drifting apart) live in `.claude/skills/`, mirrored to `.agents/skills/` for Codex. The execution
+loop is `Inspect → Plan → Change → Verify → Document → Gate → Decide`, which extends rather than
+replaces the Preferred Execution Pattern above.
 
-Governance and project docs added by V3.4:
+Governance and project docs added by the Project Starter Kit:
 - `docs/governance/` = quality gates, run contracts, risk, rollback, security, release readiness
 - `docs/project/` = pointer stubs only; each names the canonical source for that information
 - `ai/` = agent prompts, review gates, subagent roles, run reports

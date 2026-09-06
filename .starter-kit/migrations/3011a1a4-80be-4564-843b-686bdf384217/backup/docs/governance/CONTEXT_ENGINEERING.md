@@ -17,11 +17,13 @@ Do not solve context problems by making root instructions huge. Use progressive 
 Keep minimal:
 
 - `AGENTS.md`
+- `CLAUDE.md`
 
 ### Loaded When Needed
 
 Use for procedures:
 
+- `.claude/skills/*/SKILL.md`
 - `.agents/skills/*/SKILL.md`
 
 ### Durable Knowledge

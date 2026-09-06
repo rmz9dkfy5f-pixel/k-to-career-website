@@ -30,7 +30,6 @@
   "enabled_modules": [
     "accessibility",
     "browser_matrix",
-    "release_metadata",
     "seo",
     "web_performance"
   ],
@@ -161,7 +160,7 @@
       "path": ".starter-kit/manifest.json",
       "profiles": [],
       "required": true,
-      "sha256": "680cb1ea1955155bf265df7d3f89044392ec9f773b3306a2c7dd680531e916c5"
+      "sha256": "d42d09ddde4fbaf251c9d956db8a560fb0f1a5f1e971789cd0233debff7f33dd"
     },
     {
       "modules": [],
@@ -261,11 +260,35 @@
     },
     {
       "modules": [],
+      "ownership": "starter_kit",
+      "path": "00_MIGRATION_KICKOFF.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "68792e87751650b341d70f0a946b2b83cbb47f9541d36bb8adcb8f8a132c079a"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "ADOPTION_POLICY.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "5b890352e7c8a65aee244e312e3ccbadc920f5600e30ea828d4b0dba790e7471"
+    },
+    {
+      "modules": [],
       "ownership": "project",
       "path": "AGENTS.md",
       "profiles": [],
       "required": true,
       "sha256": "ff7f9a8f1f77a4be05925a9ac7bc2c62bba28293b91754aa99f5046592675ec6"
+    },
+    {
+      "modules": [],
+      "ownership": "starter_kit",
+      "path": "MIGRATION_REPORT.md",
+      "profiles": [],
+      "required": true,
+      "sha256": "1066c959a0d725c340e2e1c642ad57807585d4bc7d3aab1740603436ed6c88f1"
     },
     {
       "modules": [],
@@ -578,26 +601,6 @@
       "profiles": [],
       "required": true,
       "sha256": "39b47d25dec17bc3331108e288f2311a06f6a94f68c00de9e5739186eef12417"
-    },
-    {
-      "modules": [
-        "release_metadata"
-      ],
-      "ownership": "generated",
-      "path": ".starter-kit/release-manifest.json",
-      "profiles": [],
-      "required": true,
-      "sha256": "77fb4d1318a6748393f183d2ef857576373c10866766b491d561c1c8256dd7a1"
-    },
-    {
-      "modules": [
-        "release_metadata"
-      ],
-      "ownership": "starter_kit",
-      "path": "docs/release/RELEASE_EVIDENCE.md",
-      "profiles": [],
-      "required": true,
-      "sha256": "c0ad8ebbe39c7f6d465f7bb4f3e871b17a9aab25430cf76039ad9add7be73c43"
     }
   ],
   "installation_mode": "migrated",

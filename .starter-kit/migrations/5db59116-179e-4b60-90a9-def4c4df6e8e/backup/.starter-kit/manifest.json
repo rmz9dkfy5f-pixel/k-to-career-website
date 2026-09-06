@@ -30,7 +30,6 @@
   "enabled_modules": [
     "accessibility",
     "browser_matrix",
-    "release_metadata",
     "seo",
     "web_performance"
   ],
@@ -161,7 +160,7 @@
       "path": ".starter-kit/manifest.json",
       "profiles": [],
       "required": true,
-      "sha256": "680cb1ea1955155bf265df7d3f89044392ec9f773b3306a2c7dd680531e916c5"
+      "sha256": "6701378e6e750ddb7de39d443c5899a8d46ce956f6fdcfb92ffb79dcc09edcd0"
     },
     {
       "modules": [],
@@ -578,26 +577,6 @@
       "profiles": [],
       "required": true,
       "sha256": "39b47d25dec17bc3331108e288f2311a06f6a94f68c00de9e5739186eef12417"
-    },
-    {
-      "modules": [
-        "release_metadata"
-      ],
-      "ownership": "generated",
-      "path": ".starter-kit/release-manifest.json",
-      "profiles": [],
-      "required": true,
-      "sha256": "77fb4d1318a6748393f183d2ef857576373c10866766b491d561c1c8256dd7a1"
-    },
-    {
-      "modules": [
-        "release_metadata"
-      ],
-      "ownership": "starter_kit",
-      "path": "docs/release/RELEASE_EVIDENCE.md",
-      "profiles": [],
-      "required": true,
-      "sha256": "c0ad8ebbe39c7f6d465f7bb4f3e871b17a9aab25430cf76039ad9add7be73c43"
     }
   ],
   "installation_mode": "migrated",
