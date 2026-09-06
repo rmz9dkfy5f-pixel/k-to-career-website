@@ -8,9 +8,8 @@ records remain in the AntBrainOS vault.
 
 ## Last Updated By
 
-Claude Code — 2026-08-26 (Claude Code in VS Code; correcting this file's own "Recommended Next
-Task" section, which went stale the moment the PR it named was merged — an object lesson in why
-this section exists at all)
+Claude Code — 2026-09-06 (Claude Code in VS Code; recording PR #14's merge — Starter Kit upgraded
+v3.7.0 → v3.10.0, `release_metadata` module enabled)
 
 ## Repository Identity
 
@@ -66,6 +65,18 @@ Repo Push/Session-End Super Prompt's mandatory Final Backfill step.
 See vault `SESSION_LOG.md` for the full record of every push above, including PR #12
 (`a812475`), which merged this same file's initial backfill — the very thing this correction is
 patching.
+
+**2026-09-06, Claude Code session:** upgraded the installed Project Starter Kit **v3.7.0 →
+v3.10.0** using the kit's own tool-driven migration mechanism, then enabled the `release_metadata`
+module (formalizing this repo's existing by-hand release practice — CHANGELOG, tags, checksummed
+snapshots — as a schema-validated record; left honestly at its seeded `candidate` state, not
+backfilled for past tags). No site content changed — `index.html`/`assets/` confirmed
+byte-identical throughout. `validate`, `validate --release`, `quality --execute`, and
+`security inspect` all `PASS`. PR #14 squash-merged as `5880df1`; branch deleted. No new tag or
+canonical snapshot created this pass — that remains a separate, not-yet-requested action, per this
+repo's established pattern of treating merge and tag/snapshot as distinct authorization events.
+Full technical record: `docs/governance/MIGRATION_REPORT.md`'s "v3.10.0 Migration" section; vault
+`SESSION_LOG.md`/`DECISION_LOG.md`, 2026-09-06.
 
 ## Recommended Next Task
 
