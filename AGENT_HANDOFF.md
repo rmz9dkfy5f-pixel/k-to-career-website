@@ -8,8 +8,8 @@ records remain in the AntBrainOS vault.
 
 ## Last Updated By
 
-Claude Code — 2026-09-06 (Claude Code in VS Code; recording PR #14's merge — Starter Kit upgraded
-v3.7.0 → v3.10.0, `release_metadata` module enabled)
+Claude Code — 2026-09-06 (Claude Code in VS Code; Repo Push/Session-End Super Prompt Final Backfill
+— confirmed final HEAD and tag `v1.7.0`)
 
 ## Repository Identity
 
@@ -43,9 +43,9 @@ This file may summarize provenance for startup routing, but it must not become a
 
 ## Latest Project-Specific Provenance
 
-The latest confirmed K to Career project state, as of this backfill, is `main` at `c9b9c18`,
-tagged `v1.6.3` (remote tag independently verified). Prior tagged state was `v1.5.1` at `6a5e084`
-(2026-08-20, R-006 remainder + favicon regeneration).
+The latest confirmed K to Career project state, as of this backfill, is `main` at `d4601b3`,
+tagged `v1.7.0` (remote tag independently verified). Prior tagged state was `v1.6.3` at `c9b9c18`
+(2026-08-26, branch protection).
 
 **2026-08-24, Claude Code session:** a repository session-start recovery audit (Verdict `PASS WITH
 CONDITIONS`, provenance Confirmed); implemented the locked students-&-families audience-priority
@@ -72,18 +72,28 @@ module (formalizing this repo's existing by-hand release practice — CHANGELOG,
 snapshots — as a schema-validated record; left honestly at its seeded `candidate` state, not
 backfilled for past tags). No site content changed — `index.html`/`assets/` confirmed
 byte-identical throughout. `validate`, `validate --release`, `quality --execute`, and
-`security inspect` all `PASS`. PR #14 squash-merged as `5880df1`; branch deleted. No new tag or
-canonical snapshot created this pass — that remains a separate, not-yet-requested action, per this
-repo's established pattern of treating merge and tag/snapshot as distinct authorization events.
+`security inspect` all `PASS`. PR #14 squash-merged as `5880df1`; PR #15 (this file's own backfill)
+squash-merged as `d4601b3`; both branches deleted — both merges user-authorized separately. Ran the
+Repo Push/Session-End Super Prompt: GitHub Pages build confirmed `built` for `d4601b3` (deploy is
+implicit-on-merge for this static site; no VPS exists, so Section 8 is not applicable). User-decided
+tag **`v1.7.0`** (MINOR — governance/tooling-only, matching the `v1.5.0` precedent) created at
+`d4601b3`, canonical snapshot created via `git archive v1.7.0` and SHA-256-verified **233/233**
+files at `E:\WorkSync\Projects\RepoBackups\K_to_Career_Website\v1.7.0\` (first snapshot recorded on
+this machine — `REPOSITORY_HANDOFF_CONFIG_LOCAL.md`'s snapshot table had no Windows row; user
+supplied the destination and it was added as a new row), remote tag independently verified. All
+four vault-side closeout lints (read-only): `registry_lint.py` (45 checks, 0 errors),
+`model_gate_lint.py` (9 checks, 0 errors), `prompt_status_lint.py` (246 checks, 0 errors) all clean;
+`tag_pair_lint.py` (429 checks) found 2 pre-existing errors and `raw_source_actionable_scan.py`
+found 1 pre-existing flag, both on vault files this session never touched, unrelated to this repo.
 Full technical record: `docs/governance/MIGRATION_REPORT.md`'s "v3.10.0 Migration" section; vault
 `SESSION_LOG.md`/`DECISION_LOG.md`, 2026-09-06.
 
 ## Recommended Next Task
 
-User-confirmed (2026-08-26 session-end closeout, Step 4a gate re-run after PR #12 merged and
-invalidated the prior pick, recorded verbatim): **confirm client launch status and intended
-hosting platform** — open since 2026-06-25 (custom domain `www.ktocareer.org` vs. GitHub Pages;
-see `docs/deployment/HOSTING_NOTES.md`). Ranked below it, not chosen: gathering real impact proof
+User-confirmed (2026-09-06 session-end closeout, Step 4a gate re-run — same pick reconfirmed,
+recorded verbatim): **confirm client launch status and intended hosting platform** — open since
+2026-06-25 (custom domain `www.ktocareer.org` vs. GitHub Pages; see
+`docs/deployment/HOSTING_NOTES.md`). Ranked below it, not chosen: gathering real impact proof
 points; fixing R-008's stale `docs/workflow/branching-model.md` wording. Do not substitute a
 different starting point without re-confirming.
 
