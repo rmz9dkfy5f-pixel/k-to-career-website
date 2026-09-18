@@ -3,6 +3,14 @@
 
 ---
 
+## Status
+**Hosting platform confirmed: Wix** (client decision, 2026-09-18). The site has not yet launched —
+GitHub Pages remains the live target until the Wix migration actually happens. See "Target Hosting
+(Client — Wix)" below for setup details; the "If Hosting Outside Wix" section is now reference
+material only, not an open option.
+
+---
+
 ## Domain
 - **Target domain:** `www.ktocareer.org`
 - Canonical URL is already set in the HTML: `<link rel="canonical" href="https://www.ktocareer.org">`
