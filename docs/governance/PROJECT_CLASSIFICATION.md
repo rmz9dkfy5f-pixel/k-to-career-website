@@ -42,8 +42,10 @@ Note the distinction from `REPOSITORY_HANDOFF_CONFIG.md`'s Deployment Contract, 
 *this agent system* is authorized to deploy — nothing. The two are consistent: a deployment target
 exists, and deploying to it is not an authorized agent action.
 
-Re-check this if the client moves the site to Wix or another host, which is an open question rather
-than a decided plan.
+The client has confirmed **Wix** as the target hosting platform (decided 2026-09-18) — see
+`docs/deployment/HOSTING_NOTES.md`. The site has not yet launched, and GitHub Pages remains the live
+deployment target until migration actually happens. Re-check this classification (and the
+Deployment Contract's "Live deployment target" field) once the Wix migration is executed.
 
 Never infer a classification from assumption or convenience. If unconfirmed, leave every field
 above as `TBD` rather than guessing.

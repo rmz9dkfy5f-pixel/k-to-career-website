@@ -61,6 +61,9 @@ a deployment target **exists**, and deploying to it is **not** an authorized age
   (`k-to-career-*-client-package.zip`), which are built by hand per release.
 - Live deployment target: GitHub Pages, confirmed via
   `gh api repos/rmz9dkfy5f-pixel/k-to-career-website/pages` → `status: built`
+- Confirmed future target: **Wix** (client decision, 2026-09-18) — not yet migrated; GitHub Pages
+  remains live until cutover. See `docs/deployment/HOSTING_NOTES.md`. Update this field once the
+  migration actually happens.
 - Deployment branch/source: `main`, path `/` (repository root) — no build step; publishing is
   implicit on every push or merge to `main`
 - Published URL: `https://rmz9dkfy5f-pixel.github.io/k-to-career-website/`

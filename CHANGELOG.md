@@ -43,6 +43,10 @@ The format is based on keeping release notes clear, versioned, and easy to revie
   evidence-backed (the site has no forms, inputs, analytics, trackers, database, or backend).
 
 ### Changed
+- Recorded the client's confirmed hosting platform decision: **Wix** (2026-09-18). The site has not
+  yet launched; GitHub Pages remains the live deployment target until migration actually happens.
+  Updated `docs/governance/PROJECT_CLASSIFICATION.md`, `docs/deployment/HOSTING_NOTES.md`, and
+  `docs/governance/REPOSITORY_HANDOFF_CONFIG.md` accordingly. No site content changed.
 - Enabled GitHub branch protection on `main`: force-pushes and branch deletion are now blocked
   (`enforce_admins: true`, `allow_force_pushes: false`, `allow_deletions: false`). No PR-review
   requirement was added — this repo has no CI and is solo-maintained, so `gh pr merge` and the
