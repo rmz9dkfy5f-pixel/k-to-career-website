@@ -8,8 +8,8 @@ records remain in the AntBrainOS vault.
 
 ## Last Updated By
 
-Claude Code — 2026-09-06 (Claude Code in VS Code; Repo Push/Session-End Super Prompt Final Backfill
-— confirmed final HEAD and tag `v1.7.0`)
+Claude Code — 2026-09-18 (Claude Code in VS Code extension; Repo Push/Session-End Super Prompt
+Final Backfill — confirmed final HEAD and tag `v1.7.1`)
 
 ## Repository Identity
 
@@ -19,11 +19,8 @@ Claude Code — 2026-09-06 (Claude Code in VS Code; Repo Push/Session-End Super 
   public repo 2026-08-20 to close risk R-006 (absolute local filesystem paths were world-readable
   via GitHub Pages)
 - Branch at pointer creation: `main`
-- HEAD at pointer creation: `a812475e3e71913a8f5686e371b01fbc36f5076f`
-- Tag at pointer creation: `v1.6.3` — points one commit behind current HEAD (at `c9b9c18`); this
-  and the previous commit (`a812475`, the `AGENT_HANDOFF.md` backfill itself) are the super
-  prompt's own trailing bookkeeping, explicitly exempt from needing a new tag — see Section 7 step
-  12's loop guard
+- HEAD at pointer creation: `d4601b383f68e22a31731d5c7f1e426800739f46`
+- Tag at pointer creation: `v1.7.0`
 - Canonical remote: `https://github.com/rmz9dkfy5f-pixel/k-to-career-website.git`
 
 ## Canonical Continuity Records
@@ -43,9 +40,9 @@ This file may summarize provenance for startup routing, but it must not become a
 
 ## Latest Project-Specific Provenance
 
-The latest confirmed K to Career project state, as of this backfill, is `main` at `d4601b3`,
-tagged `v1.7.0` (remote tag independently verified). Prior tagged state was `v1.6.3` at `c9b9c18`
-(2026-08-26, branch protection).
+The latest confirmed K to Career project state, as of this backfill, is `main` at `048ae21`,
+tagged `v1.7.1` (remote tag independently verified). Prior tagged state was `v1.7.0` at `d4601b3`
+(2026-09-06, Starter Kit v3.10.0 upgrade).
 
 **2026-08-24, Claude Code session:** a repository session-start recovery audit (Verdict `PASS WITH
 CONDITIONS`, provenance Confirmed); implemented the locked students-&-families audience-priority
@@ -88,14 +85,30 @@ found 1 pre-existing flag, both on vault files this session never touched, unrel
 Full technical record: `docs/governance/MIGRATION_REPORT.md`'s "v3.10.0 Migration" section; vault
 `SESSION_LOG.md`/`DECISION_LOG.md`, 2026-09-06.
 
+**2026-09-18, Claude Code session:** ran a session-start recovery audit (Verdict `PASS WITH
+CONDITIONS`, provenance Confirmed), confirmed Starter Kit v3.10.0 was already live (not pending),
+then the client confirmed **Wix** as the target hosting platform (site not yet launched anywhere).
+Recorded the decision docs-only (PR #17, `chore/record-wix-hosting-decision`). Ran
+`REPO_SESSION_END_CLOSEOUT.md` via `$handoff-repository` (manual fallback): committed `0e2f8a2`,
+pushed, opened PR #17. User then invoked the Repo Push/Session-End Super Prompt; its Section 1
+inspection found `main` already clean with no pending work — everything sat on unmerged PR #16
+(open since 2026-09-06, backfilling this file's own `v1.7.0` values) and PR #17. The prompt cannot
+merge (`merge: prohibited` in its own Authorization Envelope), so the user was asked and explicitly
+authorized merging both, separately: PR #16 squash-merged as `8049a10`, PR #17 squash-merged as
+`048ae21`. Tag **`v1.7.1`** (PATCH — docs/governance-only, matching the `v1.6.1` precedent) applied
+at `048ae21`; canonical snapshot created via `git archive v1.7.1` and SHA-256-verified **234/234**
+files at `E:\WorkSync\Projects\RepoBackups\K_to_Career_Website\v1.7.1\`; remote tag independently
+verified. GitHub Pages deployment target unchanged (Wix is a confirmed future target, not yet
+migrated). Full record: vault `SESSION_LOG.md`/`DECISION_LOG.md`, 2026-09-18.
+
 ## Recommended Next Task
 
-User-confirmed (2026-09-06 session-end closeout, Step 4a gate re-run — same pick reconfirmed,
-recorded verbatim): **confirm client launch status and intended hosting platform** — open since
-2026-06-25 (custom domain `www.ktocareer.org` vs. GitHub Pages; see
-`docs/deployment/HOSTING_NOTES.md`). Ranked below it, not chosen: gathering real impact proof
-points; fixing R-008's stale `docs/workflow/branching-model.md` wording. Do not substitute a
-different starting point without re-confirming.
+User-confirmed (2026-09-18 session-end closeout, Step 4a gate, recorded verbatim): **confirm
+client launch timeline** — hosting platform is now resolved (Wix); the site has not launched
+anywhere and no date has been given. Ranked below it, not chosen: gathering real impact proof
+points; fixing R-008's stale `docs/workflow/branching-model.md` wording; fixing `CHANGELOG.md`'s
+`[Unreleased]` rollup drift (flagged 2026-09-18, not fixed). Do not substitute a different starting
+point without re-confirming.
 
 ## Routing Note
 
