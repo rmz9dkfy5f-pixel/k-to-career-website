@@ -7,6 +7,14 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 ## [Unreleased]
 
 ### Added
+- `robots.txt` (allow-all, points at the confirmed future `www.ktocareer.org` domain) and
+  `sitemap.xml` (single entry for `/`) — both previously 404. Added `og:image`/`twitter:image` meta
+  tags (`assets/images/og-preview.png`, 1200×630, generated from the existing logo — no new content
+  invented), so social shares now get a preview instead of none. Fixed the logo link's `href="#"` to
+  `href="#top"`. Found by a 2026-09-21 production/compatibility audit; commit `f741eab`. Left out of
+  scope, per that audit and this closeout: the "Apply for PATHWAYS" button still only scrolls to
+  `#involve` (no real application flow), and the footer Smart Learning Solutions links may be
+  placeholder — both need a separate client/product decision.
 - Enabled the **`release_metadata`** Starter Kit module: `.starter-kit/release-manifest.json`
   (schema-validated release-state record — status, artifacts, checksums, compatibility,
   migration notes, evidence, publishing authorization) and `docs/release/RELEASE_EVIDENCE.md`.

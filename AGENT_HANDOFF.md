@@ -8,8 +8,8 @@ records remain in the AntBrainOS vault.
 
 ## Last Updated By
 
-Claude Code — 2026-09-18 (Claude Code in VS Code extension; Repo Push/Session-End Super Prompt
-Final Backfill — confirmed final HEAD and tag `v1.7.1`)
+Claude Code — 2026-09-23 (Claude Code in VS Code extension; `REPO_SESSION_END_CLOSEOUT.md`,
+followed `$handoff-repository` manually — Close and Publish, direct to `main`, commit `f741eab`)
 
 ## Repository Identity
 
@@ -101,14 +101,32 @@ files at `E:\WorkSync\Projects\RepoBackups\K_to_Career_Website\v1.7.1\`; remote 
 verified. GitHub Pages deployment target unchanged (Wix is a confirmed future target, not yet
 migrated). Full record: vault `SESSION_LOG.md`/`DECISION_LOG.md`, 2026-09-18.
 
+**2026-09-21/23, Claude Code session:** ran a 13-section production/compatibility audit (Sonnet 5,
+effort `high`; the user's requested Opus/extra-high was offered but not selected) against the live
+GitHub Pages URL — Playwright (Chromium/Firefox/WebKit) installed in the session scratchpad, not
+the repo. Live site confirmed byte-identical to HEAD throughout. No P0 blockers found; verdict
+GREEN. Findings: `robots.txt`/`sitemap.xml` both 404, no `og:image`/`twitter:image`, logo link
+`href="#"`, plus non-blocking P1/P2 items (oversized 732KB `logo.png`, tap targets under 44px, no
+`aria-expanded` on the hamburger, no visible focus styles). Fixed the four SEO/sharing items this
+session via `REPO_SESSION_END_CLOSEOUT.md` (`$handoff-repository` followed manually; Close and
+Publish, direct to `main`, no PR — user-selected): `robots.txt`, `sitemap.xml` (both pointed at the
+confirmed future `www.ktocareer.org` domain, matching the existing canonical/`og:url`), a
+1200×630 `og-preview.png` generated from the existing logo (no invented content), and the logo
+`href` fixed to `#top`. Committed and pushed as `f741eab`; GitHub Pages build confirmed `built` and
+byte-identical for that commit. Left out of scope, by user direction: "Apply for PATHWAYS" has no
+real application flow; the footer Smart Learning Solutions links may be placeholder; the remaining
+P1/P2 polish items. No tag/snapshot — not a versioned release. Full record: vault
+`SESSION_LOG.md`/`DECISION_LOG.md`, 2026-09-23.
+
 ## Recommended Next Task
 
-User-confirmed (2026-09-18 session-end closeout, Step 4a gate, recorded verbatim): **confirm
+User-confirmed (2026-09-23 session-end closeout, Step 4a gate, recorded verbatim): **confirm
 client launch timeline** — hosting platform is now resolved (Wix); the site has not launched
 anywhere and no date has been given. Ranked below it, not chosen: gathering real impact proof
-points; fixing R-008's stale `docs/workflow/branching-model.md` wording; fixing `CHANGELOG.md`'s
-`[Unreleased]` rollup drift (flagged 2026-09-18, not fixed). Do not substitute a different starting
-point without re-confirming.
+points; fixing the remaining audit P1/P2 items (tap targets, hamburger `aria-expanded`, focus
+styles, resize `logo.png`); fixing R-008's stale `docs/workflow/branching-model.md` wording; fixing
+`CHANGELOG.md`'s `[Unreleased]` rollup drift (flagged 2026-09-18, still not fixed). Do not
+substitute a different starting point without re-confirming.
 
 ## Routing Note
 
