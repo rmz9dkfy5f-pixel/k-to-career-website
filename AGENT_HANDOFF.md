@@ -8,8 +8,8 @@ records remain in the AntBrainOS vault.
 
 ## Last Updated By
 
-Claude Code — 2026-09-23 (Claude Code in VS Code extension; `REPO_SESSION_END_CLOSEOUT.md`,
-followed `$handoff-repository` manually — Close and Publish, direct to `main`, commit `f741eab`)
+Claude Code — 2026-09-23 (Claude Code in VS Code extension; Repo Push/Session-End Super Prompt —
+confirmed final HEAD `7626f13` and tag `v1.8.0`)
 
 ## Repository Identity
 
@@ -115,8 +115,14 @@ confirmed future `www.ktocareer.org` domain, matching the existing canonical/`og
 `href` fixed to `#top`. Committed and pushed as `f741eab`; GitHub Pages build confirmed `built` and
 byte-identical for that commit. Left out of scope, by user direction: "Apply for PATHWAYS" has no
 real application flow; the footer Smart Learning Solutions links may be placeholder; the remaining
-P1/P2 polish items. No tag/snapshot — not a versioned release. Full record: vault
-`SESSION_LOG.md`/`DECISION_LOG.md`, 2026-09-23.
+P1/P2 polish items.
+
+Ran the Repo Push/Session-End Super Prompt for the tag/snapshot ceremony (tree was already clean —
+no new push needed). User-decided tag **`v1.8.0`** (MINOR — new site-facing crawlability/sharing
+capability, not docs-only) applied and pushed at `7626f13`; remote tag independently verified.
+Canonical snapshot created via `git archive v1.8.0` and SHA-256-verified **237/237** files at
+`E:\WorkSync\Projects\RepoBackups\K_to_Career_Website\v1.8.0\`. No VPS deploy — no such target
+exists for this repo. Full record: vault `SESSION_LOG.md`/`DECISION_LOG.md`, 2026-09-23.
 
 ## Recommended Next Task
 
