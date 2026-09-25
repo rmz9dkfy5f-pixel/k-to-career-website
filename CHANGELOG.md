@@ -6,6 +6,40 @@ The format is based on keeping release notes clear, versioned, and easy to revie
 
 ## [Unreleased]
 
+### Fixed
+- **Accessibility and page-weight remediation** of the P1/P2 items deferred by the 2026-09-21/23
+  production audit, plus three gaps found while scoping this work. In `index.html`:
+  - Visible focus indicators — there were none, so keyboard users relied on the low-contrast UA
+    default over the navy sections. Added `:focus-visible` at 3px with a 3px offset, teal on light
+    backgrounds and amber-light on the navy ones (measured 6.20:1 and 10.61:1; no single palette
+    colour clears 3:1 on both). The offset is functional, not decorative — it keeps the teal ring
+    off the teal `.nav-cta` fill.
+  - Hamburger button now carries `aria-expanded` and `aria-controls`; the inline script manages
+    focus (into the menu on open, back to the button on Escape, and deliberately *not* back on a
+    menu-link click), closes on Escape, and marks `main`/`footer` `inert` while open.
+  - Mobile menu could be left stranded full-screen with no visible close control by opening it
+    below 600px and then widening past it. `.mobile-menu.open` is now scoped inside the 600px
+    query (primary, declarative guard) with a `matchMedia` listener syncing the ARIA state.
+  - Tap targets raised to ≥44px on touch widths: nav links (`display:inline-block` is load-bearing
+    — as inline elements their box ignored `line-height` and measured 42px), a 44×44 pseudo-element
+    hit area on the hamburger that leaves its visual position unchanged, and footer links.
+    `.mobile-menu a` measured 44.16px already and was left alone.
+  - Added a skip-to-content link and `scroll-margin-top:100px`, which also fixes the pre-existing
+    defect where `#program`/`#ages`/`#outcomes`/`#involve` landed under the 100px sticky nav.
+  - Added a `prefers-reduced-motion` block. Note it must also null the `.audience-card:hover`
+    `translateY` — zeroing transition duration alone makes the card snap rather than not move.
+- `assets/images/logo.png` reduced **732,847 → 21,727 bytes (97%)**, the page's single largest
+  asset and loaded twice. It was a 3840×2160 RGB file whose pixels were all pure grayscale;
+  converting to 8-bit grayscale and resizing to 640×360 is lossless apart from the downscale and
+  still covers 3× displays at the 178×100 and 128×72 render sizes, so no HTML changed and there is
+  no layout shift. Kept opaque PNG deliberately: the footer's `invert(1)` + `mix-blend-mode:screen`
+  treatment depends on the white background being opaque. Master recoverable from git history —
+  see `docs/delivery/HANDOFF_README.md`.
+- Verified across Chromium, Firefox and WebKit (59/60 automated checks; the one failure is Safari's
+  default "Tab highlights each item" preference, which reaches no links at all — confirmed not a
+  defect in the markup) and at 375/430/768/1366/1440/1920 widths with zero horizontal overflow.
+  Live-vs-local render diff confined entirely to the logo bounding box.
+
 ### Added
 - `robots.txt` (allow-all, points at the confirmed future `www.ktocareer.org` domain) and
   `sitemap.xml` (single entry for `/`) — both previously 404. Added `og:image`/`twitter:image` meta

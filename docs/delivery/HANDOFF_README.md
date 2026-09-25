@@ -24,8 +24,13 @@ favicon-32.png          ← Browser tab icon (32×32)
 apple-touch-icon.png    ← iOS home screen icon (180×180)
 assets/
   └── images/
-      └── logo.png      ← Brand logo (3840×2160 PNG)
+      └── logo.png      ← Brand logo (640×360 grayscale PNG)
 ```
+
+`logo.png` was reduced from the original 3840×2160 master (732 KB → 22 KB) for page-weight reasons.
+The master is not committed — it is recoverable from git history at blob
+`79642d97552f27f1594879ad3bb6e193ac155ab9` (`git cat-file blob 79642d9 > logo-4k.png`). Regenerate
+`favicon-32.png` and `apple-touch-icon.png` from that master, not from the 640×360 file.
 
 ---
 
