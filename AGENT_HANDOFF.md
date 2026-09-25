@@ -8,8 +8,8 @@ records remain in the AntBrainOS vault.
 
 ## Last Updated By
 
-Claude Code — 2026-09-23 (Claude Code in VS Code extension; Repo Push/Session-End Super Prompt —
-confirmed final HEAD `7626f13` and tag `v1.8.0`)
+Claude Code — 2026-09-25 (Claude Code in VS Code extension; Repo Push/Session-End Super Prompt —
+this push will be tagged `v1.9.0`, confirmed in Section 7)
 
 ## Repository Identity
 
@@ -40,9 +40,9 @@ This file may summarize provenance for startup routing, but it must not become a
 
 ## Latest Project-Specific Provenance
 
-The latest confirmed K to Career project state, as of this backfill, is `main` at `048ae21`,
-tagged `v1.7.1` (remote tag independently verified). Prior tagged state was `v1.7.0` at `d4601b3`
-(2026-09-06, Starter Kit v3.10.0 upgrade).
+The latest confirmed K to Career project state, as of this backfill, is `main` at `5e5413d`,
+this push scheduled to be tagged `v1.9.0` (confirmed in Section 7). Prior tagged state was `v1.8.0`
+at `7626f13` (2026-09-23, SEO/sharing gap fix).
 
 **2026-08-24, Claude Code session:** a repository session-start recovery audit (Verdict `PASS WITH
 CONDITIONS`, provenance Confirmed); implemented the locked students-&-families audience-priority
@@ -124,14 +124,43 @@ Canonical snapshot created via `git archive v1.8.0` and SHA-256-verified **237/2
 `E:\WorkSync\Projects\RepoBackups\K_to_Career_Website\v1.8.0\`. No VPS deploy — no such target
 exists for this repo. Full record: vault `SESSION_LOG.md`/`DECISION_LOG.md`, 2026-09-23.
 
+**2026-09-25, Claude Code session:** fixed the P1/P2 accessibility and performance findings the
+2026-09-21/23 audit deferred — no visible focus styles, sub-44px tap targets, no hamburger
+`aria-expanded`, oversized `logo.png` — plus a skip link, `prefers-reduced-motion` support, and a
+mobile-menu-stuck-open bug found while scoping the work (widening past 600px while the menu was
+open could strand a full-screen overlay with no visible close control). Verified across
+Chromium/Firefox/WebKit (59/60 automated checks; the one failure confirmed as Safari's own "Tab
+highlights each item" preference — WebKit reaches no links by Tab at all — not a markup defect) and
+at 375/430/768/1366/1440/1920px with zero horizontal overflow. `logo.png` reduced
+**732,847 → 21,727 bytes (97%)** — it was a 3840×2160 file stored as RGB but every pixel pure
+grayscale; converting to 8-bit grayscale at 640×360 is lossless apart from the resize and still
+covers 3× displays at render size, so no HTML or layout change. Live-vs-local render diff confirmed
+confined entirely to the logo's bounding box; the footer's `invert(1)`+`screen` treatment (which
+depends on the logo staying opaque) renders identically. Committed and pushed direct to `main` as
+`5e5413d`; GitHub Pages build confirmed `built` and byte-identical. Full record:
+`plans/2026-09-25-a11y-perf-remediation.md` (repo).
+
+Then ran the Repo Push/Session-End Super Prompt for the tag/snapshot ceremony. User-decided tag
+**`v1.9.0`** (MINOR — real site-facing behavior change: keyboard/screen-reader support, a working
+mobile menu, 97% smaller logo; not docs-only, matching the `v1.8.0` precedent's reasoning over PATCH
+`v1.8.1`) — applied and pushed in Section 7; see the Final Clean-Tree Confirmation for the verified
+commit/tag pair and canonical snapshot result.
+
 ## Recommended Next Task
 
-User-confirmed (2026-09-23 session-end closeout, Step 4a gate, recorded verbatim): **confirm
-client launch timeline** — hosting platform is now resolved (Wix); the site has not launched
-anywhere and no date has been given. Ranked below it, not chosen: gathering real impact proof
-points; fixing the remaining audit P1/P2 items (tap targets, hamburger `aria-expanded`, focus
-styles, resize `logo.png`); fixing R-008's stale `docs/workflow/branching-model.md` wording; fixing
-`CHANGELOG.md`'s `[Unreleased]` rollup drift (flagged 2026-09-18, still not fixed). Do not
+User-confirmed (2026-09-25 session-end closeout, Step 4a gate, recorded verbatim): **"Wire up
+Web3Forms for the three dead CTAs and also set up Cloudflare for analytics."** Web3Forms is to
+replace the three inert "Get Involved" CTA `<span>`s (no `href`, no handler) with a real submission
+path, mirroring `Smart-Learning-Solutions/contact.html`'s pattern and the vault SOP at
+`09_PROMPTS/Claude_Code_Prompts/04_Prompts/web3forms_migration_execution_plan.md` — user will supply
+the K to Career access key. Cloudflare analytics setup was not scoped further this session. Ranked
+below it, not chosen: confirming client launch timeline (standing, open since 2026-08-04 — directly
+relevant to the user's 2026-09-26 client meeting); gathering real impact proof points; fixing R-008's
+stale `docs/workflow/branching-model.md` wording; fixing `CHANGELOG.md`'s `[Unreleased]` rollup drift
+(flagged 2026-09-18, still not fixed); reconciling stale governance docs found this session
+(`COMPATIBILITY_MATRIX.md` still claims no compatibility testing was ever performed, false since
+2026-09-21; `RELEASE_GATE.md` not re-run since 2026-07-29 despite tags v1.6.0→v1.9.0;
+`REPOSITORY_HANDOFF_CONFIG.md` self-contradicts on whether a deployment target exists). Do not
 substitute a different starting point without re-confirming.
 
 ## Routing Note
