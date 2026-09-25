@@ -9,7 +9,7 @@ records remain in the AntBrainOS vault.
 ## Last Updated By
 
 Claude Code — 2026-09-25 (Claude Code in VS Code extension; Repo Push/Session-End Super Prompt —
-this push will be tagged `v1.9.0`, confirmed in Section 7)
+confirmed final HEAD `31b3e12` and tag `v1.9.0`)
 
 ## Repository Identity
 
@@ -40,9 +40,9 @@ This file may summarize provenance for startup routing, but it must not become a
 
 ## Latest Project-Specific Provenance
 
-The latest confirmed K to Career project state, as of this backfill, is `main` at `5e5413d`,
-this push scheduled to be tagged `v1.9.0` (confirmed in Section 7). Prior tagged state was `v1.8.0`
-at `7626f13` (2026-09-23, SEO/sharing gap fix).
+The latest confirmed K to Career project state, as of this backfill, is `main` at `31b3e12`,
+tagged `v1.9.0` (remote tag independently verified). Prior tagged state was `v1.8.0` at `7626f13`
+(2026-09-23, SEO/sharing gap fix).
 
 **2026-08-24, Claude Code session:** a repository session-start recovery audit (Verdict `PASS WITH
 CONDITIONS`, provenance Confirmed); implemented the locked students-&-families audience-priority
@@ -140,11 +140,18 @@ depends on the logo staying opaque) renders identically. Committed and pushed di
 `5e5413d`; GitHub Pages build confirmed `built` and byte-identical. Full record:
 `plans/2026-09-25-a11y-perf-remediation.md` (repo).
 
-Then ran the Repo Push/Session-End Super Prompt for the tag/snapshot ceremony. User-decided tag
-**`v1.9.0`** (MINOR — real site-facing behavior change: keyboard/screen-reader support, a working
-mobile menu, 97% smaller logo; not docs-only, matching the `v1.8.0` precedent's reasoning over PATCH
-`v1.8.1`) — applied and pushed in Section 7; see the Final Clean-Tree Confirmation for the verified
-commit/tag pair and canonical snapshot result.
+Ran the Repo Push/Session-End Super Prompt for the tag/snapshot ceremony. `AGENT_HANDOFF.md` record
+committed and pushed as `31b3e12`. User-decided tag **`v1.9.0`** (MINOR — real site-facing behavior
+change: keyboard/screen-reader support, a working mobile menu, 97% smaller logo; not docs-only,
+matching the `v1.8.0` precedent's reasoning over PATCH `v1.8.1`) applied and pushed at `31b3e12`;
+remote tag independently verified (`git ls-remote --tags` dereferences to `31b3e12`). Canonical
+snapshot created via `git archive v1.9.0` and SHA-256-verified **238/238** files at
+`E:\WorkSync\Projects\RepoBackups\K_to_Career_Website\v1.9.0\`. All five mandatory vault-side
+closeout lints run (read-only): `registry_lint`/`model_gate_lint` clean (45/9 checks, 0 errors);
+`prompt_status_lint` (266 checks) found 1 pre-existing error, `tag_pair_lint` (452 checks) found 2,
+`raw_source_actionable_scan` (10 scanned) flagged 1 — all three pre-existing and unrelated to this
+repo. Working tree classification: **CLEAN**. No VPS deploy — no such target exists for this repo.
+Full record: vault `SESSION_LOG.md`/`CURRENT_CONTEXT.md`/`HANDOFF_TO_CLAUDE.md`, 2026-09-25.
 
 ## Recommended Next Task
 
